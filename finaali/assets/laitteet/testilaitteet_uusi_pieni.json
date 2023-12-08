@@ -1,0 +1,238 @@
+[
+  {
+    "school": "pupula",
+    "hostname": "pupula-kan-380",
+    "type": "laptop",
+    "timestamp": 1615654498,
+    "image": "opinsys-os-opinsys-buster-2021-01-27-071357-amd64.img",
+    "release": "O2104 Fomalhaut",
+    "manufacturer": "HP",
+    "product": "HP EliteBook 840 G3",
+    "serial": "7IX962B5CA",
+    "bios_release_date": "01/05/2020",
+    "cpu": "Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz",
+    "cpu_count": 4,
+    "memory_mib": 7763,
+    "hdd_model": "SanDisk SD8SN8U-",
+    "hdd_size_bytes": 128035676160,
+    "hdd_is_ssd": true,
+    "mac": [
+      "98:e7:18:b2:1f:62",
+      "e4:a7:88:0b:56:34"
+    ],
+   
+    ],
+
+    "battery": {
+      "vendor": "Hewlett-Packard",
+      "model": "Primary",
+      "serial": "04743 2016/09/08",
+      "state": "charging",
+      "warning-level": "none",
+      "energy": "2,0862 Wh",
+      "energy-empty": "0 Wh",
+      "energy-full": "42,1572 Wh",
+      "energy-full-design": "42,1572 Wh",
+      "voltage": "11,818 V",
+      "percentage": "4%",
+      "capacity": "100%",
+      "technology": "lithium-ion"
+    },
+  
+   
+  },
+  {
+    "school": "kettula",
+    "hostname": "kettula-nuc-16",
+    "type": "fatclient",
+    "timestamp": 1615531355,
+    "image": "opinsys-os-opinsys-stretch-2021-01-27-071036-amd64.img",
+    "release": "O2104 Euclid",
+    "manufacturer": "",
+    "product": "",
+    "serial": "6L1905OZIN",
+    "bios_release_date": "01/05/2020",
+    "cpu": "Intel(R) Core(TM) i5-5250U CPU @ 1.60GHz",
+    "cpu_count": 4,
+    "memory_mib": 7873,
+    "hdd_model": null,
+    "hdd_size_bytes": null,
+    "hdd_is_ssd": true,
+    "mac": [
+      "88:b1:58:65:62:7a",
+      "94:c6:83:23:11:ee"
+    ],
+    
+
+  },
+  {
+    "school": "pupula",
+    "hostname": "pupula-psd-76",
+    "type": "laptop",
+    "timestamp": 1615555509,
+    "image": "puavo-os-amxa-stretch-2020-10-15-105403-amd64.img",
+    "release": "O2039 Bohm (v20201015)",
+    "manufacturer": "Hewlett-Packard",
+    "product": "HP ProBook 450 G1",
+    "serial": "M3XQEY2LS1",
+    "bios_release_date": "04/29/2014",
+    "cpu": "Intel(R) Core(TM) i5-4200M CPU @ 2.50GHz",
+    "cpu_count": 4,
+    "memory_mib": 3836,
+    "hdd_model": "HGST HTS541075A9",
+    "hdd_size_bytes": 750156374016,
+    "hdd_is_ssd": false,
+    "mac": [
+      "18:cf:75:a3:56:5f",
+      "28:80:41:f7:e2:a7"
+    ],
+    
+   
+    ],
+   
+    "battery": {
+      "vendor": "Hewlett-Packard",
+      "model": "Primary",
+      "serial": "05641 2014/06/17",
+      "state": "fully-charged",
+      "warning-level": "none",
+      "energy": "37.26 Wh",
+      "energy-empty": "0 Wh",
+      "energy-full": "37.26 Wh",
+      "energy-full-design": "37.26 Wh",
+      "voltage": "12.476 V",
+      "percentage": "100%",
+      "capacity": "100%",
+      "technology": "lithium-ion"
+    },
+   
+   
+  },
+  {
+    "school": "pupula",
+    "hostname": "pupula-digilap-041",
+    "type": "laptop",
+    "timestamp": 1611918255,
+    "image": "opinsys-os-opinsys-buster-2020-12-09-114058-amd64.img",
+    "release": "O2050 Elnath",    
+    "manufacturer": "HP",
+    "product": "HP EliteBook 820 G3",
+    "serial": "N2BI4MTDEX",
+    "mainboard_serial": "X39CKPHYEA",   
+    "bios_release_date": "10/20/2020",
+    "cpu": "Intel(R) Core(TM) i5-6300U CPU @ 2.40GHz",
+    "cpu_count": 4,
+    "memory_mib": 7762,
+    "hdd_model": "LITEON L8H-256V2",
+    "hdd_size_bytes": 256060514304,
+    "hdd_is_ssd": true,
+    "mac": [
+      "34:f3:97:45:86:c0",
+      "40:b0:f6:2c:86:97"
+    ],
+    
+  
+  
+    "battery": {
+      "vendor": "Hewlett-Packard",
+      "model": "Primary",
+      "serial": "24627 2016/11/23",
+      "state": "charging",
+      "warning-level": "none",
+      "energy": "31,464 Wh",
+      "energy-empty": "0 Wh",
+      "energy-full": "38,4636 Wh",
+      "energy-full-design": "44,574 Wh",
+      "voltage": "12,97 V",
+      "percentage": "81%",
+      "capacity": "86,2916%",
+      "technology": "lithium-ion"
+    },
+  
+    
+  },
+  {
+    "school": "karhula",
+    "hostname": "karhula-lk838-ope",
+    "type": "fatclient",
+    "timestamp": 1615535307,
+    "image": "opinsys-os-opinsys-stretch-2021-01-27-071036-amd64.img",
+    "release": "O2104 Euclid",  
+    "manufacturer": "Dell Inc.",
+    "product": "Latitude E5420",
+    "serial": "CD0P6XKWBQ",
+    "mainboard_serial": "GMN7DQ5TZW",  
+    "bios_release_date": "05/17/2012",
+    "cpu": "Intel(R) Core(TM) i3-2350M CPU @ 2.30GHz",
+    "cpu_count": 4,
+    "memory_mib": 3852,  
+    "hdd_model": null,
+    "hdd_size_bytes": null,
+    "hdd_is_ssd": true,
+    "mac": [
+      "24:77:d8:4c:39:db",
+      "d0:67:b3:e7:fb:f3"
+    ],
+    
+      "battery": {
+      "vendor": "Sanyo",
+      "model": "DELL NY38W27",
+      "serial": "1429",
+      "state": "fully-charged",
+      "warning-level": "none",
+      "energy": "99,9 Wh",
+      "energy-empty": "0 Wh",
+      "energy-full": "99,9 Wh",
+      "energy-full-design": "99,9 Wh",
+      "voltage": "12,775 V",
+      "percentage": "100%",
+      "capacity": "29,5667%",
+      "technology": "lithium-ion"
+    },
+    
+      },
+   {
+    "school": "karhula",
+    "hostname": "karhula-kan-351",
+    "type": "laptop",
+    "timestamp": 1604989743,
+    "image": "opinsys-os-opinsys-stretch-2020-09-24-105637-amd64.img",
+    "release": "O2039 Bohm",   
+    "manufacturer": "HP",
+    "product": "HP EliteBook 840 G3",
+    "serial": "70AQ52DLOS",
+    "mainboard_serial": "EP6LY7S1T5",   
+    "bios_release_date": "07/12/2020",
+    "cpu": "Intel(R) Core(TM) i7-6500U CPU @ 2.50GHz",
+    "cpu_count": 4,
+    "memory_mib": 7867, 
+    "hdd_model": "INTEL SSDSCKKF25",
+    "hdd_size_bytes": 256060514304,
+    "hdd_is_ssd": true,
+    "mac": [
+      "30:e1:63:1a:6d:81",
+      "34:f3:14:28:4f:8d",
+      "62:3a:c0:ba:ce:64"
+    ],
+   
+  
+    "battery": {
+      "vendor": "Hewlett-Packard",
+      "model": "Primary",
+      "serial": "35152 2016/11/16",
+      "state": "fully-charged",
+      "warning-level": "none",
+      "energy": "39,1362 Wh",
+      "energy-empty": "0 Wh",
+      "energy-full": "40,2534 Wh",
+      "energy-full-design": "40,2534 Wh",
+      "voltage": "12,739 V",
+      "percentage": "97%",
+      "capacity": "100%",
+      "technology": "lithium-ion"
+    },
+  
+ 
+  }
+      
+]

@@ -1,0 +1,3311 @@
+@charset "UTF-8";
+/*
+  Site-wide color definitions
+*/
+/* Common elements */
+/*
+--------------------------------------------------------------------------------
+Top bar
+--------------------------------------------------------------------------------
+*/
+/*
+--------------------------------------------------------------------------------
+School name, integrations, tab bar
+--------------------------------------------------------------------------------
+*/
+/* Integration type and data flow direction labels */
+/* Tabs */
+/*
+--------------------------------------------------------------------------------
+Page contents
+--------------------------------------------------------------------------------
+*/
+/* used when no other rule applies */
+/* H1, H2, etc. headers */
+/* Things that only organisation owners can see */
+/* Ordinary links on page content areas */
+/* Links styled as clickable buttons. Also used on form submit/reset buttons,
+so verify your changes thoroughly! */
+/* Flash messages */
+/* Generic information boxes. These are NOT flash messages. */
+/* Toolboxes */
+/* Basic info blocks about users, devices, etc. */
+/* notifications about important users, etc. */
+/* warnings about users, etc. */
+/* Content boxes on "show" pages */
+/* In-page tabs */
+/* puavo-conf tables */
+/* puavo-conf editor */
+/* Miscellaneous */
+/* Organisation password requirements info boxes */
+/*
+--------------------------------------------------------------------------------
+Forms
+--------------------------------------------------------------------------------
+*/
+/* used on user edit forms */
+/*
+--------------------------------------------------------------------------------
+Lists in tables
+--------------------------------------------------------------------------------
+*/
+/*
+--------------------------------------------------------------------------------
+Supertables (shares styles with normal lists)
+--------------------------------------------------------------------------------
+*/
+/*
+--------------------------------------------------------------------------------
+Search
+--------------------------------------------------------------------------------
+*/
+/*
+--------------------------------------------------------------------------------
+Devices
+--------------------------------------------------------------------------------
+*/
+/* Hardware info */
+/* Image usage statistics */
+/*
+  Media query breakpoints
+*/
+/*
+  Base styles that are used on all pages
+*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #eee;
+  font-family: Arial, "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: black;
+  background: transparent;
+}
+
+h1 {
+  font-size: 250%;
+  border-bottom: 1px solid #000;
+}
+
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 200%;
+  }
+}
+
+h2 {
+  margin-top: 25px;
+  font-size: 200%;
+  border-bottom: 1px dashed #000;
+}
+
+@media screen and (max-width: 800px) {
+  h2 {
+    font-size: 170%;
+  }
+}
+
+h3 {
+  font-size: 130%;
+  border-bottom: 1px dotted #000;
+}
+
+h4 {
+  font-size: 115%;
+}
+
+h5 {
+  font-size: 110%;
+}
+
+h6 {
+  font-size: 105%;
+}
+
+hr {
+  /* Used to break floating boxes into controlled sections, so to speak */
+  border: none;
+  clear: both;
+  float: none;
+  height: 0;
+  margin: 0;
+  width: 100%;
+  visibility: hidden;
+}
+
+@media screen and (max-width: 800px) {
+  abbr {
+    /* cannot be hovered, hide the underline */
+    text-decoration: none;
+  }
+}
+
+abbr[title]:after {
+  content: "";
+}
+
+@media screen and (max-width: 800px) {
+  abbr[title]:after {
+    /* Can't hover over abbreviations on mobile, so display their contents */
+    content: " (" attr(title) ")";
+  }
+}
+
+/*
+  Top bar: search box, organisation/school menus, logout button
+*/
+/* Top-level wrapper, for positioning and sizing */
+#topbar {
+  position: fixed;
+  display: relative;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(#fab32e, #f59545);
+  box-shadow: 0 4px 6px rgba(34, 34, 34, 0.75);
+  min-width: 400px;
+}
+
+/* The navigation block inside the wrapper */
+#topbar nav {
+  display: flex;
+  flex-wrap: wrap;
+  /* allow multiple rows */
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  font-size: 80%;
+  /* The per-school quick link list */
+}
+
+#topbar nav > div {
+  display: inline-block;
+  margin: 0;
+  /*
+      Non-zero padding here will break the dropdown menubar entries,
+      as they must be full-height (Fitts' law)
+    */
+  padding: 0;
+}
+
+#topbar nav #left {
+  padding-right: 10px;
+}
+
+#topbar nav #middle {
+  flex-grow: 2;
+  margin: auto;
+}
+
+#topbar nav #middle div {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+#topbar nav #middle #search {
+  display: inline;
+  margin: 0;
+  padding: 5px 30px 5px 10px;
+  border: 1px solid #c8c8c8;
+  border-radius: 4px;
+}
+
+#topbar nav #middle a#extendedSearchButton {
+  display: inline;
+  align-self: center;
+  padding: 5px 10px;
+  margin-left: 2px;
+  border-radius: 5px;
+  text-decoration: none !important;
+  color: #000;
+}
+
+#topbar nav #middle a#extendedSearchButton:hover {
+  background: #fff;
+}
+
+#topbar nav #middle a#extendedSearchButton:after {
+  content: "\e822";
+  font-family: puavo-icons;
+  font-size: 110%;
+  padding-left: 5px;
+}
+
+#topbar nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#topbar nav ul.asFlex {
+  display: flex;
+}
+
+#topbar nav li {
+  background: none;
+  color: #000;
+}
+
+#topbar nav li.asFlex {
+  display: inline;
+}
+
+#topbar nav .menuTitle {
+  font-weight: bold;
+}
+
+#topbar nav .haveDropdown, #topbar nav .noDropdown {
+  /*
+      Make the dropdown menus and titles big. This padding actually controls the
+      overall height of the entire top menu bar.
+    */
+  padding: 10px;
+}
+
+#topbar nav .haveDropdown:after {
+  content: "▼";
+}
+
+#topbar nav .dropdown {
+  display: none;
+  position: absolute;
+  padding: 3px;
+  max-height: 600px;
+  overflow-y: auto;
+  z-index: 11;
+  /* topbar is 10 */
+  background: #f59545;
+  box-shadow: 0 10px 10px rgba(34, 34, 34, 0.75);
+  list-style-type: none;
+  margin: 10px 0 0 -11px;
+  /* position the dropdown in relation to the parent */
+}
+
+#topbar nav .haveDropdown:hover {
+  background: #fff;
+  color: #000;
+  cursor: default;
+}
+
+#topbar nav .haveDropdown:hover .dropdown {
+  /* Open the dropdown menu */
+  display: block;
+}
+
+#topbar nav .dropRight {
+  right: 0;
+  left: auto;
+  min-width: 150px;
+}
+
+#topbar nav .schools {
+  min-width: 250px;
+}
+
+#topbar nav .separators li {
+  padding: 4px 0;
+  margin: 0;
+  border-bottom: 1px solid #ccc;
+}
+
+#topbar nav .separators li:first-of-type {
+  padding: 0 0 4px 0;
+}
+
+#topbar nav .separators li:last-of-type {
+  padding: 4px 0 0 0;
+  border: none;
+}
+
+#topbar nav ul a {
+  display: block;
+  padding: 5px 10px;
+  color: #000;
+  background: none;
+  text-decoration: none;
+}
+
+#topbar nav ul a:hover {
+  color: #000;
+  background: #fff;
+}
+
+#topbar nav .schoolTitle {
+  font-weight: bold;
+}
+
+#topbar nav .schoolLinks {
+  margin: 0 20px 0 20px;
+  padding: 0;
+  display: inline-block;
+}
+
+#topbar nav .schoolLinks li {
+  float: left;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+}
+
+#topbar nav .schoolLinks a {
+  padding: 2px 5px;
+  text-transform: none;
+}
+
+@media screen and (max-width: 480px) {
+  #topbar nav .schoolLinks {
+    /* These items take too much space on small mobile views */
+    display: none;
+  }
+}
+
+#topbar nav #loggedInName {
+  color: #000;
+}
+
+#topbar nav .logoutButton {
+  display: block;
+  width: 100%;
+  margin-top: 4px;
+  padding: 2px;
+  text-decoration: none;
+  background: #a00;
+  border-radius: 2px;
+  /* Reuse "btn-danger" colors */
+  color: #fff;
+  background: #a00;
+}
+
+#topbar nav .logoutButton:hover, #topbar nav .logoutButton:focus {
+  color: #fff;
+  background: #c00;
+}
+
+#topbar nav svg.flag {
+  width: 32px;
+  height: 14px;
+}
+
+@media screen and (max-width: 800px) {
+  #topbar {
+    /* don't cover any content */
+    position: relative;
+    top: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 4px 6px rgba(34, 34, 34, 0.75);
+  }
+  #topbar nav {
+    width: 100%;
+    padding: 0;
+  }
+  #topbar #search {
+    flex-grow: 2;
+  }
+  /* Reorder the elements. Move the search bar at the top. */
+  #topbar nav > div:nth-child(1) {
+    order: 2;
+    flex-grow: 2;
+  }
+  #topbar nav > div:nth-child(2) {
+    order: 1;
+    flex-basis: 100%;
+  }
+  #topbar nav > div:nth-child(3) {
+    order: 3;
+  }
+}
+
+/*
+  Quick search bar at the top of the page, plus live search boxes on group pages
+*/
+/* The quick search box at the top */
+.quickSearch {
+  background: url("/images/magnifier.png") no-repeat scroll 10px center #fff;
+  text-indent: 2em;
+  margin: 4px;
+  z-index: 1;
+}
+
+/* Group members search box */
+.groupMembersSearch {
+  background: url("/images/magnifier.png") no-repeat scroll 10px center #fff;
+  text-indent: 2.5em;
+  padding: 3px;
+  /* TODO: Fix the borders. */
+}
+
+.searchLoading {
+  /*
+    The JavaScript code doing the live search adds this class to the search box when search
+    is in progress, then removes it afterwards.
+  */
+  background: url("/images/ajax-loader.gif") no-repeat scroll 10px center #fff !important;
+}
+
+/* Drop-down search result boxes */
+.searchResultsBox {
+  background: #fff;
+  border: 1px solid #cccaaa;
+  border-width: 0 1px 1px 1px;
+  margin: 0 1em 0 0;
+  max-height: 350px;
+  overflow: auto;
+  padding: 5px;
+  position: absolute;
+  width: 500px;
+  z-index: 9999;
+  box-shadow: 5px 5px 5px rgba(34, 34, 34, 0.75);
+}
+
+@media screen and (max-width: 800px) {
+  .searchResultsBox {
+    padding: 0;
+    margin: 0;
+    left: 0 !important;
+    width: 100%;
+    font-size: 90%;
+  }
+}
+
+.searchResultsBox p {
+  padding: 0;
+  margin: 0;
+  color: #aaa;
+}
+
+.searchResultsBox table {
+  border-spacing: 0;
+  margin: 0px;
+  padding: 0px;
+}
+
+.searchResultsBox th {
+  white-space: nowrap;
+}
+
+.searchResultsBox legend {
+  padding-left: 2px;
+  padding-right: 2px;
+  margin: 0;
+  border: none;
+}
+
+.searchResultsBox fieldset.search_result {
+  font-size: 80%;
+  padding: 5px;
+  margin: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .searchResultsBox fieldset.search_result {
+    margin: 2px;
+    padding: 2px;
+    border-top: 2px solid #000;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+  }
+  .searchResultsBox .search_result legend {
+    margin-left: 10px;
+    padding: 0 5px;
+  }
+  .searchResultsBox .search_result .list tr {
+    padding: 0;
+  }
+  .searchResultsBox .search_result .list td:first-of-type {
+    font-size: 110% !important;
+    font-weight: bold;
+  }
+}
+
+/*
+  Extended search form
+*/
+#extendedSearchForm #searchTerms {
+  width: 100%;
+  padding: 5px;
+}
+
+#extendedSearchForm table {
+  width: 100%;
+}
+
+#extendedSearchForm tr:nth-child(odd) {
+  background: #f5f5f5;
+}
+
+#extendedSearchForm tr:nth-child(even) {
+  background: #e9e9e9;
+}
+
+#extendedSearchForm .buttonRow {
+  /* copy-pasted from form.scss! */
+}
+
+#extendedSearchForm .buttonRow th, #extendedSearchForm .buttonRow td {
+  background: #ccc !important;
+  text-align: center;
+}
+
+#extendedSearchForm th {
+  font-size: 100%;
+}
+
+#extendedSearchForm label {
+  white-space: nowrap;
+}
+
+#extendedSearchForm select {
+  width: 100%;
+}
+
+#extendedSearchForm .termSettings {
+  display: none;
+}
+
+#extendedSearchForm .indent {
+  margin-left: 1em;
+}
+
+#extendedSearchForm fieldset {
+  margin-bottom: 0;
+}
+
+#extendedSearchForm legend {
+  /* the form is much smaller than other forms and the huge fieldset legends used
+       elsewhere look hideous */
+  border: none;
+  font-weight: normal;
+  font-size: 100%;
+}
+
+#extendedSearchForm p {
+  padding: 0;
+  margin: 0;
+}
+
+#extendedSearchForm input[type="button"] {
+  padding: 5px 50px;
+}
+
+#extendedSearchResultsTitle {
+  background: #ccc;
+  color: #000;
+  border: none;
+  padding: 5px 10px;
+}
+
+#extendedSearchResultsContainer .searchError {
+  color: #f00;
+  padding: 0;
+  margin: 0;
+}
+
+#extendedSearchResultsContainer .noResults {
+  color: #00f;
+  padding: 0;
+  margin: 0;
+}
+
+#extendedSearchResultsContainer .list th.matched {
+  /* The search term header column */
+  border-right: 1px solid #000 !important;
+}
+
+#extendedSearchResultsContainer .term, #extendedSearchResultsContainer .matched {
+  /* Force minimum width */
+  width: 1px;
+  white-space: nowrap;
+}
+
+#extendedSearchResultsContainer .matched {
+  border-right: 1px solid #000;
+}
+
+#extendedSearchResultsContainer .noMatches {
+  color: #666;
+}
+
+@media screen and (max-width: 800px) {
+  /* Remove borders, the list is collapsed */
+  #extendedSearchResultsContainer .list th:first-of-type {
+    border-right: none;
+  }
+  #extendedSearchResultsContainer .list td:first-of-type {
+    font-weight: bold;
+    border-right: none;
+  }
+}
+
+/*
+  Custom classes that are used on all/most pages
+*/
+/* Font Awesome icon class names are all prefixed with "icon-" */
+[class*=icon] {
+  font-size: 120%;
+}
+
+/* A generic missing/unset information indicator for data that isn't
+   always required to be present, but what really should be set */
+.missingData {
+  color: red;
+}
+
+/* Buttons, links and areas that are only visible to organisation owners */
+.ownersOnly {
+  border: 1px dashed red;
+}
+
+.ownersOnlyTop {
+  border: 1px dashed red !important;
+}
+
+/* Wraps everything on the page below the topmenu */
+#pageWrapper {
+  margin: 0;
+  padding: 0;
+}
+
+/* Actual page contents. Margin cannot be set to pageWrapper, as it
+   can leave a visible crack between the topbar and the page contents. */
+#pageContainer {
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 800px) {
+  #pageContainer {
+    margin: 0;
+  }
+}
+
+/* School name, integrations */
+#schoolHeader {
+  padding: 10px;
+  background: #eee;
+}
+
+@media screen and (max-width: 800px) {
+  #schoolHeader {
+    margin: 0;
+  }
+}
+
+#schoolHeader #schoolName {
+  color: #000;
+  font-size: 250%;
+  font-weight: bold;
+  font-variant: small-caps;
+  padding: 0;
+  margin: 0;
+  overflow-wrap: break-word;
+  /* force splitting of long organisation names */
+}
+
+@media screen and (max-width: 800px) {
+  #schoolHeader #schoolName {
+    font-size: 200%;
+  }
+}
+
+/* Page contents below the in-page tab bar */
+#content {
+  background: white;
+  color: black;
+  margin: 0;
+  padding: 20px;
+  position: relative;
+  width: 100%;
+  overflow: auto;
+  font-size: 80%;
+  flex: 1;
+  /* Used on the school page to push content down, below the tools */
+}
+
+@media screen and (max-width: 800px) {
+  #content {
+    padding: 10px 5px;
+    border: none;
+  }
+}
+
+#content .dashboard {
+  float: left;
+  margin: 0;
+  width: 100%;
+}
+
+#content h1 {
+  margin: 0 0 10px 0;
+  padding: 0;
+  line-height: 1;
+}
+
+/*
+  ".searchResultsBox" DIVs are created outside of the <body> element by JavaScript.
+  Those DIVs contain A and .btn elements too.
+*/
+#content, .searchResultsBox {
+  /* A generic link */
+  /* Hyperlinks styled as buttons */
+}
+
+#content a, .searchResultsBox a {
+  color: #13243f;
+  background: none;
+  font-weight: bold;
+}
+
+#content a:hover, .searchResultsBox a:hover {
+  color: #352608;
+  background: none;
+  text-decoration: none;
+}
+
+#content a:focus, .searchResultsBox a:focus {
+  color: #000;
+  background: none;
+}
+
+#content .btn, .searchResultsBox .btn {
+  display: inline-block;
+  padding: 4px 12px;
+  margin: 2px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #f0f0f0 #b0b0b0 #b0b0b0 #f0f0f0;
+  background: #d0d0d0;
+  color: #000;
+  text-decoration: none;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+#content .btn:hover, .searchResultsBox .btn:hover {
+  background: #e0e0e0;
+  color: #000;
+}
+
+#content .btn:active, #content .btn:focus, .searchResultsBox .btn:active, .searchResultsBox .btn:focus {
+  border-color: #b0b0b0 #f0f0f0 #f0f0f0 #b0b0b0;
+  background: #e0e0e0;
+  color: #000;
+}
+
+#content .btn-danger, .searchResultsBox .btn-danger {
+  border-color: #f00 #600 #600 #f00;
+  background: #a00;
+  color: #fff;
+}
+
+#content .btn-danger:hover, .searchResultsBox .btn-danger:hover {
+  background: #c00;
+  color: #fff;
+}
+
+#content .btn-danger:active, #content .btn-danger:focus, .searchResultsBox .btn-danger:active, .searchResultsBox .btn-danger:focus {
+  border-color: #600 #f00 #f00 #600;
+  background: #c00;
+  color: #fff;
+}
+
+/* Server and git commit infos */
+footer {
+  display: block;
+  color: #999;
+  text-align: center;
+  font-size: 70%;
+  margin: 1em;
+}
+
+@media screen and (max-width: 800px) {
+  footer {
+    font-size: 60%;
+  }
+}
+
+.unstyledUL {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+  External systems integration indicators
+*/
+.integrations {
+  display: flex;
+  flex-flow: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0 0 5px 0;
+  line-height: 1;
+  cursor: default;
+  font-size: 80%;
+  /* Indicator labels or badges, whatever you want to call them */
+  /* Special spans for adding arrows indicating data flow directions */
+  /* This system sends data to puavo */
+  /* Puavo sends data to this system */
+  /* Data flows in both directions between this system and puavo */
+  /* This system uses Puavo as an SSO provider */
+  /* Passwords synchronisation between Puavo and this system */
+  /* Some other type of integration */
+}
+
+.integrations li {
+  margin: 2px 5px 2px 0;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  white-space: nowrap;
+  display: inline;
+}
+
+@media screen and (max-width: 800px) {
+  .integrations {
+    padding-left: 5px;
+  }
+  .integrations li {
+    margin: 2px 2px 2px 0;
+    padding: 5px;
+  }
+}
+
+.integrations span {
+  font-family: "puavo-icons";
+  padding: 0 5px;
+}
+
+.integrations .in {
+  background: #8ff;
+  color: #000;
+}
+
+.integrations .in span:after {
+  content: "\e829";
+}
+
+.integrations .out {
+  background: #8f8;
+  color: #000;
+}
+
+.integrations .out span:after {
+  content: "\e829";
+}
+
+.integrations .inout {
+  background: #f88;
+  color: #000;
+}
+
+.integrations .inout span:after {
+  content: "\e819";
+}
+
+.integrations .login {
+  background: #88f;
+  color: #fff;
+}
+
+.integrations .login:before {
+  /* "Abuse" the puavo-icons */
+  content: "\e824";
+  font-family: "puavo-icons";
+  padding-right: 5px;
+}
+
+.integrations .password {
+  background: #ff8;
+  color: #000;
+}
+
+.integrations .password:before {
+  content: "\e81d";
+  font-family: "puavo-icons";
+  padding-right: 5px;
+}
+
+.integrations .other {
+  background: #eee;
+  color: #000;
+}
+
+.integrations .other:before {
+  content: "\e821";
+  font-family: "puavo-icons";
+  padding-right: 5px;
+}
+
+/* "Inline" integrations displayed in the school list */
+.inlineIntegrations {
+  display: inline;
+  list-style-type: none;
+  margin-left: 20px;
+  font-size: 90%;
+}
+
+.inlineIntegrations li {
+  padding: 2px 5px;
+  border: 1px solid #ccc;
+  white-space: nowrap;
+  display: inline;
+}
+
+@media screen and (max-width: 800px) {
+  .inlineIntegrations {
+    font-size: 70%;
+  }
+}
+
+/* Next synchronisation updates */
+.nextUpdates {
+  margin: 0;
+  padding-left: 5px;
+  list-style-type: none;
+  display: flex;
+  font-size: 80%;
+}
+
+.nextUpdates li {
+  display: inline;
+  padding-right: 1em;
+}
+
+.nextUpdates .system {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 800px) {
+  .nextUpdates .at {
+    white-space: nowrap;
+  }
+}
+
+.nextUpdates .in {
+  font-size: 80%;
+  font-style: italic;
+  color: #888;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 800px) {
+  .nextUpdates .in {
+    display: none;
+  }
+}
+
+/*
+  Tabs below the school name
+*/
+/* TODO: Make it possible to access second-level tabs from other first-level tabs.
+   Can be done if we play with hover effects, for example. I hate that I have to
+   first load the users list before I can access groups, for example. */
+#tabs {
+  /* Styles common for both levels */
+  /* First level */
+  /* Second level */
+}
+
+#tabs ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#tabs li {
+  display: inline;
+}
+
+#tabs a {
+  display: block;
+  margin: 0;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+#tabs .first a {
+  font-size: 80%;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 1em 1.5em;
+}
+
+#tabs .first ul {
+  background: linear-gradient(#fab32e, #f59545);
+}
+
+#tabs .first li {
+  background: linear-gradient(#fab32e, #f59545);
+}
+
+#tabs .first li a {
+  color: #000;
+}
+
+#tabs .first li:hover {
+  background: linear-gradient(#a36a2a, #ba722d);
+}
+
+#tabs .first li:hover a {
+  color: #fff;
+}
+
+#tabs .first li.current {
+  background: linear-gradient(#a36a2a, #ba722d);
+}
+
+#tabs .first li.current:hover {
+  background: linear-gradient(#a36a2a, #ba722d);
+}
+
+#tabs .first li.current a {
+  color: #fff;
+}
+
+#tabs .second {
+  /* use !important, #content > a tries to override these */
+}
+
+#tabs .second ul {
+  background: linear-gradient(#ba722d 35%, #a36a2a 60%);
+}
+
+#tabs .second li {
+  margin: 0;
+  padding: 0;
+}
+
+#tabs .second a {
+  background: none;
+  color: #e6e6d8;
+  padding: 1em 1.5em;
+  font-weight: normal;
+  font-size: 70%;
+  border: 1px solid transparent;
+}
+
+#tabs .second a:hover, #tabs .second .current a {
+  background: #fff;
+  color: #000;
+}
+
+@media screen and (max-width: 800px) {
+  #tabs .first a {
+    padding: 1em;
+  }
+  #tabs .navbarSecondLevel ul {
+    border: none;
+  }
+  #tabs .navbarSecondLevel a {
+    padding: 1em;
+  }
+}
+
+/* In-page JavaScript tabs */
+.tabBar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 0 0 5px;
+  display: flex;
+}
+
+.tabBar li {
+  display: inline;
+  margin-right: 5px;
+}
+
+.tabBar a {
+  display: block;
+  padding: 5px 50px;
+  outline: none;
+  text-decoration: none;
+  background: #ccc !important;
+  color: #000 !important;
+  font-weight: normal !important;
+  border: 1px solid #888;
+}
+
+.tabBar a:hover {
+  background: #fab32e !important;
+  color: 0 !important;
+}
+
+.tabBar a.tabActive {
+  background: #fff !important;
+  color: #000 !important;
+  cursor: default !important;
+  border-bottom: 1px solid #fff;
+}
+
+.tabBar a.tabActive:hover {
+  background: #fff !important;
+}
+
+.tabContentsWrapper {
+  margin-top: -1px;
+  border: 1px solid #888;
+  padding: 10px;
+}
+
+.tabContentsWrapper :first-child {
+  margin-top: 0;
+}
+
+.tabContentsInvisible {
+  display: none;
+}
+
+.tabContentsVisible {
+  display: block;
+}
+
+/*
+  Flash messages and other message/notification/info boxes
+*/
+/* TODO: What's the difference between message_success and message_notice? Merge them. */
+.message_success {
+  font-size: 130%;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background: #e6efc2;
+  color: #264409;
+  border: 1px solid #c6d880;
+}
+
+.message_notice {
+  font-size: 130%;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background: #86b410;
+  color: default;
+  border: 1px solid #56340e;
+}
+
+/* TODO: Merge alert and error messages */
+.message_alert, .message_error {
+  font-size: 130%;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background: #a00;
+  color: #fff;
+  border: 1px solid #f00;
+}
+
+.genericNotice {
+  padding: 10px;
+  margin: 10px 0;
+  color: #000;
+  background: #cfc;
+  border: 2px solid #0f0;
+}
+
+.genericWarning {
+  padding: 10px;
+  margin: 10px 0;
+  color: #000;
+  background: #ff9;
+  border: 2px solid #ff0;
+}
+
+.genericError {
+  padding: 10px;
+  margin: 10px 0;
+  color: #000;
+  background: #faa;
+  border: 2px solid #f00;
+}
+
+/* Floating modal dialogs */
+/* The dark backdrop */
+#modalDialogBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Use flexbox to center the dialog horizontally and vertically, regardless of its size */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 90%;
+}
+
+/* Outer container for a floating dialog. Its size can be changed freely. */
+#modalDialogContainer {
+  display: inline;
+  box-shadow: 0 0 10px #444;
+  border: 2px solid #888;
+  background: #f0f0f0;
+}
+
+/* This is finally the actual dialog */
+.modalDialog {
+  display: flex;
+  flex-direction: column;
+  /* Dialog body */
+  /* The button row */
+  /*
+    COPY-PASTED BUTTON STYLES FROM COMMON.SCSS! REMOVE ONCE THE INHERITANCE
+    PROBLEMS HAVE BEEN FIXED!
+  */
+}
+
+.modalDialog .title {
+  display: inline;
+  border-bottom: 1px solid #888;
+  background: #d0d0d0;
+  cursor: default;
+  padding: 10px;
+  text-align: left;
+  font-size: 120%;
+}
+
+.modalDialog .title span {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+.modalDialog .title small {
+  /*padding-left: 10px;*/
+}
+
+.modalDialog .body {
+  display: inline;
+  padding: 10px;
+  background: #e0e0e0;
+  flex: 2;
+  /* allocate all available space for the body */
+}
+
+.modalDialog .buttons {
+  display: inline;
+  border-top: 1px solid #c0c0c0;
+  background: #d0d0d0;
+  padding: 10px;
+  text-align: center;
+}
+
+.modalDialog .button {
+  display: inline-block;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-right: 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #f0f0f0 #b0b0b0 #b0b0b0 #f0f0f0;
+  background: #d0d0d0;
+  color: #000;
+  text-decoration: none;
+  font-weight: normal;
+  text-align: center;
+}
+
+.modalDialog .button:hover {
+  background: #e0e0e0;
+  color: #000;
+}
+
+.modalDialog .button:active, .modalDialog .btn:focus {
+  border-color: #b0b0b0 #f0f0f0 #f0f0f0 #b0b0b0;
+  background: #e0e0e0;
+  color: #000;
+}
+
+.modalDialog .button:last-of-type {
+  margin-right: 0;
+}
+
+.modalDialog .disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  color: #888;
+}
+
+.modalDialog .disabled:hover {
+  border-color: #f0f0f0 #b0b0b0 #b0b0b0 #f0f0f0;
+  background: #d0d0d0;
+  color: #888;
+}
+
+.modalDialog .disabled:active, .modalDialog .disabled:focus {
+  border-color: #f0f0f0 #b0b0b0 #b0b0b0 #f0f0f0;
+  background: #d0d0d0;
+  color: #888;
+}
+
+/* List column editor table */
+.columnTable {
+  border-collapse: collapse;
+  font-size: 90%;
+  border: 1px solid #aaa;
+  background: #fff;
+}
+
+.columnTable th {
+  border: 1px solid #aaa;
+  background: #ccc;
+  padding: 5px 10px;
+}
+
+.columnTable td {
+  padding: 0;
+}
+
+.columnTable tr td:first-child {
+  text-align: center;
+}
+
+.columnTable .visibleColumn {
+  width: 0;
+  /* force minimum possible width */
+}
+
+.columnTable .visibleColumn, .columnTable .visibleColumn input {
+  cursor: pointer;
+}
+
+.columnTable .visibleColumn input {
+  /* make the checkbox itself unclickable */
+  pointer-events: none;
+}
+
+.columnTable .nameColumn {
+  cursor: default;
+  width: 300px;
+}
+
+.columnTable .selectedRow {
+  /* take the colors from the system theme */
+  background: #00f;
+  color: #fff;
+}
+
+.columnsContainer {
+  display: flex;
+  flex-direction: rows;
+}
+
+.columnsLeft {
+  display: inline;
+  /* TODO: Make the table body scrollable, not the whole table (body+header) */
+  max-height: 400px;
+  overflow-y: scroll;
+}
+
+.columnsRight {
+  display: inline;
+  margin-left: 10px;
+}
+
+.columnsRight .button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/*
+  Drop-down "tool boxes" on show/edit pages
+*/
+.toolsContainer {
+  background: none;
+  margin: 0 0 20px 0;
+  padding: 0;
+  /* The buttons are in a list */
+  /* A tool dropdown menu */
+  /* Make the dropdown menu visible */
+}
+
+.toolsContainer > ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  /* right align */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.toolsContainer > ul > li {
+  margin: 5px;
+  padding: 1px;
+}
+
+.toolsContainer .btn {
+  padding: 7px 10px !important;
+}
+
+@media screen and (max-width: 800px) {
+  .toolsContainer .btn {
+    padding: 5px 10px !important;
+  }
+}
+
+.toolsContainer .haveDropdown {
+  /* The dropdown menu buttons aren't clickable */
+  cursor: default;
+}
+
+.toolsContainer .dropdown {
+  display: none;
+  position: absolute;
+  left: auto;
+  /* Right-aligned dropdown menus */
+  right: 0;
+  margin-right: 28px;
+  margin-top: -3px;
+  /* Some menus get so narrow it's hard to hit them, so impose a minimum width.
+       This width is approximately the width of the parent button. */
+  min-width: 130px;
+  background: #fff;
+  border: 1px solid #aaa;
+  padding: 5px;
+  box-shadow: 0 0 10px rgba(34, 34, 34, 0.75);
+  z-index: 2;
+  /* Dropdown menu entries */
+}
+
+@media screen and (max-width: 800px) {
+  .toolsContainer .dropdown {
+    margin-right: 13px;
+  }
+}
+
+.toolsContainer .dropdown ul {
+  list-style: none;
+  margin: 0 0 5px 0;
+  padding: 0 0 5px 0;
+  /* Group with separator lines */
+  border-bottom: 1px solid #ccc;
+}
+
+.toolsContainer .dropdown ul:last-of-type {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.toolsContainer .dropdown li {
+  margin: 1px;
+}
+
+.toolsContainer .dropdown a {
+  text-decoration: none;
+  display: block;
+  padding: 5px 10px;
+  color: #000 !important;
+  background: transparent !important;
+  white-space: nowrap;
+  font-size: 100%;
+  width: auto;
+  font-weight: normal !important;
+}
+
+.toolsContainer .dropdown a:hover {
+  color: #000 !important;
+  background: #f59545 !important;
+}
+
+.toolsContainer .haveDropdown:hover .btn {
+  background: #e0e0e0 !important;
+}
+
+.toolsContainer .haveDropdown:hover .dropdown {
+  visibility: visible;
+  display: block;
+}
+
+/*
+  Tables
+*/
+table {
+  border-collapse: collapse;
+}
+
+th, td {
+  vertical-align: middle;
+  margin: 0;
+  padding: 6px;
+}
+
+th {
+  font-size: 110%;
+  text-align: left;
+  text-decoration: none;
+}
+
+/* Lists of schools, users, devices, etc. */
+.list {
+  width: 100%;
+  color: #000;
+  /* Users who are marked for later deletion */
+}
+
+.list th {
+  background: linear-gradient(#fab32e, #f59545);
+  color: #000;
+  border-top: 1px solid #888;
+  border-left: 1px solid #888;
+  border-bottom: 1px solid #888;
+  padding: 10px;
+  font-size: 100%;
+}
+
+.list tbody > tr:last-child {
+  border-bottom: 1px solid #888;
+}
+
+.list th:first-of-type {
+  border-left: none;
+}
+
+.list tr {
+  /* NORMAL ROWS */
+  /* SELECTED ROWS */
+  /* ROWS THAT DID NOT FAIL */
+  /* ROWS THAT DID FAIL */
+}
+
+.list tr:nth-child(odd) {
+  background: #ebebeb;
+}
+
+.list tr:nth-child(odd) .selectedColumn {
+  background: #dedede;
+}
+
+.list tr:nth-child(even) {
+  background: #fafafa;
+}
+
+.list tr:nth-child(even) .selectedColumn {
+  background: #ededed;
+}
+
+.list tr:hover {
+  background: #f9f7e6;
+}
+
+.list tr:hover .selectedColumn {
+  background: #f4f0d1;
+}
+
+.list tr.selectedRow:nth-child(odd) {
+  background: #60ffff;
+}
+
+.list tr.selectedRow:nth-child(odd) .selectedColumn {
+  background: #2dffff;
+}
+
+.list tr.selectedRow:nth-child(even) {
+  background: #90ffff;
+}
+
+.list tr.selectedRow:nth-child(even) .selectedColumn {
+  background: #5dffff;
+}
+
+.list tr.selectedRow:hover {
+  background: #b0ffff;
+}
+
+.list tr.selectedRow:hover .selectedColumn {
+  background: #97ffff;
+}
+
+.list tr.processingSuccessfull:nth-child(odd) {
+  background: #60ff60;
+}
+
+.list tr.processingSuccessfull:nth-child(odd) .selectedColumn {
+  background: #2dff2d;
+}
+
+.list tr.processingSuccessfull:nth-child(even) {
+  background: #90ff90;
+}
+
+.list tr.processingSuccessfull:nth-child(even) .selectedColumn {
+  background: #5dff5d;
+}
+
+.list tr.processingSuccessfull:hover {
+  background: #b0ffb0;
+}
+
+.list tr.processingSuccessfull:hover .selectedColumn {
+  background: #97ff97;
+}
+
+.list tr.processingFailed:nth-child(odd) {
+  background: #ff6060;
+}
+
+.list tr.processingFailed:nth-child(odd) .selectedColumn {
+  background: #ff2d2d;
+}
+
+.list tr.processingFailed:nth-child(even) {
+  background: #ff9090;
+}
+
+.list tr.processingFailed:nth-child(even) .selectedColumn {
+  background: #ff5d5d;
+}
+
+.list tr.processingFailed:hover {
+  background: #ffb0b0;
+}
+
+.list tr.processingFailed:hover .selectedColumn {
+  background: #ff9797;
+}
+
+.list tr.deleted:nth-child(odd) {
+  background-color: #faa;
+}
+
+.list tr.deleted:nth-child(odd) .selectedColumn {
+  background: #ff9191;
+}
+
+.list tr.deleted:nth-child(even) {
+  background-color: #fcc;
+}
+
+.list tr.deleted:nth-child(even) .selectedColumn {
+  background: #ffb3b3;
+}
+
+.list tr.deleted:hover {
+  background: #fdd;
+}
+
+.list tr.deleted:hover .selectedColumn {
+  background: #ffc4c4 !important;
+}
+
+.list td {
+  border-left: 1px solid #c8c8c8;
+}
+
+.list td:first-of-type {
+  border-left: none;
+}
+
+.list .form {
+  margin-top: 20px;
+  float: left;
+}
+
+.list input[type="text"] {
+  width: 15em;
+}
+
+.list input[type="submit"] {
+  paddin: 0;
+  margin: 0;
+  width: auto;
+  height: auto;
+  float: right;
+}
+
+@media screen and (max-width: 800px) {
+  .list {
+    /* Minimize lists */
+    width: 100%;
+  }
+  .list .thead, .list th {
+    display: none;
+  }
+  .list tbody > tr:last-child {
+    border-bottom: none;
+  }
+  .list tr {
+    display: block;
+    padding: 2%;
+    border-bottom: 1px solid #c8c8c8;
+  }
+  .list td {
+    display: block;
+    padding: 2px;
+    border: none;
+  }
+  .list td:first-of-type {
+    font-size: 120%;
+    padding: 6px 2px;
+  }
+  .list td[data-title]:before {
+    content: attr(data-title) ": ";
+    font-weight: bold;
+  }
+  .list .tableActions {
+    display: inline-block;
+  }
+  .list .tableActions .btn {
+    font-size: 90%;
+    padding: 2px 10px;
+  }
+}
+
+.list .boolean {
+  /* Boolean column checkmarks */
+  text-align: center;
+  display: block;
+  font-size: 200%;
+}
+
+@media screen and (max-width: 800px) {
+  .list .boolean {
+    display: inline;
+    text-align: left;
+    font-size: 100%;
+  }
+}
+
+/* Sortable column headers. Each TH element contains a flexbox DIV that
+   contains two spans: one for the title, one for the sort direction
+   arrow. Flexbox is used because I want to right-align the sort arrow
+   and a flexbox is the only way to do that even somewhat reliably. */
+.sortHeader {
+  cursor: pointer;
+  /* The container DIV */
+}
+
+.sortHeader:hover {
+  background: linear-gradient(#f9aa15, #f4872d);
+}
+
+.sortHeader div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  /*
+      What JavaScript taketh, CSS giveth. What a mess...
+      https://css-tricks.com/slightly-careful-sub-elements-clickable-things/
+    */
+  pointer-events: none;
+  /* The child spans */
+}
+
+.sortHeader div .title {
+  display: inline;
+}
+
+.sortHeader div .arrow {
+  display: inline;
+  margin-left: auto;
+  /* right-align the arrow */
+}
+
+/* Setup the sort direction arrows */
+/* TODO: The arrows should be changed in the JavaScript code, not here. */
+.orderAscending, .orderDescending {
+  background: linear-gradient(#f9aa15, #f4872d) !important;
+}
+
+.orderNone .arrow:after {
+  font-family: puavo-icons;
+  font-size: 120%;
+  font-weight: normal;
+  padding-left: 10px;
+  padding-right: 10px;
+  content: "\f0dc";
+  /* up arrow, down arrow */
+}
+
+.typeString.orderAscending .arrow:after {
+  font-family: puavo-icons;
+  font-size: 120%;
+  font-weight: normal;
+  padding-left: 5px;
+  padding-right: 10px;
+  content: " \f15d";
+  /* A -> Z */
+}
+
+.typeString.orderDescending .arrow:after {
+  font-family: puavo-icons;
+  font-size: 120%;
+  font-weight: normal;
+  padding-left: 5px;
+  padding-right: 10px;
+  content: " \f15e";
+  /* Z -> A */
+}
+
+.typeNumeric.orderAscending .arrow:after {
+  font-family: puavo-icons;
+  font-size: 120%;
+  font-weight: normal;
+  padding-left: 6px;
+  padding-right: 10px;
+  content: " \f162";
+  /* 1 -> 9 */
+}
+
+.typeNumeric.orderDescending .arrow:after {
+  font-family: puavo-icons;
+  font-size: 120%;
+  font-weight: normal;
+  padding-left: 6px;
+  padding-right: 10px;
+  content: " \f163";
+  /* 9 -> 1 */
+}
+
+/* Alternate colors for the "marked for deletion" users table */
+.usersMarkedForDeletion tr:nth-child(even) {
+  background-color: #fcc;
+}
+
+.usersMarkedForDeletion tr:nth-child(odd) {
+  background-color: #faa;
+}
+
+.usersMarkedForDeletion tr:hover {
+  background: #fdd;
+}
+
+.usersMarkedForDeletion tr:nth-child(odd) .selectedColumn {
+  background: #ff9191;
+}
+
+.usersMarkedForDeletion tr:nth-child(even) .selectedColumn {
+  background: #ffb3b3;
+}
+
+.usersMarkedForDeletion tr:hover .selectedColumn {
+  background: #ffc4c4 !important;
+}
+
+/*
+----------------------------------------------------------------------------------------------------
+SUPERTABLES
+----------------------------------------------------------------------------------------------------
+*/
+.superTable {
+  /* Used when the table is empty, or everything in it has been filtered away */
+}
+
+.superTable .empty {
+  font-style: italic;
+}
+
+.superTable .checkbox {
+  cursor: pointer;
+  width: 0;
+  /* Prevent text/table cell selections when checkboxes are clicked. */
+  user-select: none;
+}
+
+.superTable .checkbox span {
+  pointer-events: none;
+  /* the parent TD has the event handler */
+  margin: 0 auto;
+  display: block;
+  width: 25px;
+  height: 25px;
+  border: 2px solid #ccc;
+  background: #fff;
+}
+
+.superTable .checkbox:active span {
+  background: #ddd;
+}
+
+@media screen and (max-width: 800px) {
+  .superTable .checkbox {
+    /* you can't shift-click on mobile, so don't bother */
+    width: auto;
+  }
+}
+
+.superTable .selected span {
+  background: url("/images/checkbox.svg") no-repeat #fff;
+  background-size: cover;
+}
+
+.superTable .selected:active span {
+  background: url("/images/checkbox.svg") no-repeat #ddd;
+  background-size: cover;
+}
+
+.superTable .adminUsers {
+  color: #00f;
+}
+
+.disabledTable {
+  opacity: 0.5;
+}
+
+/* Supertable controls */
+.tableControls {
+  color: #000;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* Column editor, CSV download, etc. buttons and status/stats messages */
+  /* Wraps everything related to table filters */
+  /* Table filter control buttons */
+  /* Main container for the table filters */
+}
+
+.tableControls .disabledOption {
+  display: none;
+}
+
+.tableControls .controls {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+  .tableControls .controls {
+    flex-direction: column;
+  }
+  .tableControls .controls .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.tableControls .controls p {
+  display: inline;
+  margin: 0;
+  padding: 5px 10px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 800px) {
+  .tableControls .controls p {
+    padding: 5px 0 0 0;
+    margin: 0;
+  }
+}
+
+.tableControls .controls .status {
+  font-style: italic;
+}
+
+.tableControls .controls .failed {
+  background: #f00 !important;
+  color: #fff !important;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.tableControls .filters {
+  width: 100%;
+  border: 1px solid #999;
+  margin: 5px 0 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.tableControls .filterControl {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  /* Wrap checkboxes and their labels in DIVs so they can be handled as blocks */
+  /* Master filtering enable checkbox */
+}
+
+.tableControls .filterControl div {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.tableControls .filterControl .filteringEnabled {
+  font-weight: bold;
+  margin: 0 1em 0 0;
+}
+
+.tableControls .filterControl label {
+  margin-right: 1em;
+}
+
+@media screen and (max-width: 800px) {
+  .tableControls .filterControl {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.tableControls .filterList {
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* Container for each filter term */
+}
+
+.tableControls .filterList .filter {
+  display: flex;
+  align-items: center;
+  padding: 2px 10px;
+  margin: 0;
+  /* Wrapper for term "controls" (activation checkbox, target column, operator) */
+  /*
+          Wrapper for the filtering term, whatever it may be. Some have a text input box, some have
+          radio buttons, some something else.
+      */
+  /* Invalid terms */
+  /* Container for the add/remove buttons */
+}
+
+@media screen and (max-width: 800px) {
+  .tableControls .filterList .filter {
+    flex-wrap: wrap;
+  }
+}
+
+.tableControls .filterList .filter:hover {
+  background: #f4f4f4;
+}
+
+.tableControls .filterList .filter .control {
+  margin-right: 10px;
+  /* vertical centering */
+  display: flex;
+  align-items: center;
+}
+
+.tableControls .filterList .filter .control select {
+  margin-left: 5px;
+}
+
+.tableControls .filterList .filter .term {
+  display: inline;
+  min-width: 250px;
+  min-height: 30px;
+  /* try to equalize heights (HACK) */
+  padding: 2px;
+  margin-right: 10px;
+  /* A term with only one input element, use all available width */
+  /* Boolean terms */
+  /* Unixtime terms */
+}
+
+.tableControls .filterList .filter .term ::placeholder {
+  font-style: italic;
+}
+
+@media screen and (max-width: 800px) {
+  .tableControls .filterList .filter .term {
+    min-width: auto;
+  }
+}
+
+.tableControls .filterList .filter .term .single {
+  width: 100%;
+}
+
+.tableControls .filterList .filter .term input {
+  padding: 5px;
+  /* Chrome, why are you like that? Firefox plays along nicely, why can't you? */
+}
+
+.tableControls .filterList .filter .term .boolean {
+  display: flex;
+  /* a hacky attempt to center the checkbox and its label */
+  align-items: center;
+  padding-top: 2px;
+}
+
+.tableControls .filterList .filter .term .boolean input, .tableControls .filterList .filter .term .boolean label {
+  display: inline;
+}
+
+.tableControls .filterList .filter .term .boolean label {
+  padding-left: 5px;
+}
+
+.tableControls .filterList .filter .term .year {
+  font-family: monospace;
+  width: 4em;
+}
+
+.tableControls .filterList .filter .term .month, .tableControls .filterList .filter .term .day, .tableControls .filterList .filter .term .hour, .tableControls .filterList .filter .term .minute {
+  font-family: monospace;
+  width: 3em;
+}
+
+.tableControls .filterList .filter .invalid {
+  background: #f88;
+}
+
+.tableControls .filterList .filter .buttons {
+  display: inline;
+}
+
+@media screen and (max-width: 800px) {
+  .tableControls .filterList .filter .buttons {
+    margin-left: 30px;
+  }
+}
+
+.tableControls .filterList .filter .buttons span {
+  display: inline-block;
+  padding: 3px 9px;
+  text-align: center;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  .tableControls .filterList .filter .buttons span {
+    padding: 2px 15px;
+  }
+}
+
+.tableControls .filterList .filter .buttons .add {
+  color: #000;
+  background: #7fba00;
+  border: 1px solid #5dae76;
+  margin-right: 10px;
+}
+
+.tableControls .filterList .filter .buttons .add:hover {
+  background: #8fcb11;
+}
+
+.tableControls .filterList .filter .buttons .remove {
+  color: #000;
+  background: #f25022;
+  border: 1px solid #e5392b;
+}
+
+.tableControls .filterList .filter .buttons .remove:hover {
+  background: #f36133;
+}
+
+.tableToolbox {
+  margin-top: 5px;
+  padding: 0;
+  border: 1px solid #999;
+  box-shadow: 3px 3px 0 #aaa;
+}
+
+.tableToolbox header {
+  padding: 5px 10px;
+  background: #f59545;
+  color: #000;
+  border-bottom: 1px solid #999;
+  font-weight: bold;
+}
+
+.tableToolbox section {
+  padding: 10px;
+}
+
+/* Mass operations */
+.massOperation {
+  /* Container for the mass operation settings child */
+  /* Selection status message / counters */
+}
+
+.massOperation .selector {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.massOperation .selector > * {
+  display: inline;
+}
+
+.massOperation .selector p {
+  margin: 0;
+  padding: 0 10px 0 0;
+}
+
+.massOperation .selector select {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .massOperation .selector {
+    flex-wrap: wrap;
+  }
+}
+
+.massOperation progress {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 300px;
+  visibility: hidden;
+}
+
+.massOperation .progressCount {
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 150%;
+}
+
+.massOperation .settings {
+  margin: 10px 0 0 0;
+  padding: 5px;
+  background: #f0f0f0;
+  border: 1px solid #ccc;
+}
+
+@media screen and (max-width: 800px) {
+  .massOperation .settings {
+    margin-top: 0;
+  }
+}
+
+.massOperation .settingsChild .mobileTitle {
+  display: none;
+}
+
+.massOperation .settingsChild th {
+  font-size: 100%;
+  text-align: right;
+}
+
+.massOperation .settingsChild input[type="text"] {
+  width: 500px;
+}
+
+.massOperation .settingsChild p.validityWarning {
+  margin: 0;
+  padding: 2px;
+  font-style: italic;
+}
+
+@media screen and (max-width: 800px) {
+  .massOperation .settingsChild {
+    width: 100%;
+  }
+  .massOperation .settingsChild .thead, .massOperation .settingsChild th {
+    display: none;
+  }
+  .massOperation .settingsChild tbody > tr:last-child {
+    border-bottom: none;
+  }
+  .massOperation .settingsChild tr {
+    display: block;
+    padding: 2px;
+  }
+  .massOperation .settingsChild td {
+    display: block;
+    padding: 2px;
+    border: none;
+  }
+  .massOperation .settingsChild input[type="text"] {
+    width: 100%;
+  }
+  .massOperation .settingsChild .mobileTitle {
+    display: block;
+    font-weight: bold;
+  }
+}
+
+.massOperation .status {
+  margin: 10px 0 0 0;
+  /* individual parts of the message */
+}
+
+.massOperation .status .total {
+  color: #000;
+}
+
+.massOperation .status .selected {
+  color: #00f;
+}
+
+.massOperation .status .ok {
+  color: #080;
+}
+
+.massOperation .status .failed {
+  color: #f00;
+}
+
+.massOperation .hiddenWarning {
+  /* Partially copied from the generic error class */
+  color: #000;
+  background: #faa;
+  border: 2px solid #f00;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.massSelectMenu {
+  margin: 5px 5px 10px 0;
+  padding: 0;
+  display: block;
+  float: left;
+  width: 25px;
+  height: 25px;
+  border: 2px solid #888;
+  background: url("/images/checkbox.svg") no-repeat 50% 50% #f59545;
+  background-size: contain;
+  /* FIXME: If the page is not tall enough, the bottom of this menu gets cut off by the footer! */
+}
+
+.massSelectMenu ul {
+  display: none;
+  background: #fff;
+  border: 2px solid #888;
+  padding: 5px;
+  margin: 0;
+  position: absolute;
+  top: auto;
+  left: auto;
+  margin-left: 21px;
+  margin-top: -2px;
+  width: 300px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+  list-style: none;
+}
+
+.massSelectMenu ul li {
+  margin: 0;
+  padding: 0;
+}
+
+.massSelectMenu ul li.sep {
+  border-bottom: 1px solid #888;
+  margin: 5px 0;
+}
+
+.massSelectMenu a {
+  display: block;
+  padding: 5px 10px;
+  color: #000 !important;
+  font-weight: normal !important;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.massSelectMenu a:hover {
+  color: #000 !important;
+  background: #f59545 !important;
+}
+
+.massSelectMenu:hover ul {
+  display: block;
+}
+
+/* Previously clicked row indicator */
+.previousRow .checkbox {
+  outline: 1px dotted #000;
+}
+
+@media screen and (max-width: 800px) {
+  .previousRow .checkbox {
+    /* you can't shift-click on mobile, so don't bother */
+    outline: none;
+  }
+}
+
+/*
+  Forms and form elements
+*/
+.formContainer {
+  width: 100%;
+  max-width: 1300px;
+}
+
+@media screen and (max-width: 800px) {
+  .formContainer {
+    max-width: unset;
+  }
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 20px 0;
+}
+
+legend {
+  padding: 0 5px;
+  font-weight: bold;
+  font-size: 110%;
+  border: 1px solid #ccc;
+  border-width: 0 1px;
+}
+
+/* editForms are used for creating and editing users, group, devices,
+   schools, and so on */
+.editForm {
+  width: 100%;
+  color: #000;
+  /* Labels for checkboxes/radio buttons */
+  /* Embedded tables */
+  /* Submit and cancel buttons */
+}
+
+.editForm label {
+  font-weight: normal;
+  font-size: 120%;
+  line-height: 2;
+}
+
+.editForm select {
+  padding: 5px;
+  width: 100%;
+}
+
+.editForm textarea {
+  width: 100%;
+}
+
+.editForm td, .editForm th {
+  padding: 10px;
+}
+
+.editForm th label {
+  /* Row labels */
+  font-size: 110%;
+  font-weight: bold;
+  word-wrap: none;
+  color: black;
+  padding: 0;
+  margin: 0;
+}
+
+.editForm tr:nth-child(odd) {
+  background: #f5f5f5;
+}
+
+.editForm tr:nth-child(even) {
+  background: #e9e9e9;
+}
+
+.editForm th {
+  text-align: right;
+  width: 250px;
+}
+
+.editForm .buttonRow th, .editForm .buttonRow td {
+  background: #ccc !important;
+  text-align: center;
+}
+
+.editForm input[type="text"], .editForm input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+}
+
+.editForm input[type="checkbox"], .editForm input[type="radio"] {
+  padding: 0;
+  margin: 0 5px 0 0;
+  /* push labels away from the input box */
+}
+
+@media screen and (max-width: 800px) {
+  .editForm input[type="checkbox"], .editForm input[type="radio"] {
+    /* The label gets collapsed, so push the element away from the
+         element above it. */
+    margin: 10px;
+  }
+}
+
+.editForm input[type="submit"] {
+  /*font-size: 120%;*/
+  height: 40px;
+  width: 150px;
+  max-width: 300px;
+}
+
+.editForm .cancel {
+  display: inline;
+  /*font-size: 100%;
+    margin: 0;
+    padding: 0;*/
+  width: 100px;
+  margin-left: 30px;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+}
+
+/* The "* = required" label displayed at the top of forms */
+.requiredTitle {
+  color: red;
+  font-style: italic;
+}
+
+/* Requird fields */
+.requiredField .field_with_errors {
+  display: inline-block;
+}
+
+.requiredField:after {
+  content: " *";
+  font-size: 120%;
+  color: red;
+}
+
+.field_error {
+  color: red;
+  display: block;
+}
+
+/* Fields with invalid/missing values */
+.editForm .label_error {
+  color: red;
+}
+
+/* The small label below the field explaining what's wrong with the current value.
+   This class name cannot be changed, it comes from Rails' ActionView. */
+.field_with_errors {
+  color: black;
+}
+
+.field_with_errors input, .field_with_errors select {
+  border: 1px solid red;
+}
+
+/* Administrative groups checkbox list header */
+.administrativeGroups header {
+  border-bottom: 1px dashed #000;
+  font-size: 110%;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.administrativeGroups header:first-of-type {
+  margin-top: 0;
+}
+
+/* Administrative groups checkbox list entry */
+.administrativeGroups input[type="checkbox"] {
+  margin-left: 30px;
+  margin-right: 0;
+}
+
+@media screen and (max-width: 800px) {
+  /* Turn form tables into what looks like lists of table rows, just like
+     non-form tables of things. */
+  .editForm {
+    padding: 0;
+  }
+  .editForm table, .editForm tbody {
+    display: block;
+  }
+  .editForm tr {
+    display: block;
+    position: relative;
+    padding: 5px 10px;
+  }
+  .editForm th {
+    text-align: left;
+    width: auto;
+    padding: 0;
+  }
+  .editForm .buttonRow {
+    background: #ccc !important;
+  }
+  .editForm td {
+    display: block;
+    text-align: left;
+    padding: 0;
+  }
+}
+
+/*
+  Various "show" page styles
+*/
+/* Generic floating container boxes that have titles */
+.contentBox {
+  min-width: 45%;
+  width: 49%;
+  float: left;
+  margin: 5px;
+  padding: 0;
+  box-shadow: 3px 3px 0 #aaa;
+}
+
+.contentBox header {
+  background: #f59545;
+  color: #000;
+  padding: 5px 10px;
+  margin: 0;
+  font-size: 130%;
+  border-top: 1px solid #999;
+  border-left: 1px solid #999;
+  border-right: 1px solid #999;
+  font-weight: bold;
+}
+
+.contentBox .contents {
+  padding: 5px;
+  color: #000;
+  background: #f0f0f0;
+  border-left: 1px solid #999;
+  border-right: 1px solid #999;
+  border-bottom: 1px solid #999;
+}
+
+.contentBox table {
+  width: 100%;
+}
+
+.contentBox tr:nth-child(odd) {
+  background: #f0f0f0;
+}
+
+.contentBox tr:nth-child(even) {
+  background: #e0e0e0;
+}
+
+.contentBox h3 {
+  margin: 0 0 10px 0;
+  padding: 5px;
+  font-weight: bold;
+  color: #000;
+  background: #ccc;
+  border: none;
+}
+
+@media screen and (max-width: 800px) {
+  .contentBox {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+
+.contentBox p.empty {
+  margin: 10px;
+}
+
+.schoolImage {
+  /* disable content box shadows */
+  box-shadow: none !important;
+}
+
+.fullWidth {
+  /* Used on the school page to show admins and billing info */
+  width: 99%;
+  clear: both;
+  float: none;
+}
+
+/* A weird table/list hybrid style, used on school "show" pages */
+.multilineItem {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin: 5px;
+}
+
+.multilineItem ul {
+  /* Harmonize with .value's */
+  padding-left: 20px;
+}
+
+.multilineItem:last-of-type {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.multilineItem .title {
+  font-size: 120%;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.multilineItem .value {
+  margin-left: 20px;
+}
+
+/* Turn off bulleted lists */
+.noBullets {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 0 0 0.5em;
+}
+
+/* Heading row/column of tables used in some content boxes. Can't use TH only,
+   as it's usage varies. */
+.tableHeading th {
+  background: #ccc;
+}
+
+/* Prevent word wrapping, used on user email and phone number displays */
+.noWrap {
+  white-space: no-wrap;
+}
+
+@media screen and (max-width: 800px) {
+  .noWrap {
+    /* narrow pages are unreadable otherwise */
+    white-space: normal;
+  }
+}
+
+.noFloat {
+  float: none !important;
+}
+
+/* School/device mount points */
+.mountPoints td, .mountPoints th {
+  border: none;
+}
+
+.mountPoints th {
+  text-align: center !important;
+  background: #ccc;
+}
+
+/* Basic user/device information block */
+.basicInfo {
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.basicInfo .basicInfoImage {
+  /* Explicit size, to prevent the page from jumping once the image has been loaded */
+  width: 240px;
+  height: 240px;
+  text-align: center;
+}
+
+.basicInfo .basicInfoImage img {
+  max-width: 220px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.basicInfo .basicInfoDetails {
+  flex: 2;
+  width: 75%;
+  padding-left: 15px;
+}
+
+.basicInfo .basicInfoDetails h1 {
+  border-bottom: 1px solid #ccc;
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+
+.basicInfo .basicInfoDetails .infoNotice {
+  color: #00f;
+  padding: 0 0 0 10px;
+  margin: 0;
+}
+
+.basicInfo .basicInfoDetails .infoWarn {
+  color: #f00;
+  padding: 0 0 0 10px;
+  margin: 0;
+}
+
+.basicInfo .basicInfoDetails .infoTitle {
+  font-weight: bold;
+  padding: 0 0 0 10px;
+  margin: 10px 0 0 0;
+}
+
+.basicInfo .basicInfoDetails .infoValue {
+  padding: 0 0 0 20px;
+  margin: 0 0 10px 0;
+}
+
+.basicInfo .basicInfoDetails ul.infoValue {
+  padding: 0 0 0 20px;
+  margin: 0 0 10px 0;
+  list-style-type: none;
+}
+
+.basicInfo .basicInfoDetails .puavoConf {
+  margin-top: 5px;
+  margin-left: 25px;
+}
+
+@media screen and (max-width: 800px) {
+  .basicInfo .basicInfoImage {
+    width: 138px;
+  }
+  .basicInfo .basicInfoImage img {
+    max-width: 128px;
+    padding: 0;
+    border: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .basicInfo .basicInfoImage {
+    width: 78px;
+  }
+  .basicInfo .basicInfoImage img {
+    max-width: 64px;
+    padding: 0;
+    border: none;
+  }
+}
+
+/* Puavo-conf tables in various places */
+.puavoConf {
+  border: 1px solid #bbb;
+}
+
+.puavoConf tr:nth-child(odd) {
+  background: #f0f0f0;
+}
+
+.puavoConf tr:nth-child(even) {
+  background: #e0e0e0;
+}
+
+.puavoConf th {
+  font-size: 100%;
+}
+
+.puavoConf td {
+  font-family: monospace;
+  width: 100%;
+}
+
+.pcRawError {
+  border: 1px solid #f00;
+}
+
+.pcEdit {
+  display: block;
+  width: 100%;
+}
+
+.pcEdit ::placeholder {
+  font-style: italic;
+}
+
+.pcEdit table {
+  border-collapse: collapse;
+  width: 100%;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.pcEdit td {
+  margin: 0 !important;
+  padding: 5px !important;
+}
+
+.pcEdit .buttons {
+  width: 0;
+  /* minimize cell width */
+}
+
+.pcEdit .buttons a {
+  cursor: pointer;
+  padding: 5px;
+}
+
+.pcEdit .buttons a.delete {
+  color: #f00 !important;
+  background: none !important;
+  border: 1px solid transparent !important;
+}
+
+.pcEdit .buttons a.delete:hover {
+  color: #000 !important;
+  background: #f88 !important;
+  border: 1px solid #f00 !important;
+}
+
+.pcEdit .key {
+  width: 0;
+}
+
+.pcEdit .value {
+  width: 100%;
+}
+
+.pcEdit div.editor {
+  display: block;
+  width: 100%;
+}
+
+.pcEdit div.editor input[type="text"] {
+  width: 100%;
+  padding: 5px !important;
+}
+
+.pcEdit div.editor label {
+  font-size: 100%;
+  margin-right: 1em;
+}
+
+.pcEdit input.new {
+  width: 100%;
+}
+
+.pcEdit textarea {
+  width: 100%;
+}
+
+.pcEdit .invalid {
+  border: 1px solid #f00;
+}
+
+/* The autocomplete suggestions list */
+.pcSuggestions {
+  position: absolute;
+  z-index: 1;
+  border: 1px solid #000;
+  background: #fff;
+  visibility: hidden;
+  margin: 0;
+  padding: 2px;
+  font-size: 90%;
+  min-width: 500px;
+  max-height: 300px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.pcSuggestions div {
+  display: block;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.pcSuggestions div.new {
+  font-style: italic;
+}
+
+.pcSuggestions div.error {
+  color: #f00;
+  font-style: italic;
+}
+
+.pcSuggestions div.entry:hover {
+  color: #fff;
+  background: #00f;
+}
+
+.pcSuggestions span {
+  pointer-events: none;
+}
+
+.pcSuggestions span.hint {
+  margin-left: 1em;
+  color: #888;
+  font-style: italic;
+}
+
+.pcSuggestions span.match {
+  color: #000;
+  background: #0ff;
+}
+
+/*
+  LDAP services
+*/
+.ldap_services_system_groups div {
+  word-wrap: break-word;
+}
+
+/*
+  External services
+*/
+.disabledExternalService {
+  opacity: 0.5;
+}
+
+.noOwnerSelfRemove {
+  display: block;
+  margin: 8px 5px;
+}
+
+/* The deletion timestamp on user "show" pages */
+.userMarkedForDeletion {
+  color: #f00;
+}
+
+/* Password policy info boxes. Also used on password changing forms. */
+.passwordNotice {
+  background: #d9edf7;
+  border: 1px solid #afd9ee;
+  padding: 1em;
+}
+
+.userShowGroups {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.userShowGroups ul {
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+/* Unloaded username lists */
+.userListTable {
+  /* We don't want to style the username list <table>, so emulate tables.
+     We then also can adjust the styles better with media queries. */
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  border-top: 1px solid #ccc;
+  padding-top: 15px;
+  margin-top: 15px;
+}
+
+.userListRow {
+  display: table-row;
+}
+
+.userListCol {
+  display: table-cell;
+  vertical-align: top;
+  padding: 0 10px;
+}
+
+.userListMeta {
+  padding-bottom: 5px;
+}
+
+.userListMeta p {
+  margin: 0;
+  padding: 0;
+}
+
+.userListBox {
+  max-height: 400px;
+  overflow-y: scroll;
+  width: 100%;
+}
+
+.userListBox .list {
+  width: 100%;
+}
+
+.userListRight {
+  /* Style the password form a bit */
+}
+
+.userListRight p {
+  padding: 5px 0;
+  margin: 0;
+}
+
+.userListRight input[type="text"] {
+  margin-left: 10px;
+}
+
+.userListRight p.submitRow {
+  padding-top: 20px;
+}
+
+.userListRight input[type="submit"] {
+  padding: 10px 20px;
+}
+
+.userListRight .btn {
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .userListTable, .userListRow, .userListCol {
+    /* collapse the table columns */
+    display: block;
+  }
+  .userListBox {
+    border: 1px solid #ccc;
+    /* does wonders for visibility */
+    max-height: 250px;
+    width: 66%;
+    /* leave room for scrolling the page */
+  }
+}
+
+/*
+  Groups
+*/
+/* Mass group rename */
+.massGroupRenameTable th {
+  text-align: left !important;
+  background: #ccc;
+}
+
+/* Course groups and year class groups when certain external integrations
+   are used in this school */
+.externallyMaintainedGroup {
+  color: #080;
+  background: transparent;
+}
+
+/* Group members who ar emarked for deletion */
+.groupUserMarkedForDeletion:nth-child(even) {
+  background-color: #fcc !important;
+}
+
+.groupUserMarkedForDeletion:nth-child(odd) {
+  background-color: #faa !important;
+}
+
+/*
+  Devices and device-related styles
+*/
+/* The "add new device" combobox on the devices list page */
+#addNewDeviceTitle span {
+  /* This is currently the only plain text on the tool bar. Everything else are buttons or form elements,
+       so this gets special treatment. */
+  font-size: 110%;
+  padding-right: 5px;
+}
+
+#addNewDeviceTitle select {
+  padding: 5px;
+}
+
+#addNewDeviceTitle option {
+  padding: 5px;
+}
+
+.devicePurchaseDate select {
+  /* Three combo boxes on the same row, don't make them full-width */
+  width: auto;
+}
+
+/* Hardware infos on device "show" pages */
+.hardwareInfo .timestamp {
+  font-size: 110%;
+  padding: 0.5em 0.25em 1em 0.25em;
+  margin: 0;
+}
+
+.hardwareInfo .infoTable {
+  border: 1px solid #aaa;
+  border-collapse: collapse;
+}
+
+.hardwareInfo .infoTable th {
+  border: 1px solid #aaa;
+  padding: 7px;
+  text-align: right;
+  width: 150px;
+}
+
+.hardwareInfo .infoTable tr {
+  /* forcibly disable alternating row colors */
+  background: transparent !important;
+}
+
+.hardwareInfo .infoTable .main {
+  text-align: center;
+  vertical-align: middle;
+  background: #eee;
+}
+
+.hardwareInfo .infoTable td {
+  border: 1px solid #aaa;
+  padding: 7px;
+}
+
+.hardwareInfo .infoTable .sectionEnd {
+  border-bottom: 1px solid #aaa;
+}
+
+.hardwareInfo .infoTable ol {
+  padding-left: 1.5em;
+  margin: 0;
+}
+
+.hardwareInfo .infoTable pre {
+  margin: 0;
+}
+
+/* Desktop image statistics on Device Statistics pages */
+.imageStats {
+  width: 100%;
+  /* Clickable image headers */
+  /* Device lists under desktop image names */
+}
+
+.imageStats .header {
+  color: #000;
+  background: transparent;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  /* Percentage bars */
+}
+
+.imageStats .header:hover {
+  color: #000;
+  background: #ccc;
+}
+
+.imageStats .header .nameCol {
+  width: 40%;
+}
+
+.imageStats .header .releaseName {
+  color: #088;
+  margin-left: 0.5em;
+  font-weight: bold;
+}
+
+.imageStats .header .barOuter {
+  background: #ddd;
+  border: 1px solid #666;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.imageStats .header .barInner {
+  background: #080;
+  display: block;
+  height: 100%;
+  /* bar widths are set using inline styles */
+}
+
+.imageStats .deviceListRow ul {
+  border-left: 5px solid #ccc;
+  margin: 0 0 0 20px;
+  padding: 0;
+}
+
+.imageStats .deviceListRow li {
+  margin-left: 2em;
+  padding: 0;
+}
+
+.releaseName {
+  color: #088;
+  font-weight: bold;
+}

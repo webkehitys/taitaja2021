@@ -1,0 +1,14 @@
+#popup {
+  height: 40vh;
+  width: 60vw;
+  background-color: #eee;
+  border-radius: 5px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: none;
+}
+
+.block {
+  display: block;
+}

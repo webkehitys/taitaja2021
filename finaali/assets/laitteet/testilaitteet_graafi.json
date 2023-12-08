@@ -1,0 +1,2794 @@
+[
+  {
+    "school": "pupula",
+    "hostname": "pupula-kan-380",
+    "type": "laptop",
+    "timestamp": 1615654498,
+    "image": "opinsys-os-opinsys-buster-2021-01-27-071357-amd64.img",
+    "release": "O2104 Fomalhaut",
+    "kernel_version": "4.19.0-13-amd64",
+    "kernel_args": null,
+    "manufacturer": "HP",
+    "product": "HP EliteBook 840 G3",
+    "serial": "7IX962B5CA",
+    "mainboard_serial": "7348MLCUB5",
+    "bios_vendor": "HP",
+    "bios_version": "N75 Ver. 01.45",
+    "bios_release_date": "01/05/2020",
+    "cpu": "Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz",
+    "cpu_count": 4,
+    "memory_mib": 7763,
+    "memory_slots": [
+      {
+        "size": 8192,
+        "slot": "Bottom-Slot 1(left)",
+        "vendor": "Kingston",
+        "product": "99U5700-010.A00G"
+      },
+      {
+        "slot": "Bottom-Slot 2(right)"
+      }
+    ],
+    "hdd_model": "SanDisk SD8SN8U-",
+    "hdd_size_bytes": 128035676160,
+    "hdd_is_ssd": true,
+    "mac": [
+      "98:e7:18:b2:1f:62",
+      "e4:a7:88:0b:56:34"
+    ],
+    "lspci": [
+      "00:00.0 Host bridge: Intel Corporation Skylake Host Bridge/DRAM Registers (rev 08)",
+      "00:02.0 VGA compatible controller: Intel Corporation HD Graphics 520 (rev 07)",
+      "00:14.0 USB controller: Intel Corporation Sunrise Point-LP USB 3.0 xHCI Controller (rev 21)",
+      "00:14.2 Signal processing controller: Intel Corporation Sunrise Point-LP Thermal subsystem (rev 21)",
+      "00:15.0 Signal processing controller: Intel Corporation Sunrise Point-LP Serial IO I2C Controller #0 (rev 21)",
+      "00:16.0 Communication controller: Intel Corporation Sunrise Point-LP CSME HECI #1 (rev 21)",
+      "00:17.0 SATA controller: Intel Corporation Sunrise Point-LP SATA Controller [AHCI mode] (rev 21)",
+      "00:1c.0 PCI bridge: Intel Corporation Device 9d11 (rev f1)",
+      "00:1c.3 PCI bridge: Intel Corporation Device 9d13 (rev f1)",
+      "00:1f.0 ISA bridge: Intel Corporation Sunrise Point-LP LPC Controller (rev 21)",
+      "00:1f.2 Memory controller: Intel Corporation Sunrise Point-LP PMC (rev 21)",
+      "00:1f.3 Audio device: Intel Corporation Sunrise Point-LP HD Audio (rev 21)",
+      "00:1f.4 SMBus: Intel Corporation Sunrise Point-LP SMBus (rev 21)",
+      "00:1f.6 Ethernet controller: Intel Corporation Ethernet Connection I219-V (rev 21)",
+      "01:00.0 Unassigned class [ff00]: Realtek Semiconductor Co., Ltd. RTS522A PCI Express Card Reader (rev 01)",
+      "02:00.0 Network controller: Intel Corporation Wireless 8260 (rev 3a)"
+    ],
+    "lsusb": [
+      "Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub",
+      "Bus 001 Device 003: ID 04f2:b51d Chicony Electronics Co., Ltd",
+      "Bus 001 Device 002: ID 8087:0a2b Intel Corp.",
+      "Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub"
+    ],
+    "wifi_adapter": "Intel Corporation Wireless 8260 [8086:24f3] (rev 3a)",
+    "battery": {
+      "vendor": "Hewlett-Packard",
+      "model": "Primary",
+      "serial": "04743 2016/09/08",
+      "state": "charging",
+      "warning-level": "none",
+      "energy": "2,0862 Wh",
+      "energy-empty": "0 Wh",
+      "energy-full": "42,1572 Wh",
+      "energy-full-design": "42,1572 Wh",
+      "voltage": "11,818 V",
+      "percentage": "4%",
+      "capacity": "100%",
+      "technology": "lithium-ion"
+    },
+    "purchase_date": null,
+    "purchase_location": null,
+    "warranty_ends": null,
+    "personally_administered": false,
+    "xrandr_commands": [],
+    "xrandr_output": "Screen 0: minimum 320 x 200, current 1366 x 768, maximum 8192 x 8192\neDP-1 connected primary 1366x768+0+0 (normal left inverted right x axis y axis) 309mm x 173mm\n   1366x768      60.01*+  39.97  \n   1360x768      59.80    59.96  \n   1280x720      60.00    59.99    59.86    59.74  \n   1024x768      60.04    60.00  \n   960x720       60.00  \n   928x696       60.05  \n   896x672       60.01  \n   1024x576      59.95    59.96    59.90    59.82  \n   960x600       59.93    60.00  \n   960x540       59.96    59.99    59.63    59.82  \n   800x600       60.00    60.32    56.25  \n   840x525       60.01    59.88  \n   864x486       59.92    59.57  \n   800x512       60.17  \n   700x525       59.98  \n   800x450       59.95    59.82  \n   640x512       60.02  \n   720x450       59.89  \n   700x450       59.96    59.88  \n   640x480       60.00    59.94  \n   720x405       59.51    58.99  \n   684x384       59.88    59.85  \n   680x384       59.80    59.96  \n   640x400       59.88    59.98  \n   576x432       60.06  \n   640x360       59.86    59.83    59.84    59.32  \n   512x384       60.00  \n   512x288       60.00    59.92  \n   480x270       59.63    59.82  \n   400x300       60.32    56.34  \n   432x243       59.92    59.57  \n   320x240       60.05  \n   360x202       59.51    59.13  \n   320x180       59.84    59.32  \nDP-1 disconnected (normal left inverted right x axis y axis)\nHDMI-1 disconnected (normal left inverted right x axis y axis)\nDP-2 disconnected (normal left inverted right x axis y axis)\nHDMI-2 disconnected (normal left inverted right x axis y axis)",
+    "automatic_shutdown": null
+  },
+  {
+    "school": "kettula",
+    "hostname": "kettula-nuc-16",
+    "type": "fatclient",
+    "timestamp": 1615531355,
+    "image": "opinsys-os-opinsys-stretch-2021-01-27-071036-amd64.img",
+    "release": "O2104 Euclid",
+    "kernel_version": "4.9.0-14-amd64",
+    "kernel_args": null,
+    "manufacturer": "",
+    "product": "",
+    "serial": "6L1905OZIN",
+    "mainboard_serial": "VJDHIOL7E1",
+    "bios_vendor": "Intel Corporation",
+    "bios_version": "RYBDWi35.86A.0363.2017.0316.1028",
+    "bios_release_date": "03/16/2017",
+    "cpu": "Intel(R) Core(TM) i5-5250U CPU @ 1.60GHz",
+    "cpu_count": 4,
+    "memory_mib": 7873,
+    "memory_slots": [
+      {
+        "size": 0,
+        "slot": "SODIMM0",
+        "product": null,
+        "vendor": null
+      },
+      {
+        "size": 8192,
+        "slot": "SODIMM1",
+        "product": "99U5428-018.A00LF",
+        "vendor": "Kingston"
+      }
+    ],
+    "hdd_model": null,
+    "hdd_size_bytes": null,
+    "hdd_is_ssd": true,
+    "mac": [
+      "88:b1:58:65:62:7a",
+      "94:c6:83:23:11:ee"
+    ],
+    "lspci": [
+      "00:02.0 VGA compatible controller: Intel Corporation HD Graphics 6000 (rev 09)",
+      "02:00.0 Network controller: Intel Corporation Wireless 7265 (rev 59)"
+    ],
+    "lsusb": [
+      "Bus 003 Device 002: ID 8087:8001 Intel Corp.",
+      "Bus 003 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub",
+      "Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub",
+      "Bus 001 Device 004: ID 8087:0a2a Intel Corp.",
+      "Bus 001 Device 003: ID 046d:c31c Logitech, Inc. Keyboard K120",
+      "Bus 001 Device 002: ID 046d:c077 Logitech, Inc. M105 Optical Mouse",
+      "Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub"
+    ],
+    "wifi_adapter": "Intel Corporation Wireless 7265 [8086:095a] (rev 59)",
+    "battery": null,
+    "purchase_date": null,
+    "purchase_location": null,
+    "warranty_ends": null,
+    "personally_administered": false,
+    "xrandr_commands": [],
+    "xrandr_output": "Screen 0: minimum 320 x 200, current 1920 x 1080, maximum 8192 x 8192\nHDMI-1 disconnected primary (normal left inverted right x axis y axis)\nDP-1 disconnected (normal left inverted right x axis y axis)\nHDMI-2 connected 1920x1080+0+0 (normal left inverted right x axis y axis) 478mm x 268mm\n   1920x1080     60.00*+  50.00    59.94  \n   1920x1080i    60.00    50.00    59.94  \n   1600x1200     60.00  \n   1680x1050     59.88  \n   1600x900      60.00  \n   1280x1024     75.02    60.02  \n   1440x900      59.90  \n   1280x800      59.91  \n   1152x864      75.00  \n   1280x720      60.00    50.00    59.94  \n   1024x768      75.03    70.07    60.00  \n   832x624       74.55  \n   800x600       72.19    75.00    60.32    56.25  \n   720x576       50.00  \n   720x576i      50.00  \n   720x480       60.00    59.94  \n   720x480i      60.00    59.94  \n   640x480       75.00    72.81    66.67    60.00    59.94  \n   720x400       70.08",
+    "automatic_shutdown": null
+  },
+  {
+    "school": "pupula",
+    "hostname": "pupula-psd-76",
+    "type": "laptop",
+    "timestamp": 1615555509,
+    "image": "puavo-os-amxa-stretch-2020-10-15-105403-amd64.img",
+    "release": "O2039 Bohm (v20201015)",
+    "kernel_version": "4.9.0-13-amd64",
+    "kernel_args": null,
+    "manufacturer": "Hewlett-Packard",
+    "product": "HP ProBook 450 G1",
+    "serial": "M3XQEY2LS1",
+    "mainboard_serial": "TWKP9VAGLQ",
+    "bios_vendor": "Hewlett-Packard",
+    "bios_version": "L74 Ver. 01.09",
+    "bios_release_date": "04/29/2014",
+    "cpu": "Intel(R) Core(TM) i5-4200M CPU @ 2.50GHz",
+    "cpu_count": 4,
+    "memory_mib": 3836,
+    "memory_slots": [
+      {
+        "size": 0,
+        "slot": "Top - Slot 1 (top)",
+        "product": null,
+        "vendor": null
+      },
+      {
+        "size": 4096,
+        "slot": "Top - Slot 2 (under)",
+        "product": "HMT351S6EFR8A-PB",
+        "vendor": "Hynix/Hyundai"
+      }
+    ],
+    "hdd_model": "HGST HTS541075A9",
+    "hdd_size_bytes": 750156374016,
+    "hdd_is_ssd": false,
+    "mac": [
+      "18:cf:75:a3:56:5f",
+      "28:80:41:f7:e2:a7"
+    ],
+    "lspci": [
+      "00:02.0 VGA compatible controller: Intel Corporation 4th Gen Core Processor Integrated Graphics Controller (rev 06)",
+      "03:00.0 Network controller: Qualcomm Atheros QCA9565 / AR9565 Wireless Network Adapter (rev 01)"
+    ],
+    "lsusb": [
+      "Bus 002 Device 002: ID 8087:8000 Intel Corp.",
+      "Bus 002 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub",
+      "Bus 001 Device 002: ID 8087:8008 Intel Corp.",
+      "Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub",
+      "Bus 004 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub",
+      "Bus 003 Device 003: ID 05c8:0359 Cheng Uei Precision Industry Co., Ltd (Foxlink)",
+      "Bus 003 Device 002: ID 138a:003f Validity Sensors, Inc. VFS495 Fingerprint Reader",
+      "Bus 003 Device 005: ID 0cf3:311f Qualcomm Atheros Communications AR3012 Bluetooth",
+      "Bus 003 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub"
+    ],
+    "wifi_adapter": "Qualcomm Atheros QCA9565 / AR9565 Wireless Network Adapter [168c:0036] (rev 01)",
+    "battery": {
+      "vendor": "Hewlett-Packard",
+      "model": "Primary",
+      "serial": "05641 2014/06/17",
+      "state": "fully-charged",
+      "warning-level": "none",
+      "energy": "37.26 Wh",
+      "energy-empty": "0 Wh",
+      "energy-full": "37.26 Wh",
+      "energy-full-design": "37.26 Wh",
+      "voltage": "12.476 V",
+      "percentage": "100%",
+      "capacity": "100%",
+      "technology": "lithium-ion"
+    },
+    "purchase_date": null,
+    "purchase_location": null,
+    "warranty_ends": null,
+    "personally_administered": false,
+    "xrandr_commands": [],
+    "xrandr_output": "Screen 0: minimum 8 x 8, current 1366 x 768, maximum 32767 x 32767\neDP1 connected primary 1366x768+0+0 (normal left inverted right x axis y axis) 350mm x 190mm\n   1366x768      60.03*+  40.01  \n   1360x768      59.96  \n   1280x720      60.00  \n   1024x768      60.00  \n   1024x576      60.00  \n   960x540       60.00  \n   800x600       60.32    56.25  \n   864x486       60.00  \n   640x480       59.94  \n   720x405       60.00  \n   680x384       60.00  \n   640x360       60.00  \nHDMI1 disconnected (normal left inverted right x axis y axis)\nVGA1 disconnected (normal left inverted right x axis y axis)\nVIRTUAL1 disconnected (normal left inverted right x axis y axis)\nVIRTUAL2 disconnected (normal left inverted right x axis y axis)",
+    "automatic_shutdown": null
+  },
+  {
+    "school": "pupula",
+    "hostname": "pupula-digilap-041",
+    "type": "laptop",
+    "timestamp": 1611918255,
+    "image": "opinsys-os-opinsys-buster-2020-12-09-114058-amd64.img",
+    "release": "O2050 Elnath",
+    "kernel_version": "4.19.0-11-amd64",
+    "kernel_args": null,
+    "manufacturer": "HP",
+    "product": "HP EliteBook 820 G3",
+    "serial": "N2BI4MTDEX",
+    "mainboard_serial": "X39CKPHYEA",
+    "bios_vendor": "HP",
+    "bios_version": "N75 Ver. 01.51",
+    "bios_release_date": "10/20/2020",
+    "cpu": "Intel(R) Core(TM) i5-6300U CPU @ 2.40GHz",
+    "cpu_count": 4,
+    "memory_mib": 7762,
+    "memory_slots": [
+      {
+        "slot": "Bottom-Slot 1(left)"
+      },
+      {
+        "size": 8192,
+        "slot": "Bottom-Slot 2(right)",
+        "vendor": "Samsung",
+        "product": "M471A1K43CB1-CRC"
+      }
+    ],
+    "hdd_model": "LITEON L8H-256V2",
+    "hdd_size_bytes": 256060514304,
+    "hdd_is_ssd": true,
+    "mac": [
+      "34:f3:97:45:86:c0",
+      "40:b0:f6:2c:86:97"
+    ],
+    "lspci": [
+      "00:02.0 VGA compatible controller: Intel Corporation HD Graphics 520 (rev 07)",
+      "02:00.0 Network controller: Intel Corporation Wireless 8260 (rev 3a)"
+    ],
+    "lsusb": [
+      "Bus 002 Device 002: ID 0424:5534 Standard Microsystems Corp. Hub",
+      "Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub",
+      "Bus 001 Device 004: ID 04f2:b51c Chicony Electronics Co., Ltd",
+      "Bus 001 Device 003: ID 8087:0a2b Intel Corp.",
+      "Bus 001 Device 002: ID 0424:2134 Standard Microsystems Corp. Hub",
+      "Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub"
+    ],
+    "wifi_adapter": "Intel Corporation Wireless 8260 [8086:24f3] (rev 3a)",
+    "battery": {
+      "vendor": "Hewlett-Packard",
+      "model": "Primary",
+      "serial": "24627 2016/11/23",
+      "state": "charging",
+      "warning-level": "none",
+      "energy": "31,464 Wh",
+      "energy-empty": "0 Wh",
+      "energy-full": "38,4636 Wh",
+      "energy-full-design": "44,574 Wh",
+      "voltage": "12,97 V",
+      "percentage": "81%",
+      "capacity": "86,2916%",
+      "technology": "lithium-ion"
+    },
+    "purchase_date": null,
+    "purchase_location": null,
+    "warranty_ends": null,
+    "personally_administered": false,
+    "xrandr_commands": [],
+    "xrandr_output": "Screen 0: minimum 320 x 200, current 1366 x 768, maximum 8192 x 8192\neDP-1 connected primary 1366x768+0+0 (normal left inverted right x axis y axis) 277mm x 156mm\n   1366x768      60.00*+  40.00  \n   1360x768      59.80    59.96  \n   1280x720      60.00    59.99    59.86    59.74  \n   1024x768      60.04    60.00  \n   960x720       60.00  \n   928x696       60.05  \n   896x672       60.01  \n   1024x576      59.95    59.96    59.90    59.82  \n   960x600       59.93    60.00  \n   960x540       59.96    59.99    59.63    59.82  \n   800x600       60.00    60.32    56.25  \n   840x525       60.01    59.88  \n   864x486       59.92    59.57  \n   800x512       60.17  \n   700x525       59.98  \n   800x450       59.95    59.82  \n   640x512       60.02  \n   720x450       59.89  \n   700x450       59.96    59.88  \n   640x480       60.00    59.94  \n   720x405       59.51    58.99  \n   684x384       59.88    59.85  \n   680x384       59.80    59.96  \n   640x400       59.88    59.98  \n   576x432       60.06  \n   640x360       59.86    59.83    59.84    59.32  \n   512x384       60.00  \n   512x288       60.00    59.92  \n   480x270       59.63    59.82  \n   400x300       60.32    56.34  \n   432x243       59.92    59.57  \n   320x240       60.05  \n   360x202       59.51    59.13  \n   320x180       59.84    59.32  \nDP-1 disconnected (normal left inverted right x axis y axis)\nHDMI-1 disconnected (normal left inverted right x axis y axis)\nDP-2 disconnected (normal left inverted right x axis y axis)\nHDMI-2 disconnected (normal left inverted right x axis y axis)",
+    "automatic_shutdown": null
+  },
+  {
+    "school": "karhula",
+    "hostname": "karhula-lk838-ope",
+    "type": "fatclient",
+    "timestamp": 1615535307,
+    "image": "opinsys-os-opinsys-stretch-2021-01-27-071036-amd64.img",
+    "release": "O2104 Euclid",
+    "kernel_version": "4.9.0-14-amd64",
+    "kernel_args": null,
+    "manufacturer": "Dell Inc.",
+    "product": "Latitude E5420",
+    "serial": "CD0P6XKWBQ",
+    "mainboard_serial": "GMN7DQ5TZW",
+    "bios_vendor": "Dell Inc.",
+    "bios_version": "A08",
+    "bios_release_date": "05/17/2012",
+    "cpu": "Intel(R) Core(TM) i3-2350M CPU @ 2.30GHz",
+    "cpu_count": 4,
+    "memory_mib": 3852,
+    "memory_slots": [
+      {
+        "size": 0,
+        "slot": "ChannelA-DIMM0",
+        "product": "[Empty]",
+        "vendor": "[Empty]"
+      },
+      {
+        "size": 4096,
+        "slot": "ChannelB-DIMM0",
+        "product": "KX830D-HYC",
+        "vendor": "Kingston"
+      }
+    ],
+    "hdd_model": null,
+    "hdd_size_bytes": null,
+    "hdd_is_ssd": true,
+    "mac": [
+      "24:77:d8:4c:39:db",
+      "d0:67:b3:e7:fb:f3"
+    ],
+    "lspci": [
+      "00:02.0 VGA compatible controller: Intel Corporation 2nd Generation Core Processor Family Integrated Graphics Controller (rev 09)",
+      "02:00.0 Network controller: Intel Corporation Centrino Ultimate-N 6300 (rev 35)"
+    ],
+    "lsusb": [
+      "Bus 002 Device 002: ID 8087:0024 Intel Corp. Integrated Rate Matching Hub",
+      "Bus 002 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub",
+      "Bus 001 Device 002: ID 8087:0024 Intel Corp. Integrated Rate Matching Hub",
+      "Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub"
+    ],
+    "wifi_adapter": "Intel Corporation Centrino Ultimate-N 6300 [8086:422b] (rev 35)",
+    "battery": {
+      "vendor": "Sanyo",
+      "model": "DELL NY38W27",
+      "serial": "1429",
+      "state": "fully-charged",
+      "warning-level": "none",
+      "energy": "99,9 Wh",
+      "energy-empty": "0 Wh",
+      "energy-full": "99,9 Wh",
+      "energy-full-design": "99,9 Wh",
+      "voltage": "12,775 V",
+      "percentage": "100%",
+      "capacity": "29,5667%",
+      "technology": "lithium-ion"
+    },
+    "purchase_date": null,
+    "purchase_location": null,
+    "warranty_ends": null,
+    "personally_administered": false,
+    "xrandr_commands": [],
+    "xrandr_output": "Screen 0: minimum 320 x 200, current 1024 x 768, maximum 8192 x 8192\nLVDS-1 connected primary 1024x768+0+0 (normal left inverted right x axis y axis) 309mm x 174mm\n   1366x768      60.00 +  40.02  \n   1360x768      59.80    59.96  \n   1024x768      60.04    60.00* \n   960x720       60.00  \n   928x696       60.05  \n   896x672       60.01  \n   960x600       60.00  \n   960x540       59.99  \n   800x600       60.00    60.32    56.25  \n   840x525       60.01    59.88  \n   800x512       60.17  \n   700x525       59.98  \n   640x512       60.02  \n   720x450       59.89  \n   640x480       60.00    59.94  \n   680x384       59.80    59.96  \n   576x432       60.06  \n   512x384       60.00  \n   400x300       60.32    56.34  \n   320x240       60.05  \nVGA-1 disconnected (normal left inverted right x axis y axis)\nHDMI-1 connected 1024x768+0+0 (normal left inverted right x axis y axis) 1600mm x 900mm\n   1920x1080     60.00 +  50.00    59.94    30.00    24.00    29.97    23.98  \n   1920x1080i    60.00    50.00    59.94  \n   1600x1200     60.00  \n   1400x1050     59.95  \n   1280x1024     60.02  \n   1280x960      60.00  \n   1280x800      59.81  \n   1280x720      60.00    50.00    59.94  \n   1024x768      60.00* \n   800x600       60.32  \n   720x576       50.00  \n   720x576i      50.00  \n   720x480       60.00    59.94  \n   720x480i      60.00    59.94  \n   640x480       60.00    59.94  \nDP-1 disconnected (normal left inverted right x axis y axis)\nHDMI-2 disconnected (normal left inverted right x axis y axis)\nHDMI-3 disconnected (normal left inverted right x axis y axis)\nDP-2 disconnected (normal left inverted right x axis y axis)\nDP-3 disconnected (normal left inverted right x axis y axis)",
+    "automatic_shutdown": null
+  },
+  {
+    "school": "kettula",
+    "hostname": "kettula-151-48",
+    "type": "fatclient",
+    "timestamp": 1615184270,
+    "image": "opinsys-os-opinsys-stretch-2021-01-27-071036-amd64.img",
+    "release": "O2104 Euclid",
+    "kernel_version": "4.9.0-14-amd64",
+    "kernel_args": null,
+    "manufacturer": "FUJITSU",
+    "product": "ESPRIMO E720",
+    "serial": "T82FG96SO7",
+    "mainboard_serial": "431I6FZ8YO",
+    "bios_vendor": "FUJITSU // American Megatrends Inc.",
+    "bios_version": "V4.6.5.4 R1.44.0 for D3221-A1x",
+    "bios_release_date": "11/29/2017",
+    "cpu": "Intel(R) Core(TM) i5-4570 CPU @ 3.20GHz",
+    "cpu_count": 4,
+    "memory_mib": 6895,
+    "memory_slots": [
+      {
+        "size": 0,
+        "slot": "DIMM A3",
+        "product": "[Empty]",
+        "vendor": "[Empty]"
+      },
+      {
+        "size": 4096,
+        "slot": "DIMM A1",
+        "product": "M378B5173QH0-CK0",
+        "vendor": "Samsung"
+      },
+      {
+        "size": 0,
+        "slot": "DIMM B4",
+        "product": "[Empty]",
+        "vendor": "[Empty]"
+      },
+      {
+        "size": 4096,
+        "slot": "DIMM B2",
+        "product": "M378B5173QH0-CK0",
+        "vendor": "Samsung"
+      }
+    ],
+    "hdd_model": null,
+    "hdd_size_bytes": null,
+    "hdd_is_ssd": true,
+    "mac": [
+      "90:1b:27:d1:66:c2"
+    ],
+    "lspci": [
+      "00:02.0 VGA compatible controller: Intel Corporation Xeon E3-1200 v3/4th Gen Core Processor Integrated Graphics Controller (rev 06)"
+    ],
+    "lsusb": [
+      "Bus 002 Device 002: ID 8087:8000 Intel Corp.",
+      "Bus 002 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub",
+      "Bus 001 Device 002: ID 8087:8008 Intel Corp.",
+      "Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub",
+      "Bus 004 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub",
+      "Bus 003 Device 003: ID 04ca:0020 Lite-On Technology Corp.",
+      "Bus 003 Device 002: ID 046d:c077 Logitech, Inc. M105 Optical Mouse",
+      "Bus 003 Device 004: ID 0bf8:1006 Fujitsu Siemens Computers SmartCard Reader 2A",
+      "Bus 003 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub"
+    ],
+    "wifi_adapter": "",
+    "battery": null,
+    "purchase_date": null,
+    "purchase_location": null,
+    "warranty_ends": null,
+    "personally_administered": false,
+    "xrandr_commands": [],
+    "xrandr_output": "Screen 0: minimum 320 x 200, current 1280 x 1024, maximum 8192 x 8192\nVGA-1 connected primary 1280x1024+0+0 (normal left inverted right x axis y axis) 375mm x 301mm\n   1280x1024     60.02*+  75.02  \n   1280x960      75.04    70.03    60.00  \n   1280x800      59.81  \n   1152x864      75.00    59.97  \n   1024x768      75.03    70.07    66.01    60.00  \n   832x624       74.55  \n   800x600       72.19    75.00    60.32    56.25  \n   640x480       75.00    72.81    66.67    59.94  \n   720x400       70.08  \nHDMI-1 disconnected (normal left inverted right x axis y axis)\nDP-1 disconnected (normal left inverted right x axis y axis)\nHDMI-2 disconnected (normal left inverted right x axis y axis)",
+    "automatic_shutdown": null
+  },
+  {
+    "school": "karhula",
+    "hostname": "karhula-kan-351",
+    "type": "laptop",
+    "timestamp": 1604989743,
+    "image": "opinsys-os-opinsys-stretch-2020-09-24-105637-amd64.img",
+    "release": "O2039 Bohm",
+    "kernel_version": "4.9.0-13-amd64",
+    "kernel_args": null,
+    "manufacturer": "HP",
+    "product": "HP EliteBook 840 G3",
+    "serial": "70AQ52DLOS",
+    "mainboard_serial": "EP6LY7S1T5",
+    "bios_vendor": "HP",
+    "bios_version": "N75 Ver. 01.49",
+    "bios_release_date": "07/12/2020",
+    "cpu": "Intel(R) Core(TM) i7-6500U CPU @ 2.50GHz",
+    "cpu_count": 4,
+    "memory_mib": 7867,
+    "memory_slots": [
+      {
+        "size": 8192,
+        "slot": "Bottom-Slot 1(left)",
+        "product": "M471A1K43CB1-CRC",
+        "vendor": "Samsung"
+      },
+      {
+        "size": 0,
+        "slot": "Bottom-Slot 2(right)",
+        "product": null,
+        "vendor": null
+      }
+    ],
+    "hdd_model": "INTEL SSDSCKKF25",
+    "hdd_size_bytes": 256060514304,
+    "hdd_is_ssd": true,
+    "mac": [
+      "30:e1:63:1a:6d:81",
+      "34:f3:14:28:4f:8d",
+      "62:3a:c0:ba:ce:64"
+    ],
+    "lspci": [
+      "00:02.0 VGA compatible controller: Intel Corporation HD Graphics 520 (rev 07)",
+      "02:00.0 Network controller: Intel Corporation Wireless 8260 (rev 3a)"
+    ],
+    "lsusb": [
+      "Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub",
+      "Bus 001 Device 005: ID 04ca:7054 Lite-On Technology Corp.",
+      "Bus 001 Device 004: ID 138a:003f Validity Sensors, Inc. VFS495 Fingerprint Reader",
+      "Bus 001 Device 003: ID 8087:0a2b Intel Corp.",
+      "Bus 001 Device 002: ID 03f0:9d1d HP, Inc",
+      "Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub"
+    ],
+    "wifi_adapter": "Intel Corporation Wireless 8260 [8086:24f3] (rev 3a)",
+    "battery": {
+      "vendor": "Hewlett-Packard",
+      "model": "Primary",
+      "serial": "35152 2016/11/16",
+      "state": "fully-charged",
+      "warning-level": "none",
+      "energy": "39,1362 Wh",
+      "energy-empty": "0 Wh",
+      "energy-full": "40,2534 Wh",
+      "energy-full-design": "40,2534 Wh",
+      "voltage": "12,739 V",
+      "percentage": "97%",
+      "capacity": "100%",
+      "technology": "lithium-ion"
+    },
+    "purchase_date": null,
+    "purchase_location": null,
+    "warranty_ends": null,
+    "personally_administered": false,
+    "xrandr_commands": [],
+    "xrandr_output": "Screen 0: minimum 320 x 200, current 2560 x 1440, maximum 8192 x 8192\neDP-1 connected primary 2560x1440+0+0 (normal left inverted right x axis y axis) 309mm x 174mm\n   2560x1440     60.05*+  40.03  \n   1920x1440     60.00  \n   1856x1392     60.01  \n   1792x1344     60.01  \n   1920x1200     59.95  \n   1920x1080     59.93  \n   1600x1200     60.00  \n   1680x1050     59.95    59.88  \n   1600x1024     60.17  \n   1400x1050     59.98  \n   1280x1024     60.02  \n   1440x900      59.89  \n   1280x960      60.00  \n   1360x768      59.80    59.96  \n   1152x864      60.00  \n   1024x768      60.04    60.00  \n   960x720       60.00  \n   928x696       60.05  \n   896x672       60.01  \n   960x600       60.00  \n   960x540       59.99  \n   800x600       60.00    60.32    56.25  \n   840x525       60.01    59.88  \n   800x512       60.17  \n   700x525       59.98  \n   640x512       60.02  \n   720x450       59.89  \n   640x480       60.00    59.94  \n   680x384       59.80    59.96  \n   576x432       60.06  \n   512x384       60.00  \n   400x300       60.32    56.34  \n   320x240       60.05  \nDP-1 disconnected (normal left inverted right x axis y axis)\nHDMI-1 disconnected (normal left inverted right x axis y axis)\nDP-2 disconnected (normal left inverted right x axis y axis)\nHDMI-2 disconnected (normal left inverted right x axis y axis)",
+    "automatic_shutdown": null
+  },
+  {
+    "school": "kettula",
+    "hostname": "kettula-kan-36",
+    "type": "laptop",
+    "timestamp": 1615194817,
+    "image": "opinsys-os-opinsys-stretch-2020-04-29-161102-amd64.img",
+    "release": "O2018 Öberg",
+    "kernel_version": "4.9.0-12-amd64",
+    "kernel_args": null,
+    "manufacturer": "Hewlett-Packard",
+    "product": "HP ProBook 430 G2",
+    "serial": "9IS6H4EB5J",
+    "mainboard_serial": "BGXDMNJ1ZW",
+    "bios_vendor": "Hewlett-Packard",
+    "bios_version": "M73 Ver. 01.11",
+    "bios_release_date": "03/17/2015",
+    "cpu": "Intel(R) Core(TM) i5-5200U CPU @ 2.20GHz",
+    "cpu_count": 4,
+    "memory_mib": 3844,
+    "memory_slots": [
+      {
+        "size": 0,
+        "slot": "Bottom-Slot 1(left)",
+        "product": null,
+        "vendor": null
+      },
+      {
+        "size": 4096,
+        "slot": "Bottom-Slot 2(right)",
+        "product": "M471B5173QH0-YK0",
+        "vendor": "Samsung"
+      }
+    ],
+    "hdd_model": "LITEON LCH-128V2",
+    "hdd_size_bytes": 128035676160,
+    "hdd_is_ssd": true,
+    "mac": [
+      "58:20:f5:dd:90:27",
+      "e4:f8:92:fc:f9:58"
+    ],
+    "lspci": [
+      "00:02.0 VGA compatible controller: Intel Corporation HD Graphics 5500 (rev 09)",
+      "09:00.0 Network controller: Intel Corporation Wireless 3160 (rev 83)"
+    ],
+    "lsusb": [
+      "Bus 001 Device 002: ID 8087:8001 Intel Corp.",
+      "Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub",
+      "Bus 003 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub",
+      "Bus 002 Device 004: ID 04f2:b477 Chicony Electronics Co., Ltd",
+      "Bus 002 Device 003: ID 8087:07dc Intel Corp.",
+      "Bus 002 Device 002: ID 046d:c077 Logitech, Inc. M105 Optical Mouse",
+      "Bus 002 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub"
+    ],
+    "wifi_adapter": "Intel Corporation Wireless 3160 [8086:08b3] (rev 83)",
+    "battery": {
+      "vendor": "Hewlett-Packard",
+      "model": "Primary",
+      "serial": "01870 2015/05/19",
+      "state": "charging",
+      "warning-level": "none",
+      "energy": "3,4336 Wh",
+      "energy-empty": "0 Wh",
+      "energy-full": "38,0064 Wh",
+      "energy-full-design": "38,0064 Wh",
+      "voltage": "15,882 V",
+      "percentage": "9%",
+      "capacity": "100%",
+      "technology": "lithium-ion"
+    },
+    "purchase_date": null,
+    "purchase_location": null,
+    "warranty_ends": null,
+    "personally_administered": false,
+    "xrandr_commands": [],
+    "xrandr_output": "Screen 0: minimum 320 x 200, current 1366 x 768, maximum 8192 x 8192\neDP-1 connected primary 1366x768+0+0 (normal left inverted right x axis y axis) 293mm x 165mm\n   1366x768      59.97*+  39.98  \n   1360x768      59.80    59.96  \n   1024x768      60.04    60.00  \n   960x720       60.00  \n   928x696       60.05  \n   896x672       60.01  \n   960x600       60.00  \n   960x540       59.99  \n   800x600       60.00    60.32    56.25  \n   840x525       60.01    59.88  \n   800x512       60.17  \n   700x525       59.98  \n   640x512       60.02  \n   720x450       59.89  \n   640x480       60.00    59.94  \n   680x384       59.80    59.96  \n   576x432       60.06  \n   512x384       60.00  \n   400x300       60.32    56.34  \n   320x240       60.05  \nHDMI-1 disconnected (normal left inverted right x axis y axis)\nDP-1 disconnected (normal left inverted right x axis y axis)\nHDMI-2 disconnected (normal left inverted right x axis y axis)",
+    "automatic_shutdown": null
+  },
+  {
+    "school": "karhula",
+    "hostname": "karhula-lukio-030",
+    "type": "laptop",
+    "timestamp": 1615561643,
+    "image": "opinsys-os-opinsys-stretch-2021-01-27-071036-amd64.img",
+    "release": "O2104 Euclid",
+    "kernel_version": "4.9.0-14-amd64",
+    "kernel_args": null,
+    "manufacturer": "HP",
+    "product": "HP EliteBook 840 G3",
+    "serial": "UQFR580PYH",
+    "mainboard_serial": "CYHDJ10QS8",
+    "bios_vendor": "HP",
+    "bios_version": "N75 Ver. 01.45",
+    "bios_release_date": "01/05/2020",
+    "cpu": "Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz",
+    "cpu_count": 4,
+    "memory_mib": 7771,
+    "memory_slots": [
+      {
+        "size": 8192,
+        "slot": "Bottom-Slot 1(left)",
+        "product": "M471A1K43BB0-CPB",
+        "vendor": "Samsung"
+      },
+      {
+        "size": 0,
+        "slot": "Bottom-Slot 2(right)",
+        "product": null,
+        "vendor": null
+      }
+    ],
+    "hdd_model": "SanDisk SD8SN8U-",
+    "hdd_size_bytes": 256060514304,
+    "hdd_is_ssd": true,
+    "mac": [
+      "98:e7:dd:2b:b2:47",
+      "e4:a7:97:31:1c:7e"
+    ],
+    "lspci": [
+      "00:02.0 VGA compatible controller: Intel Corporation HD Graphics 520 (rev 07)",
+      "02:00.0 Network controller: Intel Corporation Wireless 8260 (rev 3a)"
+    ],
+    "lsusb": [
+      "Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub",
+      "Bus 001 Device 004: ID 05c8:0383 Cheng Uei Precision Industry Co., Ltd (Foxlink)",
+      "Bus 001 Device 003: ID 138a:003f Validity Sensors, Inc. VFS495 Fingerprint Reader",
+      "Bus 001 Device 002: ID 8087:0a2b Intel Corp.",
+      "Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub"
+    ],
+    "wifi_adapter": "Intel Corporation Wireless 8260 [8086:24f3] (rev 3a)",
+    "battery": {
+      "vendor": "Hewlett-Packard",
+      "model": "Primary",
+      "serial": "01125 2016/08/26",
+      "state": "discharging",
+      "warning-level": "none",
+      "energy": "24,3276 Wh",
+      "energy-empty": "0 Wh",
+      "energy-full": "39,9798 Wh",
+      "energy-full-design": "39,9798 Wh",
+      "voltage": "11,492 V",
+      "percentage": "60%",
+      "capacity": "100%",
+      "technology": "lithium-ion"
+    },
+    "purchase_date": null,
+    "purchase_location": null,
+    "warranty_ends": null,
+    "personally_administered": false,
+    "xrandr_commands": [],
+    "xrandr_output": "Screen 0: minimum 320 x 200, current 1920 x 1080, maximum 8192 x 8192\neDP-1 connected primary 1920x1080+0+0 (normal left inverted right x axis y axis) 309mm x 173mm\n   1920x1080     60.06*+  59.93    40.04  \n   1680x1050     59.95    59.88  \n   1600x1024     60.17  \n   1400x1050     59.98  \n   1280x1024     60.02  \n   1440x900      59.89  \n   1280x960      60.00  \n   1360x768      59.80    59.96  \n   1152x864      60.00  \n   1024x768      60.04    60.00  \n   960x720       60.00  \n   928x696       60.05  \n   896x672       60.01  \n   960x600       60.00  \n   960x540       59.99  \n   800x600       60.00    60.32    56.25  \n   840x525       60.01    59.88  \n   800x512       60.17  \n   700x525       59.98  \n   640x512       60.02  \n   720x450       59.89  \n   640x480       60.00    59.94  \n   680x384       59.80    59.96  \n   576x432       60.06  \n   512x384       60.00  \n   400x300       60.32    56.34  \n   320x240       60.05  \nDP-1 disconnected (normal left inverted right x axis y axis)\nHDMI-1 disconnected (normal left inverted right x axis y axis)\nDP-2 disconnected (normal left inverted right x axis y axis)\nHDMI-2 disconnected (normal left inverted right x axis y axis)",
+    "automatic_shutdown": null
+  },
+  {
+    "school": "karhula",
+    "hostname": "karhula-lap-1144",
+    "type": "laptop",
+    "timestamp": 1613560388,
+    "image": "opinsys-os-opinsys-buster-2020-12-09-114058-amd64.img",
+    "release": "O2050 Elnath",
+    "kernel_version": "4.19.0-11-amd64",
+    "kernel_args": null,
+    "manufacturer": "HP",
+    "product": "HP EliteBook 840 G3",
+    "serial": "Y98DLZV347",
+    "mainboard_serial": "3BIMCT8QWH",
+    "bios_vendor": "HP",
+    "bios_version": "N75 Ver. 01.51",
+    "bios_release_date": "10/20/2020",
+    "cpu": "Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz",
+    "cpu_count": 4,
+    "memory_mib": 7762,
+    "memory_slots": [
+      {
+        "size": 8192,
+        "slot": "Bottom-Slot 1(left)",
+        "vendor": "Hynix/Hyundai",
+        "product": "HMA81GS6AFR8N-UH"
+      },
+      {
+        "slot": "Bottom-Slot 2(right)"
+      }
+    ],
+    "hdd_model": "SanDisk SD8SN8U-",
+    "hdd_size_bytes": 256060514304,
+    "hdd_is_ssd": true,
+    "mac": [
+      "28:16:16:92:2e:01",
+      "3c:52:93:97:02:30",
+      "b6:bd:57:91:33:51"
+    ],
+    "lspci": [
+      "00:02.0 VGA compatible controller: Intel Corporation HD Graphics 520 (rev 07)",
+      "02:00.0 Network controller: Intel Corporation Wireless 8260 (rev 3a)"
+    ],
+    "lsusb": [
+      "Bus 002 Device 002: ID 0424:5534 Standard Microsystems Corp. Hub",
+      "Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub",
+      "Bus 001 Device 005: ID 04ca:7054 Lite-On Technology Corp.",
+      "Bus 001 Device 004: ID 8087:0a2b Intel Corp.",
+      "Bus 001 Device 003: ID 0424:2134 Standard Microsystems Corp. Hub",
+      "Bus 001 Device 002: ID 03f0:9d1d HP, Inc",
+      "Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub"
+    ],
+    "wifi_adapter": "Intel Corporation Wireless 8260 [8086:24f3] (rev 3a)",
+    "battery": {
+      "vendor": "Hewlett-Packard",
+      "model": "Primary",
+      "serial": "02139 2017/04/12",
+      "state": "charging",
+      "warning-level": "none",
+      "energy": "31,8288 Wh",
+      "energy-empty": "0 Wh",
+      "energy-full": "41,3364 Wh",
+      "energy-full-design": "46,512 Wh",
+      "voltage": "12,943 V",
+      "percentage": "76%",
+      "capacity": "88,8725%",
+      "technology": "lithium-ion"
+    },
+    "purchase_date": null,
+    "purchase_location": null,
+    "warranty_ends": null,
+    "personally_administered": false,
+    "xrandr_commands": [],
+    "xrandr_output": "Screen 0: minimum 320 x 200, current 1920 x 1080, maximum 8192 x 8192\neDP-1 connected primary 1920x1080+0+0 (normal left inverted right x axis y axis) 309mm x 173mm\n   1920x1080     60.06*+  60.01    59.97    59.96    59.93    40.04  \n   1680x1050     59.95    59.88  \n   1600x1024     60.17  \n   1400x1050     59.98  \n   1600x900      59.99    59.94    59.95    59.82  \n   1280x1024     60.02  \n   1440x900      59.89  \n   1400x900      59.96    59.88  \n   1280x960      60.00  \n   1440x810      60.00    59.97  \n   1368x768      59.88    59.85  \n   1360x768      59.80    59.96  \n   1280x800      59.99    59.97    59.81    59.91  \n   1152x864      60.00  \n   1280x720      60.00    59.99    59.86    59.74  \n   1024x768      60.04    60.00  \n   960x720       60.00  \n   928x696       60.05  \n   896x672       60.01  \n   1024x576      59.95    59.96    59.90    59.82  \n   960x600       59.93    60.00  \n   960x540       59.96    59.99    59.63    59.82  \n   800x600       60.00    60.32    56.25  \n   840x525       60.01    59.88  \n   864x486       59.92    59.57  \n   800x512       60.17  \n   700x525       59.98  \n   800x450       59.95    59.82  \n   640x512       60.02  \n   720x450       59.89  \n   700x450       59.96    59.88  \n   640x480       60.00    59.94  \n   720x405       59.51    58.99  \n   684x384       59.88    59.85  \n   680x384       59.80    59.96  \n   640x400       59.88    59.98  \n   576x432       60.06  \n   640x360       59.86    59.83    59.84    59.32  \n   512x384       60.00  \n   512x288       60.00    59.92  \n   480x270       59.63    59.82  \n   400x300       60.32    56.34  \n   432x243       59.92    59.57  \n   320x240       60.05  \n   360x202       59.51    59.13  \n   320x180       59.84    59.32  \nDP-1 disconnected (normal left inverted right x axis y axis)\nHDMI-1 disconnected (normal left inverted right x axis y axis)\nDP-2 disconnected (normal left inverted right x axis y axis)\nHDMI-2 disconnected (normal left inverted right x axis y axis)",
+    "automatic_shutdown": null
+  },
+  {
+    "school": "pupula",
+    "hostname": "pupula-3305",
+    "type": "laptop",
+    "timestamp": 1608211725,
+    "image": "opinsys-os-lukiolaiskannettava-stretch-2020-11-05-084821-amd64.img",
+    "release": "L2045 Riisitunturi",
+    "kernel_version": "4.9.0-13-amd64",
+    "kernel_args": null,
+    "manufacturer": "Hewlett-Packard",
+    "product": "HP EliteBook 840 G2",
+    "serial": "STIA69B0QO",
+    "mainboard_serial": "VQUL7T1EZ8",
+    "bios_vendor": "Hewlett-Packard",
+    "bios_version": "M71 Ver. 01.28",
+    "bios_release_date": "04/18/2019",
+    "cpu": "Intel(R) Core(TM) i5-5200U CPU @ 2.20GHz",
+    "cpu_count": 4,
+    "memory_mib": 7862,
+    "memory_slots": [
+      {
+        "size": 8192,
+        "slot": "Bottom-Slot 1(left)",
+        "product": "M471B1G73EB0-YK0",
+        "vendor": "Samsung"
+      },
+      {
+        "size": 0,
+        "slot": "Bottom-Slot 2(right)",
+        "product": null,
+        "vendor": null
+      }
+    ],
+    "hdd_model": "LITEON LCH-256V2",
+    "hdd_size_bytes": 256060514304,
+    "hdd_is_ssd": true,
+    "mac": [
+      "94:57:06:fe:40:da",
+      "94:65:07:b8:2d:9d"
+    ],
+    "lspci": [
+      "00:02.0 VGA compatible controller: Intel Corporation HD Graphics 5500 (rev 09)",
+      "03:00.0 Network controller: Intel Corporation Wireless 7265 (rev 48)"
+    ],
+    "lsusb": [
+      "Bus 003 Device 002: ID 8087:8001 Intel Corp.",
+      "Bus 003 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub",
+      "Bus 002 Device 002: ID 0424:5534 Standard Microsystems Corp. Hub",
+      "Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub",
+      "Bus 001 Device 005: ID 04f2:b477 Chicony Electronics Co., Ltd",
+      "Bus 001 Device 004: ID 138a:003f Validity Sensors, Inc. VFS495 Fingerprint Reader",
+      "Bus 001 Device 003: ID 8087:0a2a Intel Corp.",
+      "Bus 001 Device 002: ID 0424:2134 Standard Microsystems Corp. Hub",
+      "Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub"
+    ],
+    "wifi_adapter": "Intel Corporation Wireless 7265 [8086:095a] (rev 48)",
+    "battery": {
+      "vendor": "Hewlett-Packard",
+      "model": "Primary",
+      "serial": "29491 2015/06/03",
+      "state": "discharging",
+      "warning-level": "none",
+      "energy": "4,4574 Wh",
+      "energy-empty": "0 Wh",
+      "energy-full": "40,4586 Wh",
+      "energy-full-design": "40,4586 Wh",
+      "voltage": "10,281 V",
+      "percentage": "11%",
+      "capacity": "100%",
+      "technology": "lithium-ion"
+    },
+    "purchase_date": null,
+    "purchase_location": null,
+    "warranty_ends": null,
+    "personally_administered": false,
+    "xrandr_commands": [],
+    "xrandr_output": "Screen 0: minimum 320 x 200, current 1920 x 1080, maximum 8192 x 8192\neDP-1 connected primary 1920x1080+0+0 (normal left inverted right x axis y axis) 309mm x 173mm\n   1920x1080     60.05*+  59.93  \n   1680x1050     59.95    59.88  \n   1600x1024     60.17  \n   1400x1050     59.98  \n   1280x1024     60.02  \n   1440x900      59.89  \n   1280x960      60.00  \n   1360x768      59.80    59.96  \n   1152x864      60.00  \n   1024x768      60.04    60.00  \n   960x720       60.00  \n   928x696       60.05  \n   896x672       60.01  \n   960x600       60.00  \n   960x540       59.99  \n   800x600       60.00    60.32    56.25  \n   840x525       60.01    59.88  \n   800x512       60.17  \n   700x525       59.98  \n   640x512       60.02  \n   720x450       59.89  \n   640x480       60.00    59.94  \n   680x384       59.80    59.96  \n   576x432       60.06  \n   512x384       60.00  \n   400x300       60.32    56.34  \n   320x240       60.05  \nDP-1 disconnected (normal left inverted right x axis y axis)\nHDMI-1 disconnected (normal left inverted right x axis y axis)\nDP-2 disconnected (normal left inverted right x axis y axis)\nHDMI-2 disconnected (normal left inverted right x axis y axis)",
+    "automatic_shutdown": null
+  },
+  {
+    "school": "pupula",
+    "hostname": "pupula-kan-915",
+    "type": "laptop",
+    "timestamp": 1614770935,
+    "image": "opinsys-os-opinsys-stretch-2021-01-27-071036-amd64.img",
+    "release": "O2104 Euclid",
+    "kernel_version": "4.9.0-14-amd64",
+    "kernel_args": null,
+    "manufacturer": "HP",
+    "product": "HP EliteBook 840 G3",
+    "serial": "TYMI4CSP5J",
+    "mainboard_serial": "VSXDCM5WHA",
+    "bios_vendor": "HP",
+    "bios_version": "N75 Ver. 01.47",
+    "bios_release_date": "04/27/2020",
+    "cpu": "Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz",
+    "cpu_count": 4,
+    "memory_mib": 3739,
+    "memory_slots": [
+      {
+        "size": 4096,
+        "slot": "Bottom-Slot 1(left)",
+        "product": "M471A5143EB0-CPB",
+        "vendor": "Samsung"
+      },
+      {
+        "size": 0,
+        "slot": "Bottom-Slot 2(right)",
+        "product": null,
+        "vendor": null
+      }
+    ],
+    "hdd_model": "SanDisk SD8SN8U-",
+    "hdd_size_bytes": 128035676160,
+    "hdd_is_ssd": true,
+    "mac": [
+      "98:e7:78:6e:01:0a",
+      "e4:a7:00:f0:f1:a9"
+    ],
+    "lspci": [
+      "00:02.0 VGA compatible controller: Intel Corporation HD Graphics 520 (rev 07)",
+      "02:00.0 Network controller: Intel Corporation Wireless 8260 (rev 3a)"
+    ],
+    "lsusb": [
+      "Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub",
+      "Bus 001 Device 004: ID 05c8:0383 Cheng Uei Precision Industry Co., Ltd (Foxlink)",
+      "Bus 001 Device 003: ID 138a:003f Validity Sensors, Inc. VFS495 Fingerprint Reader",
+      "Bus 001 Device 002: ID 8087:0a2b Intel Corp.",
+      "Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub"
+    ],
+    "wifi_adapter": "Intel Corporation Wireless 8260 [8086:24f3] (rev 3a)",
+    "battery": {
+      "vendor": "Hewlett-Packard",
+      "model": "Primary",
+      "serial": "25687 2016/09/21",
+      "state": "discharging",
+      "warning-level": "none",
+      "energy": "39,7062 Wh",
+      "energy-empty": "0 Wh",
+      "energy-full": "40,6752 Wh",
+      "energy-full-design": "40,6752 Wh",
+      "voltage": "11,959 V",
+      "percentage": "97%",
+      "capacity": "100%",
+      "technology": "lithium-ion"
+    },
+    "purchase_date": null,
+    "purchase_location": null,
+    "warranty_ends": null,
+    "personally_administered": false,
+    "xrandr_commands": [],
+    "xrandr_output": "Screen 0: minimum 320 x 200, current 1920 x 1080, maximum 8192 x 8192\neDP-1 connected primary 1920x1080+0+0 (normal left inverted right x axis y axis) 309mm x 173mm\n   1920x1080     60.06*+  59.93    40.04  \n   1680x1050     59.95    59.88  \n   1600x1024     60.17  \n   1400x1050     59.98  \n   1280x1024     60.02  \n   1440x900      59.89  \n   1280x960      60.00  \n   1360x768      59.80    59.96  \n   1152x864      60.00  \n   1024x768      60.04    60.00  \n   960x720       60.00  \n   928x696       60.05  \n   896x672       60.01  \n   960x600       60.00  \n   960x540       59.99  \n   800x600       60.00    60.32    56.25  \n   840x525       60.01    59.88  \n   800x512       60.17  \n   700x525       59.98  \n   640x512       60.02  \n   720x450       59.89  \n   640x480       60.00    59.94  \n   680x384       59.80    59.96  \n   576x432       60.06  \n   512x384       60.00  \n   400x300       60.32    56.34  \n   320x240       60.05  \nDP-1 disconnected (normal left inverted right x axis y axis)\nHDMI-1 disconnected (normal left inverted right x axis y axis)\nDP-2 disconnected (normal left inverted right x axis y axis)\nHDMI-2 disconnected (normal left inverted right x axis y axis)",
+    "automatic_shutdown": null
+  },
+  {
+    "school": "karhula",
+    "hostname": "karhula-atk904-98",
+    "type": "fatclient",
+    "timestamp": 1614752028,
+    "image": "opinsys-os-opinsys-stretch-2021-01-27-071036-amd64.img",
+    "release": "O2104 Euclid",
+    "kernel_version": "4.9.0-14-amd64",
+    "kernel_args": null,
+    "manufacturer": "Dell Inc.",
+    "product": "OptiPlex 780",
+    "serial": "BC4QOUZPJH",
+    "mainboard_serial": "QEAV6RP8GI",
+    "bios_vendor": "Dell Inc.",
+    "bios_version": "A06",
+    "bios_release_date": "11/03/2010",
+    "cpu": "Pentium(R) Dual-Core  CPU      E5800  @ 3.20GHz",
+    "cpu_count": 2,
+    "memory_mib": 3855,
+    "memory_slots": [
+      {
+        "size": 4096,
+        "slot": "DIMM_1",
+        "product": "HMT351U6BFR8C-H9",
+        "vendor": "Hynix Semiconductor (Hyundai Electronics)"
+      },
+      {
+        "size": 0,
+        "slot": "DIMM_3",
+        "product": null,
+        "vendor": "FFFFFFFFFFFF"
+      },
+      {
+        "size": 0,
+        "slot": "DIMM_2",
+        "product": null,
+        "vendor": "FFFFFFFFFFFF"
+      },
+      {
+        "size": 0,
+        "slot": "DIMM_4",
+        "product": null,
+        "vendor": "FFFFFFFFFFFF"
+      }
+    ],
+    "hdd_model": null,
+    "hdd_size_bytes": null,
+    "hdd_is_ssd": true,
+    "mac": [
+      "bc:30:2c:bb:cd:30"
+    ],
+    "lspci": [
+      "00:02.0 VGA compatible controller: Intel Corporation 4 Series Chipset Integrated Graphics Controller (rev 03)"
+    ],
+    "lsusb": [
+      "Bus 006 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub",
+      "Bus 008 Device 002: ID 03f0:0024 HP, Inc KU-0316 Keyboard",
+      "Bus 008 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub",
+      "Bus 007 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub",
+      "Bus 004 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub",
+      "Bus 005 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub",
+      "Bus 003 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub",
+      "Bus 002 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub",
+      "Bus 001 Device 002: ID 046d:c018 Logitech, Inc. Optical Wheel Mouse",
+      "Bus 001 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub"
+    ],
+    "wifi_adapter": "",
+    "battery": null,
+    "purchase_date": null,
+    "purchase_location": null,
+    "warranty_ends": null,
+    "personally_administered": false,
+    "xrandr_commands": [],
+    "xrandr_output": "Screen 0: minimum 320 x 200, current 1280 x 1024, maximum 8192 x 8192\nVGA-1 connected primary 1280x1024+0+0 (normal left inverted right x axis y axis) 338mm x 270mm\n   1280x1024     60.02*+  75.02  \n   1152x864      75.00  \n   1024x768      75.03    60.00  \n   800x600       75.00    60.32  \n   640x480       75.00    59.94  \n   720x400       70.08  \nDVI-D-1 disconnected (normal left inverted right x axis y axis)",
+    "automatic_shutdown": null
+  },
+  {
+    "school": "kettula",
+    "hostname": "kettula-kan-059",
+    "type": "laptop",
+    "timestamp": 1615255838,
+    "image": "opinsys-os-opinsys-stretch-2019-04-15-095350-amd64.img",
+    "release": "O1916 Schrödinger",
+    "kernel_version": "4.9.0-8-amd64",
+    "kernel_args": null,
+    "manufacturer": "Hewlett-Packard",
+    "product": "HP EliteBook 2570p",
+    "serial": "P341FT6YEL",
+    "mainboard_serial": "FVWO2T9NKU",
+    "bios_vendor": "Hewlett-Packard",
+    "bios_version": "68ISB Ver. F.65",
+    "bios_release_date": "09/29/2016",
+    "cpu": "Intel(R) Core(TM) i5-3320M CPU @ 2.60GHz",
+    "cpu_count": 4,
+    "memory_mib": 3821,
+    "memory_slots": [
+      {
+        "size": 0,
+        "slot": "Bottom-Slot 1(top)",
+        "product": null,
+        "vendor": null
+      },
+      {
+        "size": 4096,
+        "slot": "Bottom-Slot 2(under)",
+        "product": "EBJ40UG8EFU0-GN-F",
+        "vendor": "Elpida"
+      }
+    ],
+    "hdd_model": "TOSHIBA MK3261GS",
+    "hdd_size_bytes": 320072933376,
+    "hdd_is_ssd": false,
+    "mac": [
+      "84:4b:ef:c2:b0:b4",
+      "c8:cb:3d:72:c0:7c"
+    ],
+    "lspci": [
+      "00:02.0 VGA compatible controller: Intel Corporation 3rd Gen Core processor Graphics Controller (rev 09)",
+      "24:00.0 Network controller: Broadcom Limited BCM43228 802.11a/b/g/n"
+    ],
+    "lsusb": [
+      "Bus 002 Device 003: ID 0a5c:21e1 Broadcom Corp. HP Portable SoftSailing",
+      "Bus 002 Device 002: ID 8087:0024 Intel Corp. Integrated Rate Matching Hub",
+      "Bus 002 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub",
+      "Bus 001 Device 003: ID 05c8:0341 Cheng Uei Precision Industry Co., Ltd (Foxlink)",
+      "Bus 001 Device 002: ID 8087:0024 Intel Corp. Integrated Rate Matching Hub",
+      "Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub",
+      "Bus 004 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub",
+      "Bus 003 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub"
+    ],
+    "wifi_adapter": "Broadcom Limited BCM43228 802.11a/b/g/n [14e4:4359]",
+    "battery": {
+      "vendor": "Hewlett-Packard",
+      "model": "Primary",
+      "serial": "37943 2013/02/07",
+      "state": "charging",
+      "warning-level": "none",
+      "energy": "27,4104 Wh",
+      "energy-empty": "0 Wh",
+      "energy-full": "46,8936 Wh",
+      "energy-full-design": "46,8936 Wh",
+      "voltage": "11,952 V",
+      "percentage": "58%",
+      "capacity": "100%",
+      "technology": "lithium-ion"
+    },
+    "purchase_date": null,
+    "purchase_location": null,
+    "warranty_ends": null,
+    "personally_administered": false,
+    "xrandr_commands": [],
+    "xrandr_output": "Screen 0: minimum 320 x 200, current 1366 x 768, maximum 8192 x 8192\nLVDS-1 connected primary 1366x768+0+0 (normal left inverted right x axis y axis) 292mm x 174mm\n   1366x768      60.01*+  40.00  \n   1360x768      59.80    59.96  \n   1024x768      60.04    60.00  \n   960x720       60.00  \n   928x696       60.05  \n   896x672       60.01  \n   960x600       60.00  \n   960x540       59.99  \n   800x600       60.00    60.32    56.25  \n   840x525       60.01    59.88  \n   800x512       60.17  \n   700x525       59.98  \n   640x512       60.02  \n   720x450       59.89  \n   640x480       60.00    59.94  \n   680x384       59.80    59.96  \n   576x432       60.06  \n   512x384       60.00  \n   400x300       60.32    56.34  \n   320x240       60.05  \nVGA-1 disconnected (normal left inverted right x axis y axis)\nHDMI-1 disconnected (normal left inverted right x axis y axis)\nDP-1 disconnected (normal left inverted right x axis y axis)\nHDMI-2 disconnected (normal left inverted right x axis y axis)\nDP-2 disconnected (normal left inverted right x axis y axis)",
+    "automatic_shutdown": null
+  },
+  {
+    "school": "karhula",
+    "hostname": "karhula-lap-6947",
+    "type": "laptop",
+    "timestamp": 1613572373,
+    "image": "opinsys-os-opinsys-buster-2020-12-09-114058-amd64.img",
+    "release": "O2050 Elnath",
+    "kernel_version": "4.19.0-11-amd64",
+    "kernel_args": null,
+    "manufacturer": "HP",
+    "product": "HP EliteBook 840 G3",
+    "serial": "JD9F0OIPAS",
+    "mainboard_serial": "Y4GF17RTOM",
+    "bios_vendor": "HP",
+    "bios_version": "N75 Ver. 01.51",
+    "bios_release_date": "10/20/2020",
+    "cpu": "Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz",
+    "cpu_count": 4,
+    "memory_mib": 7762,
+    "memory_slots": [
+      {
+        "size": 8192,
+        "slot": "Bottom-Slot 1(left)",
+        "vendor": "Samsung",
+        "product": "M471A1K43BB1-CRC"
+      },
+      {
+        "slot": "Bottom-Slot 2(right)"
+      }
+    ],
+    "hdd_model": "SAMSUNG MZNLN256",
+    "hdd_size_bytes": 256060514304,
+    "hdd_is_ssd": true,
+    "mac": [
+      "28:16:2f:c7:cd:b6",
+      "40:b0:0a:9c:66:1d",
+      "8a:7e:6e:f0:95:79"
+    ],
+    "lspci": [
+      "00:02.0 VGA compatible controller: Intel Corporation HD Graphics 520 (rev 07)",
+      "02:00.0 Network controller: Intel Corporation Wireless 8260 (rev 3a)"
+    ],
+    "lsusb": [
+      "Bus 002 Device 002: ID 0424:5534 Standard Microsystems Corp. Hub",
+      "Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub",
+      "Bus 001 Device 005: ID 05c8:0383 Cheng Uei Precision Industry Co., Ltd (Foxlink)",
+      "Bus 001 Device 004: ID 8087:0a2b Intel Corp.",
+      "Bus 001 Device 003: ID 0424:2134 Standard Microsystems Corp. Hub",
+      "Bus 001 Device 002: ID 03f0:9d1d HP, Inc",
+      "Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub"
+    ],
+    "wifi_adapter": "Intel Corporation Wireless 8260 [8086:24f3] (rev 3a)",
+    "battery": {
+      "vendor": "Hewlett-Packard",
+      "model": "Primary",
+      "serial": "02438 2017/02/17",
+      "state": "charging",
+      "warning-level": "none",
+      "energy": "21,2268 Wh",
+      "energy-empty": "0 Wh",
+      "energy-full": "44,5056 Wh",
+      "energy-full-design": "46,512 Wh",
+      "voltage": "12,441 V",
+      "percentage": "47%",
+      "capacity": "95,6863%",
+      "technology": "lithium-ion"
+    },
+    "purchase_date": null,
+    "purchase_location": null,
+    "warranty_ends": null,
+    "personally_administered": false,
+    "xrandr_commands": [],
+    "xrandr_output": "Screen 0: minimum 320 x 200, current 1920 x 1080, maximum 8192 x 8192\neDP-1 connected primary 1920x1080+0+0 (normal left inverted right x axis y axis) 308mm x 173mm\n   1920x1080     60.01*+  60.01    59.97    59.96    59.93    40.00  \n   1680x1050     59.95    59.88  \n   1600x1024     60.17  \n   1400x1050     59.98  \n   1600x900      59.99    59.94    59.95    59.82  \n   1280x1024     60.02  \n   1440x900      59.89  \n   1400x900      59.96    59.88  \n   1280x960      60.00  \n   1440x810      60.00    59.97  \n   1368x768      59.88    59.85  \n   1360x768      59.80    59.96  \n   1280x800      59.99    59.97    59.81    59.91  \n   1152x864      60.00  \n   1280x720      60.00    59.99    59.86    59.74  \n   1024x768      60.04    60.00  \n   960x720       60.00  \n   928x696       60.05  \n   896x672       60.01  \n   1024x576      59.95    59.96    59.90    59.82  \n   960x600       59.93    60.00  \n   960x540       59.96    59.99    59.63    59.82  \n   800x600       60.00    60.32    56.25  \n   840x525       60.01    59.88  \n   864x486       59.92    59.57  \n   800x512       60.17  \n   700x525       59.98  \n   800x450       59.95    59.82  \n   640x512       60.02  \n   720x450       59.89  \n   700x450       59.96    59.88  \n   640x480       60.00    59.94  \n   720x405       59.51    58.99  \n   684x384       59.88    59.85  \n   680x384       59.80    59.96  \n   640x400       59.88    59.98  \n   576x432       60.06  \n   640x360       59.86    59.83    59.84    59.32  \n   512x384       60.00  \n   512x288       60.00    59.92  \n   480x270       59.63    59.82  \n   400x300       60.32    56.34  \n   432x243       59.92    59.57  \n   320x240       60.05  \n   360x202       59.51    59.13  \n   320x180       59.84    59.32  \nDP-1 disconnected (normal left inverted right x axis y axis)\nHDMI-1 disconnected (normal left inverted right x axis y axis)\nDP-2 disconnected (normal left inverted right x axis y axis)\nHDMI-2 disconnected (normal left inverted right x axis y axis)",
+    "automatic_shutdown": null
+  },
+  {
+    "school": "kettula",
+    "hostname": "kettula-303",
+    "type": "laptop",
+    "timestamp": 1614761095,
+    "image": "puavo-os-amxa-buster-2020-11-20-114000-amd64.img",
+    "release": "O2046 Deneb (v20201120)",
+    "kernel_version": "4.19.0-11-amd64",
+    "kernel_args": null,
+    "manufacturer": "LENOVO",
+    "product": "20CLS0JM0J",
+    "serial": "LF2Q08ZRK3",
+    "mainboard_serial": "XFC7GO1ZMQ",
+    "bios_vendor": "LENOVO",
+    "bios_version": "N10ET36W (1.15 )",
+    "bios_release_date": "06/19/2015",
+    "cpu": "Intel(R) Core(TM) i5-5200U CPU @ 2.20GHz",
+    "cpu_count": 4,
+    "memory_mib": 7678,
+    "memory_slots": [
+      {
+        "size": 8192,
+        "slot": "ChannelA-DIMM0",
+        "vendor": "Samsung",
+        "product": "M471B1G73EB0-YK0"
+      }
+    ],
+    "hdd_model": "WDC WD5000LPCX-0",
+    "hdd_size_bytes": 500107862016,
+    "hdd_is_ssd": false,
+    "mac": [
+      "5c:e0:bf:58:21:b4",
+      "68:f7:c4:f4:14:06"
+    ],
+    "lspci": [
+      "00:02.0 VGA compatible controller: Intel Corporation HD Graphics 5500 (rev 09)",
+      "03:00.0 Network controller: Intel Corporation Wireless 7265 (rev 59)"
+    ],
+    "lsusb": [
+      "Bus 001 Device 002: ID 8087:8001 Intel Corp.",
+      "Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub",
+      "Bus 003 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub",
+      "Bus 002 Device 005: ID 04ca:703c Lite-On Technology Corp.",
+      "Bus 002 Device 004: ID 8087:0a2a Intel Corp.",
+      "Bus 002 Device 003: ID 138a:0017 Validity Sensors, Inc. VFS 5011 fingerprint sensor",
+      "Bus 002 Device 002: ID 0461:4e22 Primax Electronics, Ltd",
+      "Bus 002 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub"
+    ],
+    "wifi_adapter": "Intel Corporation Wireless 7265 [8086:095b] (rev 59)",
+    "battery": {
+      "vendor": "SANYO",
+      "model": "45N1773",
+      "serial": "11855",
+      "state": "charging",
+      "warning-level": "none",
+      "energy": "6.52 Wh",
+      "energy-empty": "0 Wh",
+      "energy-full": "18.22 Wh",
+      "energy-full-design": "23.2 Wh",
+      "voltage": "12.013 V",
+      "percentage": "35%",
+      "capacity": "78.5345%",
+      "technology": "lithium-ion"
+    },
+    "purchase_date": null,
+    "purchase_location": null,
+    "warranty_ends": null,
+    "personally_administered": false,
+    "xrandr_commands": [],
+    "xrandr_output": "Screen 0: minimum 8 x 8, current 1366 x 768, maximum 32767 x 32767\neDP1 connected primary 1366x768+0+0 (normal left inverted right x axis y axis) 280mm x 160mm\n   1366x768      59.99*+\n   1360x768      59.96  \n   1280x720      59.86    60.00    59.74  \n   1024x768      60.00  \n   1024x576      60.00    59.90    59.82  \n   960x540       60.00    59.63    59.82  \n   800x600       60.32    56.25  \n   864x486       60.00    59.92    59.57  \n   640x480       59.94  \n   720x405       59.51    60.00    58.99  \n   680x384       60.00  \n   640x360       59.84    59.32    60.00  \nDP1 disconnected (normal left inverted right x axis y axis)\nDP2 disconnected (normal left inverted right x axis y axis)\nHDMI1 disconnected (normal left inverted right x axis y axis)\nHDMI2 disconnected (normal left inverted right x axis y axis)\nVIRTUAL1 disconnected (normal left inverted right x axis y axis)",
+    "automatic_shutdown": null
+  },
+  {
+    "school": "kettula",
+    "hostname": "kettula-laptop-115",
+    "type": "laptop",
+    "timestamp": 1612249531,
+    "image": "puavo-os-amxa-stretch-2020-07-28-124823-amd64.img",
+    "release": "O2018 Öberg (v20200728)",
+    "kernel_version": "4.9.0-12-amd64",
+    "kernel_args": null,
+    "manufacturer": "LENOVO",
+    "product": "6475E11",
+    "serial": "0IJ9DZK6UN",
+    "mainboard_serial": "QI8KVJ2L07",
+    "bios_vendor": "LENOVO",
+    "bios_version": "7UET79WW (3.09 )",
+    "bios_release_date": "10/13/2009",
+    "cpu": "Intel(R) Core(TM)2 Duo CPU     P8400  @ 2.26GHz",
+    "cpu_count": 2,
+    "memory_mib": 3852,
+    "memory_slots": [
+      {
+        "size": 2048,
+        "slot": "DIMM 1",
+        "product": "RMT1970ED48E8F1066",
+        "vendor": "Fujitsu"
+      },
+      {
+        "size": 2048,
+        "slot": "DIMM 2",
+        "product": "9905428-010.A00LF",
+        "vendor": "AMD"
+      }
+    ],
+    "hdd_model": "HITACHI HTS72321",
+    "hdd_size_bytes": 160041885696,
+    "hdd_is_ssd": false,
+    "mac": [
+      "00:22:72:4b:bc:b4",
+      "00:26:c8:56:a3:a6"
+    ],
+    "lspci": [
+      "00:02.0 VGA compatible controller: Intel Corporation Mobile 4 Series Chipset Integrated Graphics Controller (rev 07)"
+    ],
+    "lsusb": [
+      "Bus 007 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub",
+      "Bus 008 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub",
+      "Bus 005 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub",
+      "Bus 004 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub",
+      "Bus 006 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub",
+      "Bus 003 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub",
+      "Bus 002 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub",
+      "Bus 001 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub"
+    ],
+    "wifi_adapter": "",
+    "battery": {
+      "vendor": "Panasonic",
+      "model": "42T5264",
+      "serial": "1719",
+      "state": "charging",
+      "warning-level": "none",
+      "energy": "32.09 Wh",
+      "energy-empty": "0 Wh",
+      "energy-full": "45.88 Wh",
+      "energy-full-design": "47.52 Wh",
+      "voltage": "12.461 V",
+      "percentage": "69%",
+      "capacity": "96.5488%",
+      "technology": "lithium-ion"
+    },
+    "purchase_date": null,
+    "purchase_location": null,
+    "warranty_ends": null,
+    "personally_administered": false,
+    "xrandr_commands": [],
+    "xrandr_output": "Screen 0: minimum 320 x 200, current 1280 x 800, maximum 8192 x 8192\nLVDS-1 connected primary 1280x800+0+0 (normal left inverted right x axis y axis) 303mm x 189mm\n   1280x800      60.08*+  50.00  \n   1024x768      60.04    60.00  \n   960x720       60.00  \n   928x696       60.05  \n   896x672       60.01  \n   960x600       60.00  \n   960x540       59.99  \n   800x600       60.00    60.32    56.25  \n   840x525       60.01    59.88  \n   800x512       60.17  \n   700x525       59.98  \n   640x512       60.02  \n   720x450       59.89  \n   640x480       60.00    59.94  \n   680x384       59.80    59.96  \n   576x432       60.06  \n   512x384       60.00  \n   400x300       60.32    56.34  \n   320x240       60.05  \nVGA-1 disconnected (normal left inverted right x axis y axis)\nHDMI-1 disconnected (normal left inverted right x axis y axis)\nDP-1 disconnected (normal left inverted right x axis y axis)\nHDMI-2 disconnected (normal left inverted right x axis y axis)\nDP-2 disconnected (normal left inverted right x axis y axis)\nDP-3 disconnected (normal left inverted right x axis y axis)",
+    "automatic_shutdown": null
+  },
+  {
+    "school": "kettula",
+    "hostname": "kettula-kan-40",
+    "type": "laptop",
+    "timestamp": 1615462266,
+    "image": "opinsys-os-opinsys-stretch-2021-01-27-071036-amd64.img",
+    "release": "O2104 Euclid",
+    "kernel_version": "4.9.0-14-amd64",
+    "kernel_args": null,
+    "manufacturer": "Hewlett-Packard",
+    "product": "HP EliteBook 820 G1",
+    "serial": "APKZC05X84",
+    "mainboard_serial": "GYWEHVP9LB",
+    "bios_vendor": "Hewlett-Packard",
+    "bios_version": "L71 Ver. 01.43",
+    "bios_release_date": "01/24/2018",
+    "cpu": "Intel(R) Core(TM) i5-4200U CPU @ 1.60GHz",
+    "cpu_count": 4,
+    "memory_mib": 7884,
+    "memory_slots": [
+      {
+        "size": 8192,
+        "slot": "Bottom-Slot 1(left)",
+        "product": "M471B1G73DB0-YK0",
+        "vendor": "Samsung"
+      },
+      {
+        "size": 0,
+        "slot": "Bottom-Slot 2(right)",
+        "product": null,
+        "vendor": null
+      }
+    ],
+    "hdd_model": "SanDisk SD6SB1M-",
+    "hdd_size_bytes": 128035676160,
+    "hdd_is_ssd": true,
+    "mac": [
+      "30:10:c4:02:ee:11",
+      "8c:dc:bf:88:ee:ea"
+    ],
+    "lspci": [
+      "00:02.0 VGA compatible controller: Intel Corporation Haswell-ULT Integrated Graphics Controller (rev 09)",
+      "02:00.0 Network controller: Broadcom Limited BCM43228 802.11a/b/g/n"
+    ],
+    "lsusb": [
+      "Bus 003 Device 002: ID 8087:8000 Intel Corp.",
+      "Bus 003 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub",
+      "Bus 002 Device 002: ID 0424:5534 Standard Microsystems Corp. Hub",
+      "Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub",
+      "Bus 001 Device 006: ID 04f2:b3ed Chicony Electronics Co., Ltd",
+      "Bus 001 Device 005: ID 03f0:521d HP, Inc",
+      "Bus 001 Device 004: ID 0a5c:21f1 Broadcom Corp. HP Portable Bumble Bee",
+      "Bus 001 Device 003: ID 0424:2134 Standard Microsystems Corp. Hub",
+      "Bus 001 Device 002: ID 03f0:134a HP, Inc Optical Mouse",
+      "Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub"
+    ],
+    "wifi_adapter": "Broadcom Limited BCM43228 802.11a/b/g/n [14e4:4359]",
+    "battery": {
+      "vendor": "Hewlett-Packard",
+      "model": "Primary",
+      "serial": "04382 2014/08/09",
+      "state": "discharging",
+      "warning-level": "none",
+      "energy": "37,6763 Wh",
+      "energy-empty": "0 Wh",
+      "energy-full": "41,5237 Wh",
+      "energy-full-design": "41,5237 Wh",
+      "voltage": "12,101 V",
+      "percentage": "90%",
+      "capacity": "100%",
+      "technology": "lithium-ion"
+    },
+    "purchase_date": null,
+    "purchase_location": null,
+    "warranty_ends": null,
+    "personally_administered": false,
+    "xrandr_commands": [],
+    "xrandr_output": "Screen 0: minimum 320 x 200, current 1366 x 768, maximum 8192 x 8192\neDP-1 connected primary 1366x768+0+0 (normal left inverted right x axis y axis) 277mm x 156mm\n   1366x768      60.14*+  40.09  \n   1360x768      59.80    59.96  \n   1024x768      60.04    60.00  \n   960x720       60.00  \n   928x696       60.05  \n   896x672       60.01  \n   960x600       60.00  \n   960x540       59.99  \n   800x600       60.00    60.32    56.25  \n   840x525       60.01    59.88  \n   800x512       60.17  \n   700x525       59.98  \n   640x512       60.02  \n   720x450       59.89  \n   640x480       60.00    59.94  \n   680x384       59.80    59.96  \n   576x432       60.06  \n   512x384       60.00  \n   400x300       60.32    56.34  \n   320x240       60.05  \nDP-1 disconnected (normal left inverted right x axis y axis)\nHDMI-1 disconnected (normal left inverted right x axis y axis)\nDP-2 disconnected (normal left inverted right x axis y axis)\nHDMI-2 disconnected (normal left inverted right x axis y axis)",
+    "automatic_shutdown": null
+  },
+  {
+    "school": "karhula",
+    "hostname": "karhula-kan-233",
+    "type": "laptop",
+    "timestamp": 1615196789,
+    "image": "opinsys-os-opinsys-buster-2020-12-09-114058-amd64.img",
+    "release": "O2050 Elnath",
+    "kernel_version": "4.19.0-11-amd64",
+    "kernel_args": null,
+    "manufacturer": "HP",
+    "product": "HP EliteBook 840 G3",
+    "serial": "BZKOFX6NU9",
+    "mainboard_serial": "6CBS0V1RLQ",
+    "bios_vendor": "HP",
+    "bios_version": "N75 Ver. 01.51",
+    "bios_release_date": "10/20/2020",
+    "cpu": "Intel(R) Core(TM) i5-6300U CPU @ 2.40GHz",
+    "cpu_count": 4,
+    "memory_mib": 7762,
+    "memory_slots": [
+      {
+        "size": 8192,
+        "slot": "Bottom-Slot 1(left)",
+        "vendor": "Samsung",
+        "product": "M471A1K43CB1-CRC"
+      },
+      {
+        "slot": "Bottom-Slot 2(right)"
+      }
+    ],
+    "hdd_model": "SanDisk SD8SN8U-",
+    "hdd_size_bytes": 256060514304,
+    "hdd_is_ssd": true,
+    "mac": [
+      "28:16:9a:ce:e6:b4",
+      "f4:30:2b:43:3e:fc"
+    ],
+    "lspci": [
+      "00:02.0 VGA compatible controller: Intel Corporation HD Graphics 520 (rev 07)",
+      "02:00.0 Network controller: Intel Corporation Wireless 8260 (rev 3a)"
+    ],
+    "lsusb": [
+      "Bus 002 Device 002: ID 0424:5534 Standard Microsystems Corp. Hub",
+      "Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub",
+      "Bus 001 Device 005: ID 05c8:0383 Cheng Uei Precision Industry Co., Ltd (Foxlink)",
+      "Bus 001 Device 004: ID 138a:003f Validity Sensors, Inc. VFS495 Fingerprint Reader",
+      "Bus 001 Device 003: ID 8087:0a2b Intel Corp.",
+      "Bus 001 Device 002: ID 0424:2134 Standard Microsystems Corp. Hub",
+      "Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub"
+    ],
+    "wifi_adapter": "Intel Corporation Wireless 8260 [8086:24f3] (rev 3a)",
+    "battery": {
+      "vendor": "Hewlett-Packard",
+      "model": "Primary",
+      "serial": "30152 2017/05/05",
+      "state": "charging",
+      "warning-level": "none",
+      "energy": "32,262 Wh",
+      "energy-empty": "0 Wh",
+      "energy-full": "39,387 Wh",
+      "energy-full-design": "46,512 Wh",
+      "voltage": "12,983 V",
+      "percentage": "81%",
+      "capacity": "84,6814%",
+      "technology": "lithium-ion"
+    },
+    "purchase_date": null,
+    "purchase_location": null,
+    "warranty_ends": null,
+    "personally_administered": false,
+    "xrandr_commands": [],
+    "xrandr_output": "Screen 0: minimum 320 x 200, current 1920 x 1080, maximum 8192 x 8192\neDP-1 connected primary 1920x1080+0+0 (normal left inverted right x axis y axis) 309mm x 173mm\n   1920x1080     60.06*+  60.01    59.97    59.96    59.93    40.04  \n   1680x1050     59.95    59.88  \n   1600x1024     60.17  \n   1400x1050     59.98  \n   1600x900      59.99    59.94    59.95    59.82  \n   1280x1024     60.02  \n   1440x900      59.89  \n   1400x900      59.96    59.88  \n   1280x960      60.00  \n   1440x810      60.00    59.97  \n   1368x768      59.88    59.85  \n   1360x768      59.80    59.96  \n   1280x800      59.99    59.97    59.81    59.91  \n   1152x864      60.00  \n   1280x720      60.00    59.99    59.86    59.74  \n   1024x768      60.04    60.00  \n   960x720       60.00  \n   928x696       60.05  \n   896x672       60.01  \n   1024x576      59.95    59.96    59.90    59.82  \n   960x600       59.93    60.00  \n   960x540       59.96    59.99    59.63    59.82  \n   800x600       60.00    60.32    56.25  \n   840x525       60.01    59.88  \n   864x486       59.92    59.57  \n   800x512       60.17  \n   700x525       59.98  \n   800x450       59.95    59.82  \n   640x512       60.02  \n   720x450       59.89  \n   700x450       59.96    59.88  \n   640x480       60.00    59.94  \n   720x405       59.51    58.99  \n   684x384       59.88    59.85  \n   680x384       59.80    59.96  \n   640x400       59.88    59.98  \n   576x432       60.06  \n   640x360       59.86    59.83    59.84    59.32  \n   512x384       60.00  \n   512x288       60.00    59.92  \n   480x270       59.63    59.82  \n   400x300       60.32    56.34  \n   432x243       59.92    59.57  \n   320x240       60.05  \n   360x202       59.51    59.13  \n   320x180       59.84    59.32  \nDP-1 disconnected (normal left inverted right x axis y axis)\nHDMI-1 disconnected (normal left inverted right x axis y axis)\nDP-2 disconnected (normal left inverted right x axis y axis)\nHDMI-2 disconnected (normal left inverted right x axis y axis)",
+    "automatic_shutdown": null
+  },
+  {
+    "school": "pupula",
+    "hostname": "pupula-kan-80",
+    "type": "laptop",
+    "timestamp": 1615372495,
+    "image": "opinsys-os-opinsys-stretch-2021-01-27-071036-amd64.img",
+    "release": "O2104 Euclid",
+    "kernel_version": "4.9.0-14-amd64",
+    "kernel_args": null,
+    "manufacturer": "Hewlett-Packard",
+    "product": "HP EliteBook 2560p",
+    "serial": "1J9RVTQHM0",
+    "mainboard_serial": "D75TLWRIOY",
+    "bios_vendor": "Hewlett-Packard",
+    "bios_version": "68SSU Ver. F.63",
+    "bios_release_date": "10/07/2016",
+    "cpu": "Intel(R) Core(TM) i5-2450M CPU @ 2.50GHz",
+    "cpu_count": 4,
+    "memory_mib": 3865,
+    "memory_slots": [
+      {
+        "size": 0,
+        "slot": "Bottom-Slot 1(top)",
+        "product": null,
+        "vendor": null
+      },
+      {
+        "size": 4096,
+        "slot": "Bottom-Slot 2(under)",
+        "product": "16KTF51264HZ-1G6M1",
+        "vendor": "Micron"
+      }
+    ],
+    "hdd_model": "Hitachi HTS72323",
+    "hdd_size_bytes": 320072933376,
+    "hdd_is_ssd": false,
+    "mac": [
+      "8c:70:09:b9:22:f1",
+      "e4:11:35:5f:00:d6"
+    ],
+    "lspci": [
+      "00:02.0 VGA compatible controller: Intel Corporation 2nd Generation Core Processor Family Integrated Graphics Controller (rev 09)",
+      "24:00.0 Network controller: Intel Corporation Centrino Advanced-N 6205 [Taylor Peak] (rev 34)"
+    ],
+    "lsusb": [
+      "Bus 002 Device 003: ID 0461:4dce Primax Electronics, Ltd",
+      "Bus 002 Device 002: ID 8087:0024 Intel Corp. Integrated Rate Matching Hub",
+      "Bus 002 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub",
+      "Bus 001 Device 002: ID 8087:0024 Intel Corp. Integrated Rate Matching Hub",
+      "Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub"
+    ],
+    "wifi_adapter": "Intel Corporation Centrino Advanced-N 6205 [Taylor Peak] [8086:0085] (rev 34)",
+    "battery": {
+      "vendor": "Hewlett-Packard",
+      "model": "Primary",
+      "serial": "50663 2012/03/23",
+      "state": "discharging",
+      "warning-level": "none",
+      "energy": "5,1393 Wh",
+      "energy-empty": "0 Wh",
+      "energy-full": "44,0226 Wh",
+      "energy-full-design": "44,0226 Wh",
+      "voltage": "10,007 V",
+      "percentage": "11%",
+      "capacity": "100%",
+      "technology": "lithium-ion"
+    },
+    "purchase_date": null,
+    "purchase_location": null,
+    "warranty_ends": null,
+    "personally_administered": false,
+    "xrandr_commands": [],
+    "xrandr_output": "Screen 0: minimum 320 x 200, current 1366 x 768, maximum 8192 x 8192\nLVDS-1 connected primary 1366x768+0+0 (normal left inverted right x axis y axis) 292mm x 174mm\n   1366x768      60.01*+  40.00  \n   1360x768      59.80    59.96  \n   1024x768      60.04    60.00  \n   960x720       60.00  \n   928x696       60.05  \n   896x672       60.01  \n   960x600       60.00  \n   960x540       59.99  \n   800x600       60.00    60.32    56.25  \n   840x525       60.01    59.88  \n   800x512       60.17  \n   700x525       59.98  \n   640x512       60.02  \n   720x450       59.89  \n   640x480       60.00    59.94  \n   680x384       59.80    59.96  \n   576x432       60.06  \n   512x384       60.00  \n   400x300       60.32    56.34  \n   320x240       60.05  \nVGA-1 disconnected (normal left inverted right x axis y axis)\nHDMI-1 disconnected (normal left inverted right x axis y axis)\nDP-1 disconnected (normal left inverted right x axis y axis)\nHDMI-2 disconnected (normal left inverted right x axis y axis)\nDP-2 disconnected (normal left inverted right x axis y axis)",
+    "automatic_shutdown": null
+  },
+  {
+    "school": "pupula",
+    "hostname": "pupula-kan-70",
+    "type": "laptop",
+    "timestamp": 1614934630,
+    "image": "opinsys-os-opinsys-stretch-2021-01-27-071036-amd64.img",
+    "release": "O2104 Euclid",
+    "kernel_version": "4.9.0-14-amd64",
+    "kernel_args": null,
+    "manufacturer": "Hewlett-Packard",
+    "product": "HP EliteBook 820 G1",
+    "serial": "OULFY9E4QX",
+    "mainboard_serial": "I06K9QO2TX",
+    "bios_vendor": "Hewlett-Packard",
+    "bios_version": "L71 Ver. 01.44",
+    "bios_release_date": "04/12/2018",
+    "cpu": "Intel(R) Core(TM) i5-4310U CPU @ 2.00GHz",
+    "cpu_count": 4,
+    "memory_mib": 7884,
+    "memory_slots": [
+      {
+        "size": 8192,
+        "slot": "Bottom-Slot 1(left)",
+        "product": "16KTF1G64HZ-1G6E1",
+        "vendor": "Micron"
+      },
+      {
+        "size": 0,
+        "slot": "Bottom-Slot 2(right)",
+        "product": null,
+        "vendor": null
+      }
+    ],
+    "hdd_model": "HGST HTS545032A7",
+    "hdd_size_bytes": 320072933376,
+    "hdd_is_ssd": false,
+    "mac": [
+      "14:58:75:2d:69:05",
+      "f8:16:29:6a:94:d3"
+    ],
+    "lspci": [
+      "00:02.0 VGA compatible controller: Intel Corporation Haswell-ULT Integrated Graphics Controller (rev 0b)",
+      "02:00.0 Network controller: Intel Corporation Wireless 7260 (rev 73)"
+    ],
+    "lsusb": [
+      "Bus 003 Device 002: ID 8087:8000 Intel Corp.",
+      "Bus 003 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub",
+      "Bus 002 Device 002: ID 0424:5534 Standard Microsystems Corp. Hub",
+      "Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub",
+      "Bus 001 Device 006: ID 04f2:b3ed Chicony Electronics Co., Ltd",
+      "Bus 001 Device 005: ID 03f0:521d HP, Inc",
+      "Bus 001 Device 004: ID 138a:003f Validity Sensors, Inc. VFS495 Fingerprint Reader",
+      "Bus 001 Device 003: ID 8087:07dc Intel Corp.",
+      "Bus 001 Device 002: ID 0424:2134 Standard Microsystems Corp. Hub",
+      "Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub"
+    ],
+    "wifi_adapter": "Intel Corporation Wireless 7260 [8086:08b1] (rev 73)",
+    "battery": {
+      "vendor": "Hewlett-Packard",
+      "model": "Primary",
+      "serial": "01944 2014/07/29",
+      "state": "discharging",
+      "warning-level": "none",
+      "energy": "36,3081 Wh",
+      "energy-empty": "0 Wh",
+      "energy-full": "41,7249 Wh",
+      "energy-full-design": "41,7249 Wh",
+      "voltage": "11,996 V",
+      "percentage": "87%",
+      "capacity": "100%",
+      "technology": "lithium-ion"
+    },
+    "purchase_date": null,
+    "purchase_location": null,
+    "warranty_ends": null,
+    "personally_administered": false,
+    "xrandr_commands": [],
+    "xrandr_output": "Screen 0: minimum 320 x 200, current 1366 x 768, maximum 8192 x 8192\neDP-1 connected primary 1366x768+0+0 (normal left inverted right x axis y axis) 277mm x 156mm\n   1366x768      60.00*+  40.00  \n   1360x768      59.80    59.96  \n   1024x768      60.04    60.00  \n   960x720       60.00  \n   928x696       60.05  \n   896x672       60.01  \n   960x600       60.00  \n   960x540       59.99  \n   800x600       60.00    60.32    56.25  \n   840x525       60.01    59.88  \n   800x512       60.17  \n   700x525       59.98  \n   640x512       60.02  \n   720x450       59.89  \n   640x480       60.00    59.94  \n   680x384       59.80    59.96  \n   576x432       60.06  \n   512x384       60.00  \n   400x300       60.32    56.34  \n   320x240       60.05  \nDP-1 disconnected (normal left inverted right x axis y axis)\nHDMI-1 disconnected (normal left inverted right x axis y axis)\nDP-2 disconnected (normal left inverted right x axis y axis)\nHDMI-2 disconnected (normal left inverted right x axis y axis)",
+    "automatic_shutdown": null
+  },
+  {
+    "school": "karhula",
+    "hostname": "karhula-5468",
+    "type": "laptop",
+    "timestamp": 1612516568,
+    "image": "opinsys-os-opinsys-stretch-2020-11-04-165649-amd64.img",
+    "release": "O2045 Celsius",
+    "kernel_version": "4.9.0-13-amd64",
+    "kernel_args": null,
+    "manufacturer": "LENOVO",
+    "product": "20F5S2NE00",
+    "serial": "G1W69ARU0F",
+    "mainboard_serial": "TXH967ISGM",
+    "bios_vendor": "LENOVO",
+    "bios_version": "R02ET73W (1.46 )",
+    "bios_release_date": "01/08/2020",
+    "cpu": "Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz",
+    "cpu_count": 4,
+    "memory_mib": 7409,
+    "memory_slots": [
+      {
+        "size": 8192,
+        "slot": "ChannelA-DIMM0",
+        "product": "16ATF1G64HZ-2G1A2",
+        "vendor": "Micron"
+      }
+    ],
+    "hdd_model": "KINGSTON SA400S3",
+    "hdd_size_bytes": 240057409536,
+    "hdd_is_ssd": true,
+    "mac": [
+      "0e:d3:d4:e3:7a:40",
+      "c8:5b:6b:25:34:46",
+      "e4:a4:7a:06:8f:32"
+    ],
+    "lspci": [
+      "00:02.0 VGA compatible controller: Intel Corporation HD Graphics 520 (rev 07)",
+      "04:00.0 Network controller: Intel Corporation Wireless 8260 (rev 3a)"
+    ],
+    "lsusb": [
+      "Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub",
+      "Bus 001 Device 005: ID 04ca:7058 Lite-On Technology Corp.",
+      "Bus 001 Device 004: ID 8087:0a2b Intel Corp.",
+      "Bus 001 Device 003: ID 093a:2510 Pixart Imaging, Inc. Optical Mouse",
+      "Bus 001 Device 002: ID 12d1:15c1 Huawei Technologies Co., Ltd. ME906s LTE M.2 Module",
+      "Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub"
+    ],
+    "wifi_adapter": "Intel Corporation Wireless 8260 [8086:24f3] (rev 3a)",
+    "battery": {
+      "vendor": "SANYO",
+      "model": "45N1773",
+      "serial": "819",
+      "state": "charging",
+      "warning-level": "none",
+      "energy": "0,84 Wh",
+      "energy-empty": "0 Wh",
+      "energy-full": "18,62 Wh",
+      "energy-full-design": "23,2 Wh",
+      "voltage": "11,154 V",
+      "percentage": "4%",
+      "capacity": "80,2586%",
+      "technology": "lithium-ion"
+    },
+    "purchase_date": null,
+    "purchase_location": null,
+    "warranty_ends": null,
+    "personally_administered": false,
+    "xrandr_commands": [],
+    "xrandr_output": "Screen 0: minimum 320 x 200, current 1366 x 768, maximum 8192 x 8192\neDP-1 connected primary 1366x768+0+0 (normal left inverted right x axis y axis) 276mm x 155mm\n   1366x768      60.00*+  48.00  \n   1360x768      59.80    59.96  \n   1024x768      60.04    60.00  \n   960x720       60.00  \n   928x696       60.05  \n   896x672       60.01  \n   960x600       60.00  \n   960x540       59.99  \n   800x600       60.00    60.32    56.25  \n   840x525       60.01    59.88  \n   800x512       60.17  \n   700x525       59.98  \n   640x512       60.02  \n   720x450       59.89  \n   640x480       60.00    59.94  \n   680x384       59.80    59.96  \n   576x432       60.06  \n   512x384       60.00  \n   400x300       60.32    56.34  \n   320x240       60.05  \nDP-1 disconnected (normal left inverted right x axis y axis)\nHDMI-1 disconnected (normal left inverted right x axis y axis)\nDP-2 disconnected (normal left inverted right x axis y axis)\nHDMI-2 disconnected (normal left inverted right x axis y axis)",
+    "automatic_shutdown": null
+  },
+  {
+    "school": "karhula",
+    "hostname": "karhula-kan-072",
+    "type": "laptop",
+    "timestamp": 1615443929,
+    "image": "opinsys-os-opinsys-stretch-2021-01-27-071036-amd64.img",
+    "release": "O2104 Euclid",
+    "kernel_version": "4.9.0-14-amd64",
+    "kernel_args": null,
+    "manufacturer": "HP",
+    "product": "HP EliteBook 820 G3",
+    "serial": "ROMJAU8260",
+    "mainboard_serial": "G4N9C5XTY1",
+    "bios_vendor": "HP",
+    "bios_version": "N75 Ver. 01.45",
+    "bios_release_date": "01/05/2020",
+    "cpu": "Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz",
+    "cpu_count": 4,
+    "memory_mib": 7771,
+    "memory_slots": [
+      {
+        "size": 8192,
+        "slot": "Bottom-Slot 1(left)",
+        "product": "M471A1G43DB0-CPB",
+        "vendor": "Samsung"
+      },
+      {
+        "size": 0,
+        "slot": "Bottom-Slot 2(right)",
+        "product": null,
+        "vendor": null
+      }
+    ],
+    "hdd_model": "SAMSUNG MZNLN256",
+    "hdd_size_bytes": 256060514304,
+    "hdd_is_ssd": true,
+    "mac": [
+      "44:85:75:e0:5c:8f",
+      "70:5a:52:17:3e:38",
+      "d6:07:c3:c8:18:81"
+    ],
+    "lspci": [
+      "00:02.0 VGA compatible controller: Intel Corporation HD Graphics 520 (rev 07)",
+      "02:00.0 Network controller: Intel Corporation Wireless 8260 (rev 3a)"
+    ],
+    "lsusb": [
+      "Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub",
+      "Bus 001 Device 005: ID 04ca:7054 Lite-On Technology Corp.",
+      "Bus 001 Device 004: ID 138a:003f Validity Sensors, Inc. VFS495 Fingerprint Reader",
+      "Bus 001 Device 003: ID 8087:0a2b Intel Corp.",
+      "Bus 001 Device 002: ID 03f0:9d1d HP, Inc",
+      "Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub"
+    ],
+    "wifi_adapter": "Intel Corporation Wireless 8260 [8086:24f3] (rev 3a)",
+    "battery": {
+      "vendor": "Hewlett-Packard",
+      "model": "Primary",
+      "serial": "26030 2016/03/14",
+      "state": "discharging",
+      "warning-level": "none",
+      "energy": "38,4864 Wh",
+      "energy-empty": "0 Wh",
+      "energy-full": "40,0824 Wh",
+      "energy-full-design": "40,0824 Wh",
+      "voltage": "12,273 V",
+      "percentage": "96%",
+      "capacity": "100%",
+      "technology": "lithium-ion"
+    },
+    "purchase_date": null,
+    "purchase_location": null,
+    "warranty_ends": null,
+    "personally_administered": false,
+    "xrandr_commands": [],
+    "xrandr_output": "Screen 0: minimum 320 x 200, current 1366 x 768, maximum 8192 x 8192\neDP-1 connected primary 1366x768+0+0 (normal left inverted right x axis y axis) 277mm x 156mm\n   1366x768      60.06*+  40.04  \n   1360x768      59.80    59.96  \n   1024x768      60.04    60.00  \n   960x720       60.00  \n   928x696       60.05  \n   896x672       60.01  \n   960x600       60.00  \n   960x540       59.99  \n   800x600       60.00    60.32    56.25  \n   840x525       60.01    59.88  \n   800x512       60.17  \n   700x525       59.98  \n   640x512       60.02  \n   720x450       59.89  \n   640x480       60.00    59.94  \n   680x384       59.80    59.96  \n   576x432       60.06  \n   512x384       60.00  \n   400x300       60.32    56.34  \n   320x240       60.05  \nDP-1 disconnected (normal left inverted right x axis y axis)\nHDMI-1 disconnected (normal left inverted right x axis y axis)\nDP-2 disconnected (normal left inverted right x axis y axis)\nHDMI-2 disconnected (normal left inverted right x axis y axis)",
+    "automatic_shutdown": null
+  },
+  {
+    "school": "pupula",
+    "hostname": "pupula-kan-940",
+    "type": "laptop",
+    "timestamp": 1614683098,
+    "image": "opinsys-os-opinsys-stretch-2021-01-27-071036-amd64.img",
+    "release": "O2104 Euclid",
+    "kernel_version": "4.9.0-14-amd64",
+    "kernel_args": null,
+    "manufacturer": "Hewlett-Packard",
+    "product": "HP EliteBook 8440p",
+    "serial": "JPU8EXIWK6",
+    "mainboard_serial": "HKEGF4U695",
+    "bios_vendor": "Hewlett-Packard",
+    "bios_version": "68CCU Ver. F.23",
+    "bios_release_date": "03/07/2013",
+    "cpu": "Intel(R) Core(TM) i5 CPU       M 520  @ 2.40GHz",
+    "cpu_count": 4,
+    "memory_mib": 3748,
+    "memory_slots": [
+      {
+        "size": 2048,
+        "slot": "Top-Slot 1(top)",
+        "product": "M471B5773CHS-CH9",
+        "vendor": "Samsung"
+      },
+      {
+        "size": 2048,
+        "slot": "Top-Slot 2(under)",
+        "product": "M471B5773CHS-CH9",
+        "vendor": "Samsung"
+      }
+    ],
+    "hdd_model": "ST9250410AS",
+    "hdd_size_bytes": 250059350016,
+    "hdd_is_ssd": false,
+    "mac": [
+      "18:3d:80:b9:9b:bf",
+      "b4:99:48:a8:03:6b"
+    ],
+    "lspci": [
+      "00:02.0 VGA compatible controller: Intel Corporation Core Processor Integrated Graphics Controller (rev 02)",
+      "43:00.0 Network controller: Intel Corporation Centrino Advanced-N 6200 (rev 35)"
+    ],
+    "lsusb": [
+      "Bus 002 Device 002: ID 8087:0020 Intel Corp. Integrated Rate Matching Hub",
+      "Bus 002 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub",
+      "Bus 001 Device 004: ID 04f2:b15e Chicony Electronics Co., Ltd",
+      "Bus 001 Device 003: ID 138a:0007 Validity Sensors, Inc. VFS451 Fingerprint Reader",
+      "Bus 001 Device 002: ID 8087:0020 Intel Corp. Integrated Rate Matching Hub",
+      "Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub"
+    ],
+    "wifi_adapter": "Intel Corporation Centrino Advanced-N 6200 [8086:4239] (rev 35)",
+    "battery": {
+      "vendor": "Hewlett-Packard",
+      "model": "Primary",
+      "serial": "03666 2010/12/25",
+      "state": "discharging",
+      "warning-level": "none",
+      "energy": "36,9684 Wh",
+      "energy-empty": "0 Wh",
+      "energy-full": "38,9124 Wh",
+      "energy-full-design": "38,9124 Wh",
+      "voltage": "11,827 V",
+      "percentage": "95%",
+      "capacity": "100%",
+      "technology": "lithium-ion"
+    },
+    "purchase_date": null,
+    "purchase_location": null,
+    "warranty_ends": null,
+    "personally_administered": false,
+    "xrandr_commands": [],
+    "xrandr_output": "Screen 0: minimum 320 x 200, current 1600 x 900, maximum 8192 x 8192\neDP-1 connected primary 1600x900+0+0 (normal left inverted right x axis y axis) 310mm x 174mm\n   1600x900      60.00*+  40.00  \n   1440x900      59.89  \n   1360x768      59.80    59.96  \n   1152x864      60.00  \n   1024x768      60.04    60.00  \n   960x720       60.00  \n   928x696       60.05  \n   896x672       60.01  \n   960x600       60.00  \n   960x540       59.99  \n   800x600       60.00    60.32    56.25  \n   840x525       60.01    59.88  \n   800x512       60.17  \n   700x525       59.98  \n   640x512       60.02  \n   720x450       59.89  \n   640x480       60.00    59.94  \n   680x384       59.80    59.96  \n   576x432       60.06  \n   512x384       60.00  \n   400x300       60.32    56.34  \n   320x240       60.05  \nVGA-1 disconnected (normal left inverted right x axis y axis)\nHDMI-1 disconnected (normal left inverted right x axis y axis)\nDP-1 disconnected (normal left inverted right x axis y axis)\nHDMI-2 disconnected (normal left inverted right x axis y axis)\nHDMI-3 disconnected (normal left inverted right x axis y axis)\nDP-2 disconnected (normal left inverted right x axis y axis)\nDP-3 disconnected (normal left inverted right x axis y axis)",
+    "automatic_shutdown": null
+  },
+  {
+    "school": "karhula",
+    "hostname": "karhula-ope-23",
+    "type": "fatclient",
+    "timestamp": 1615530295,
+    "image": "opinsys-os-opinsys-stretch-2021-01-27-071036-amd64.img",
+    "release": "O2104 Euclid",
+    "kernel_version": "4.9.0-14-amd64",
+    "kernel_args": null,
+    "manufacturer": "LENOVO",
+    "product": "10AF0017MX",
+    "serial": "VWXZSOGJ56",
+    "mainboard_serial": "9SXZOYNHLU",
+    "bios_vendor": "LENOVO",
+    "bios_version": "FEKT84BUS",
+    "bios_release_date": "05/14/2014",
+    "cpu": "Intel(R) Core(TM) i5-4460S CPU @ 2.90GHz",
+    "cpu_count": 4,
+    "memory_mib": 7784,
+    "memory_slots": [
+      {
+        "size": 4096,
+        "slot": "ChannelA-DIMM0",
+        "product": "M471B5173QH0-YK0",
+        "vendor": "Samsung"
+      },
+      {
+        "size": 4096,
+        "slot": "ChannelB-DIMM0",
+        "product": "99U5469-055.A00LF",
+        "vendor": "Kingston"
+      }
+    ],
+    "hdd_model": "WDC WD5000AAKX-0",
+    "hdd_size_bytes": 500107862016,
+    "hdd_is_ssd": false,
+    "mac": [
+      "44:39:e8:38:61:4c",
+      "48:51:2f:7c:f7:94"
+    ],
+    "lspci": [
+      "00:02.0 VGA compatible controller: Intel Corporation Xeon E3-1200 v3/4th Gen Core Processor Integrated Graphics Controller (rev 06)",
+      "01:00.0 Network controller: Intel Corporation Wireless 7260 (rev 73)"
+    ],
+    "lsusb": [
+      "Bus 002 Device 002: ID 8087:8000 Intel Corp.",
+      "Bus 002 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub",
+      "Bus 001 Device 002: ID 8087:8008 Intel Corp.",
+      "Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub",
+      "Bus 004 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub",
+      "Bus 003 Device 006: ID 8087:07dc Intel Corp.",
+      "Bus 003 Device 005: ID 0bda:0129 Realtek Semiconductor Corp. RTS5129 Card Reader Controller",
+      "Bus 003 Device 004: ID 5986:0532 Acer, Inc",
+      "Bus 003 Device 003: ID 093a:2510 Pixart Imaging, Inc. Optical Mouse",
+      "Bus 003 Device 002: ID 04b3:3025 IBM Corp. NetVista Full Width Keyboard",
+      "Bus 003 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub"
+    ],
+    "wifi_adapter": "Intel Corporation Wireless 7260 [8086:08b2] (rev 73)",
+    "battery": null,
+    "purchase_date": null,
+    "purchase_location": null,
+    "warranty_ends": null,
+    "personally_administered": false,
+    "xrandr_commands": [],
+    "xrandr_output": "Screen 0: minimum 320 x 200, current 1920 x 1080, maximum 8192 x 8192\neDP-1 connected primary 1920x1080+0+0 (normal left inverted right x axis y axis) 510mm x 290mm\n   1920x1080     60.00*+\n   1680x1050     59.95  \n   1680x945      60.02  \n   1400x1050     59.98  \n   1600x900      60.00  \n   1280x1024     60.02  \n   1440x900      59.89  \n   1280x960      60.00  \n   1366x768      59.79  \n   1360x768      60.02  \n   1280x800      59.81  \n   1280x768      59.87  \n   1280x720      60.00  \n   1024x768      60.00  \n   1024x576      59.97  \n   800x600       60.32  \n   848x480       60.00  \n   640x480       59.94  \nVGA-1 disconnected (normal left inverted right x axis y axis)\nDP-1 disconnected (normal left inverted right x axis y axis)\nHDMI-1 disconnected (normal left inverted right x axis y axis)",
+    "automatic_shutdown": null
+  },
+  {
+    "school": "karhula",
+    "hostname": "karhula-5214-41",
+    "type": "fatclient",
+    "timestamp": 1584355752,
+    "image": "opinsys-os-opinsys-stretch-2020-02-06-074536-amd64.img",
+    "release": "O2006 Zewail",
+    "kernel_version": "4.9.0-11-amd64",
+    "kernel_args": null,
+    "manufacturer": "Hewlett-Packard",
+    "product": "HP Compaq 8000 Elite CMT PC",
+    "serial": "MRZJ62QEB3",
+    "mainboard_serial": "6OB70C5UPK",
+    "bios_vendor": "Hewlett-Packard",
+    "bios_version": "786G7 v01.02",
+    "bios_release_date": "10/22/2009",
+    "cpu": "Pentium(R) Dual-Core  CPU      E5400  @ 2.70GHz",
+    "cpu_count": 2,
+    "memory_mib": 3851,
+    "memory_slots": [],
+    "hdd_model": "WDC WD2500AAJS-6",
+    "hdd_size_bytes": 250059350016,
+    "hdd_is_ssd": false,
+    "mac": [
+      "d8:d3:1b:26:7c:63"
+    ],
+    "lspci": [
+      "00:02.0 VGA compatible controller: Intel Corporation 4 Series Chipset Integrated Graphics Controller (rev 03)"
+    ],
+    "lsusb": [
+      "Bus 008 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub",
+      "Bus 006 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub",
+      "Bus 005 Device 003: ID 046d:c077 Logitech, Inc. M105 Optical Mouse",
+      "Bus 005 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub",
+      "Bus 004 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub",
+      "Bus 007 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub",
+      "Bus 003 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub",
+      "Bus 002 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub",
+      "Bus 001 Device 003: ID 03f0:0024 HP, Inc KU-0316 Keyboard",
+      "Bus 001 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub"
+    ],
+    "wifi_adapter": "",
+    "battery": null,
+    "purchase_date": null,
+    "purchase_location": null,
+    "warranty_ends": null,
+    "personally_administered": false,
+    "xrandr_commands": [],
+    "xrandr_output": "Screen 0: minimum 320 x 200, current 1680 x 1050, maximum 8192 x 8192\nVGA-1 connected primary 1680x1050+0+0 (normal left inverted right x axis y axis) 473mm x 296mm\n   1680x1050     59.95*+\n   1600x1200     60.00  \n   1280x1024     60.02  \n   1440x900      59.89  \n   1280x960      60.00  \n   1024x768      60.00  \n   800x600       60.32  \n   640x480       59.94  \n   720x400       70.08  \nHDMI-1 disconnected (normal left inverted right x axis y axis)\nDP-1 disconnected (normal left inverted right x axis y axis)",
+    "automatic_shutdown": null
+  },
+  {
+    "school": "pupula",
+    "hostname": "pupula-3154",
+    "type": "laptop",
+    "timestamp": 1612866388,
+    "image": "opinsys-os-opinsys-stretch-2020-12-08-113112-amd64.img",
+    "release": "O2050 Darwin",
+    "kernel_version": "4.9.0-13-amd64",
+    "kernel_args": null,
+    "manufacturer": "HP",
+    "product": "HP EliteBook 820 G3",
+    "serial": "J6BEM73DZP",
+    "mainboard_serial": "1D8EF40LBG",
+    "bios_vendor": "HP",
+    "bios_version": "N75 Ver. 01.47",
+    "bios_release_date": "04/27/2020",
+    "cpu": "Intel(R) Core(TM) i5-6300U CPU @ 2.40GHz",
+    "cpu_count": 4,
+    "memory_mib": 3740,
+    "memory_slots": [
+      {
+        "size": 4096,
+        "slot": "Bottom-Slot 1(left)",
+        "product": "HMA451S6AFR8N-TF",
+        "vendor": "Hynix/Hyundai"
+      },
+      {
+        "size": 0,
+        "slot": "Bottom-Slot 2(right)",
+        "product": null,
+        "vendor": null
+      }
+    ],
+    "hdd_model": "SanDisk SD8SN8U-",
+    "hdd_size_bytes": 256060514304,
+    "hdd_is_ssd": true,
+    "mac": [
+      "98:e7:96:5c:83:69",
+      "e4:a7:84:b5:d2:33"
+    ],
+    "lspci": [
+      "00:02.0 VGA compatible controller: Intel Corporation HD Graphics 520 (rev 07)",
+      "02:00.0 Network controller: Intel Corporation Wireless 8260 (rev 3a)"
+    ],
+    "lsusb": [
+      "Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub",
+      "Bus 001 Device 004: ID 04f2:b51c Chicony Electronics Co., Ltd",
+      "Bus 001 Device 003: ID 8087:0a2b Intel Corp.",
+      "Bus 001 Device 002: ID 17ef:608d Lenovo",
+      "Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub"
+    ],
+    "wifi_adapter": "Intel Corporation Wireless 8260 [8086:24f3] (rev 3a)",
+    "battery": {
+      "vendor": "Hewlett-Packard",
+      "model": "Primary",
+      "serial": "27514 2016/09/18",
+      "state": "charging",
+      "warning-level": "none",
+      "energy": "0,3192 Wh",
+      "energy-empty": "0 Wh",
+      "energy-full": "39,7632 Wh",
+      "energy-full-design": "39,7632 Wh",
+      "voltage": "11,952 V",
+      "percentage": "0%",
+      "capacity": "100%",
+      "technology": "lithium-ion"
+    },
+    "purchase_date": null,
+    "purchase_location": null,
+    "warranty_ends": null,
+    "personally_administered": false,
+    "xrandr_commands": [],
+    "xrandr_output": "Screen 0: minimum 320 x 200, current 1366 x 768, maximum 8192 x 8192\neDP-1 connected primary 1366x768+0+0 (normal left inverted right x axis y axis) 277mm x 156mm\n   1366x768      60.00*+  40.00  \n   1360x768      59.80    59.96  \n   1024x768      60.04    60.00  \n   960x720       60.00  \n   928x696       60.05  \n   896x672       60.01  \n   960x600       60.00  \n   960x540       59.99  \n   800x600       60.00    60.32    56.25  \n   840x525       60.01    59.88  \n   800x512       60.17  \n   700x525       59.98  \n   640x512       60.02  \n   720x450       59.89  \n   640x480       60.00    59.94  \n   680x384       59.80    59.96  \n   576x432       60.06  \n   512x384       60.00  \n   400x300       60.32    56.34  \n   320x240       60.05  \nDP-1 disconnected (normal left inverted right x axis y axis)\nHDMI-1 disconnected (normal left inverted right x axis y axis)\nDP-2 disconnected (normal left inverted right x axis y axis)\nHDMI-2 disconnected (normal left inverted right x axis y axis)",
+    "automatic_shutdown": null
+  },
+  {
+    "school": "karhula",
+    "hostname": "karhula-kan-316",
+    "type": "laptop",
+    "timestamp": 1611751342,
+    "image": "opinsys-os-opinsys-stretch-2020-12-08-113112-amd64.img",
+    "release": "O2050 Darwin",
+    "kernel_version": "4.9.0-13-amd64",
+    "kernel_args": null,
+    "manufacturer": "Hewlett-Packard",
+    "product": "HP EliteBook 840 G2",
+    "serial": "S02I9PHWUB",
+    "mainboard_serial": "LPBW8E2FZJ",
+    "bios_vendor": "Hewlett-Packard",
+    "bios_version": "M71 Ver. 01.27",
+    "bios_release_date": "07/12/2018",
+    "cpu": "Intel(R) Core(TM) i5-5200U CPU @ 2.20GHz",
+    "cpu_count": 4,
+    "memory_mib": 7862,
+    "memory_slots": [
+      {
+        "size": 8192,
+        "slot": "Bottom-Slot 1(left)",
+        "product": "M471B1G73QH0-YK0",
+        "vendor": "Samsung"
+      },
+      {
+        "size": 0,
+        "slot": "Bottom-Slot 2(right)",
+        "product": null,
+        "vendor": null
+      }
+    ],
+    "hdd_model": "LITEON LCH-256V2",
+    "hdd_size_bytes": 256060514304,
+    "hdd_is_ssd": true,
+    "mac": [
+      "94:57:6a:b5:7e:f5",
+      "94:65:19:c5:2d:04"
+    ],
+    "lspci": [
+      "00:02.0 VGA compatible controller: Intel Corporation HD Graphics 5500 (rev 09)",
+      "03:00.0 Network controller: Intel Corporation Wireless 7265 (rev 48)"
+    ],
+    "lsusb": [
+      "Bus 003 Device 002: ID 8087:8001 Intel Corp.",
+      "Bus 003 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub",
+      "Bus 002 Device 002: ID 0424:5534 Standard Microsystems Corp. Hub",
+      "Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub",
+      "Bus 001 Device 005: ID 04f2:b477 Chicony Electronics Co., Ltd",
+      "Bus 001 Device 004: ID 138a:003f Validity Sensors, Inc. VFS495 Fingerprint Reader",
+      "Bus 001 Device 003: ID 8087:0a2a Intel Corp.",
+      "Bus 001 Device 002: ID 0424:2134 Standard Microsystems Corp. Hub",
+      "Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub"
+    ],
+    "wifi_adapter": "Intel Corporation Wireless 7265 [8086:095a] (rev 48)",
+    "battery": {
+      "vendor": "Hewlett-Packard",
+      "model": "Primary",
+      "serial": "29463 2015/06/04",
+      "state": "discharging",
+      "warning-level": "none",
+      "energy": "26,4366 Wh",
+      "energy-empty": "0 Wh",
+      "energy-full": "39,558 Wh",
+      "energy-full-design": "39,558 Wh",
+      "voltage": "11,192 V",
+      "percentage": "66%",
+      "capacity": "100%",
+      "technology": "lithium-ion"
+    },
+    "purchase_date": null,
+    "purchase_location": null,
+    "warranty_ends": null,
+    "personally_administered": false,
+    "xrandr_commands": [],
+    "xrandr_output": "Screen 0: minimum 320 x 200, current 1920 x 1080, maximum 8192 x 8192\neDP-1 connected primary 1920x1080+0+0 (normal left inverted right x axis y axis) 309mm x 173mm\n   1920x1080     60.05*+  59.93  \n   1680x1050     59.95    59.88  \n   1600x1024     60.17  \n   1400x1050     59.98  \n   1280x1024     60.02  \n   1440x900      59.89  \n   1280x960      60.00  \n   1360x768      59.80    59.96  \n   1152x864      60.00  \n   1024x768      60.04    60.00  \n   960x720       60.00  \n   928x696       60.05  \n   896x672       60.01  \n   960x600       60.00  \n   960x540       59.99  \n   800x600       60.00    60.32    56.25  \n   840x525       60.01    59.88  \n   800x512       60.17  \n   700x525       59.98  \n   640x512       60.02  \n   720x450       59.89  \n   640x480       60.00    59.94  \n   680x384       59.80    59.96  \n   576x432       60.06  \n   512x384       60.00  \n   400x300       60.32    56.34  \n   320x240       60.05  \nDP-1 disconnected (normal left inverted right x axis y axis)\nHDMI-1 disconnected (normal left inverted right x axis y axis)\nDP-2 disconnected (normal left inverted right x axis y axis)\nHDMI-2 disconnected (normal left inverted right x axis y axis)",
+    "automatic_shutdown": null
+  },
+  {
+    "school": "karhula",
+    "hostname": "karhula-715-ope",
+    "type": "fatclient",
+    "timestamp": 1614927945,
+    "image": "opinsys-os-opinsys-buster-2021-01-27-071357-amd64.img",
+    "release": "O2104 Fomalhaut",
+    "kernel_version": "4.19.0-13-amd64",
+    "kernel_args": null,
+    "manufacturer": "Hewlett-Packard",
+    "product": "HP ProDesk 600 G1 SFF",
+    "serial": "QBUL4ZE01N",
+    "mainboard_serial": "OYXF53GAUW",
+    "bios_vendor": "Hewlett-Packard",
+    "bios_version": "L01 v02.71",
+    "bios_release_date": "05/09/2017",
+    "cpu": "Intel(R) Core(TM) i3-4130 CPU @ 3.40GHz",
+    "cpu_count": 4,
+    "memory_mib": 7869,
+    "memory_slots": [
+      {
+        "slot": "DIMM4",
+        "vendor": "[Empty]",
+        "product": "[Empty]"
+      },
+      {
+        "slot": "DIMM3",
+        "vendor": "[Empty]",
+        "product": "[Empty]"
+      },
+      {
+        "slot": "DIMM2",
+        "vendor": "[Empty]",
+        "product": "[Empty]"
+      },
+      {
+        "size": 8192,
+        "slot": "DIMM1",
+        "vendor": "Samsung",
+        "product": "M378B1G73QH0-CK0"
+      }
+    ],
+    "hdd_model": "USB    CRW-CF/MD",
+    "hdd_size_bytes": 0,
+    "hdd_is_ssd": false,
+    "mac": [
+      "64:51:c7:ab:8d:be"
+    ],
+    "lspci": [
+      "00:00.0 Host bridge: Intel Corporation 4th Gen Core Processor DRAM Controller (rev 06)",
+      "00:02.0 VGA compatible controller: Intel Corporation 4th Generation Core Processor Family Integrated Graphics Controller (rev 06)",
+      "00:03.0 Audio device: Intel Corporation Xeon E3-1200 v3/4th Gen Core Processor HD Audio Controller (rev 06)",
+      "00:14.0 USB controller: Intel Corporation 8 Series/C220 Series Chipset Family USB xHCI (rev 04)",
+      "00:16.0 Communication controller: Intel Corporation 8 Series/C220 Series Chipset Family MEI Controller #1 (rev 04)",
+      "00:16.3 Serial controller: Intel Corporation 8 Series/C220 Series Chipset Family KT Controller (rev 04)",
+      "00:19.0 Ethernet controller: Intel Corporation Ethernet Connection I217-LM (rev 04)",
+      "00:1a.0 USB controller: Intel Corporation 8 Series/C220 Series Chipset Family USB EHCI #2 (rev 04)",
+      "00:1b.0 Audio device: Intel Corporation 8 Series/C220 Series Chipset High Definition Audio Controller (rev 04)",
+      "00:1d.0 USB controller: Intel Corporation 8 Series/C220 Series Chipset Family USB EHCI #1 (rev 04)",
+      "00:1f.0 ISA bridge: Intel Corporation Q85 Express LPC Controller (rev 04)",
+      "00:1f.2 SATA controller: Intel Corporation 8 Series/C220 Series Chipset Family 6-port SATA Controller 1 [AHCI mode] (rev 04)",
+      "00:1f.3 SMBus: Intel Corporation 8 Series/C220 Series Chipset Family SMBus Controller (rev 04)"
+    ],
+    "lsusb": [
+      "Bus 004 Device 002: ID 8087:8000 Intel Corp.",
+      "Bus 004 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub",
+      "Bus 003 Device 002: ID 8087:8008 Intel Corp.",
+      "Bus 003 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub",
+      "Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub",
+      "Bus 001 Device 004: ID 0bda:0321 Realtek Semiconductor Corp.",
+      "Bus 001 Device 003: ID 046d:c05a Logitech, Inc. M90/M100 Optical Mouse",
+      "Bus 001 Device 002: ID 413c:2107 Dell Computer Corp.",
+      "Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub"
+    ],
+    "wifi_adapter": "",
+    "battery": null,
+    "purchase_date": null,
+    "purchase_location": null,
+    "warranty_ends": null,
+    "personally_administered": false,
+    "xrandr_commands": [],
+    "xrandr_output": "Screen 0: minimum 320 x 200, current 1920 x 1080, maximum 8192 x 8192\nVGA-1 disconnected (normal left inverted right x axis y axis)\nDP-1 disconnected (normal left inverted right x axis y axis)\nHDMI-1 connected primary 1920x1080+0+0 (normal left inverted right x axis y axis) 477mm x 268mm\n   1920x1080     60.00*+\n   1280x1024     75.02    60.02  \n   1152x864      75.00  \n   1024x768      75.03    60.00  \n   800x600       75.00    60.32  \n   640x480       75.00    59.94  \n   720x400       70.08  \nDP-2 disconnected (normal left inverted right x axis y axis)\nHDMI-2 disconnected (normal left inverted right x axis y axis)",
+    "automatic_shutdown": null
+  },
+  {
+    "school": "karhula",
+    "hostname": "karhula-d0-ope",
+    "type": "fatclient",
+    "timestamp": 1615559867,
+    "image": "opinsys-os-opinsys-stretch-2021-01-27-071036-amd64.img",
+    "release": "O2104 Euclid",
+    "kernel_version": "4.9.0-14-amd64",
+    "kernel_args": null,
+    "manufacturer": "To Be Filled By O.E.M.",
+    "product": "To Be Filled By O.E.M.",
+    "serial": "3RG62V4FAW",
+    "mainboard_serial": "HU0G95MLT3",
+    "bios_vendor": "American Megatrends Inc.",
+    "bios_version": "P1.60",
+    "bios_release_date": "02/18/2013",
+    "cpu": "Intel(R) Core(TM) i3-3220T CPU @ 2.80GHz",
+    "cpu_count": 4,
+    "memory_mib": 7687,
+    "memory_slots": [
+      {
+        "size": 4096,
+        "slot": "ChannelA-DIMM0",
+        "product": "99U5471-012.A00LF",
+        "vendor": "Kingston"
+      },
+      {
+        "size": 4096,
+        "slot": "ChannelB-DIMM0",
+        "product": "99U5471-012.A00LF",
+        "vendor": "Kingston"
+      }
+    ],
+    "hdd_model": null,
+    "hdd_size_bytes": null,
+    "hdd_is_ssd": true,
+    "mac": [
+      "bc:5f:cd:8c:40:72"
+    ],
+    "lspci": [
+      "00:02.0 VGA compatible controller: Intel Corporation Xeon E3-1200 v2/3rd Gen Core processor Graphics Controller (rev 09)"
+    ],
+    "lsusb": [
+      "Bus 002 Device 003: ID 09a1:0028",
+      "Bus 002 Device 002: ID 8087:0024 Intel Corp. Integrated Rate Matching Hub",
+      "Bus 002 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub",
+      "Bus 001 Device 004: ID 046d:c077 Logitech, Inc. M105 Optical Mouse",
+      "Bus 001 Device 003: ID 046d:c31c Logitech, Inc. Keyboard K120",
+      "Bus 001 Device 002: ID 8087:0024 Intel Corp. Integrated Rate Matching Hub",
+      "Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub",
+      "Bus 004 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub",
+      "Bus 003 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub"
+    ],
+    "wifi_adapter": "",
+    "battery": null,
+    "purchase_date": null,
+    "purchase_location": null,
+    "warranty_ends": null,
+    "personally_administered": false,
+    "xrandr_commands": [
+      "--output HDMI-1 --mode 1440x900 --output VGA-1 --mode 1440x900 --same-as HDMI-1"
+    ],
+    "xrandr_output": "Screen 0: minimum 320 x 200, current 1440 x 900, maximum 8192 x 8192\nVGA-1 connected primary 1440x900+0+0 (normal left inverted right x axis y axis) 510mm x 290mm\n   1920x1080     60.00 +\n   1680x1050     59.95  \n   1280x1024     75.02    60.02  \n   1440x900      59.89* \n   1280x960      60.00  \n   1152x864      75.00  \n   1024x768      75.03    70.07    60.00  \n   800x600       72.19    75.00    60.32    56.25  \n   640x480       75.00    72.81    59.94  \n   720x400       70.08  \nHDMI-1 connected 1440x900+0+0 (normal left inverted right x axis y axis) 1600mm x 900mm\n   1920x1080     60.00 +  50.00    59.94    30.00    24.00    29.97    23.98  \n   1920x1080i    60.00    50.00    59.94  \n   1600x1200     60.00  \n   1680x1050     59.88  \n   1400x1050     59.95  \n   1600x900      60.00  \n   1280x1024     60.02  \n   1440x900      59.90* \n   1280x960      60.00  \n   1366x768      59.79  \n   1280x800      59.81  \n   1280x720      60.00    50.00    59.94  \n   1024x768      60.00  \n   800x600       60.32  \n   720x576       50.00  \n   720x576i      50.00  \n   720x480       60.00    59.94  \n   720x480i      60.00    59.94  \n   640x480       60.00    59.94  \nDP-1 disconnected (normal left inverted right x axis y axis)\nHDMI-2 disconnected (normal left inverted right x axis y axis)\nHDMI-3 disconnected (normal left inverted right x axis y axis)\nDP-2 disconnected (normal left inverted right x axis y axis)\nDP-3 disconnected (normal left inverted right x axis y axis)",
+    "automatic_shutdown": null
+  },
+  {
+    "school": "kettula",
+    "hostname": "kettula-lap-8376",
+    "type": "laptop",
+    "timestamp": 1610351986,
+    "image": "opinsys-os-opinsys-buster-2020-11-09-120441-amd64.img",
+    "release": "O2046 Deneb",
+    "kernel_version": "4.19.0-11-amd64",
+    "kernel_args": null,
+    "manufacturer": "HP",
+    "product": "HP EliteBook 840 G3",
+    "serial": "YVB7KFPCTU",
+    "mainboard_serial": "7E4RIQJTBV",
+    "bios_vendor": "HP",
+    "bios_version": "N75 Ver. 01.51",
+    "bios_release_date": "10/20/2020",
+    "cpu": "Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz",
+    "cpu_count": 4,
+    "memory_mib": 7762,
+    "memory_slots": [
+      {
+        "size": 8192,
+        "slot": "Bottom-Slot 1(left)",
+        "vendor": "Samsung",
+        "product": "M471A1G43DB0-CPB"
+      },
+      {
+        "slot": "Bottom-Slot 2(right)"
+      }
+    ],
+    "hdd_model": "SAMSUNG MZNLN128",
+    "hdd_size_bytes": 128035676160,
+    "hdd_is_ssd": true,
+    "mac": [
+      "a0:8c:64:12:c8:79",
+      "e4:b3:85:77:b6:a2",
+      "f6:c4:95:7b:5c:4a"
+    ],
+    "lspci": [
+      "00:02.0 VGA compatible controller: Intel Corporation HD Graphics 520 (rev 07)",
+      "02:00.0 Network controller: Intel Corporation Wireless 8260 (rev 3a)"
+    ],
+    "lsusb": [
+      "Bus 002 Device 002: ID 0424:5534 Standard Microsystems Corp. Hub",
+      "Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub",
+      "Bus 001 Device 006: ID 04f2:b51c Chicony Electronics Co., Ltd",
+      "Bus 001 Device 004: ID 8087:0a2b Intel Corp.",
+      "Bus 001 Device 005: ID 0603:00f2 Novatek Microelectronics Corp. Keyboard (Labtec Ultra Flat Keyboard)",
+      "Bus 001 Device 003: ID 0424:2134 Standard Microsystems Corp. Hub",
+      "Bus 001 Device 002: ID 03f0:9d1d HP, Inc",
+      "Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub"
+    ],
+    "wifi_adapter": "Intel Corporation Wireless 8260 [8086:24f3] (rev 3a)",
+    "battery": {
+      "vendor": "Hewlett-Packard",
+      "model": "Primary",
+      "serial": "29983 2016/05/04",
+      "state": "charging",
+      "warning-level": "none",
+      "energy": "25,7868 Wh",
+      "energy-empty": "0 Wh",
+      "energy-full": "38,9994 Wh",
+      "energy-full-design": "46,512 Wh",
+      "voltage": "12,771 V",
+      "percentage": "65%",
+      "capacity": "83,848%",
+      "technology": "lithium-ion"
+    },
+    "purchase_date": null,
+    "purchase_location": null,
+    "warranty_ends": null,
+    "personally_administered": false,
+    "xrandr_commands": [],
+    "xrandr_output": "Screen 0: minimum 320 x 200, current 1366 x 768, maximum 8192 x 8192\neDP-1 connected primary 1366x768+0+0 (normal left inverted right x axis y axis) 309mm x 173mm\n   1366x768      60.01*+  39.97  \n   1360x768      59.80    59.96  \n   1280x720      60.00    59.99    59.86    59.74  \n   1024x768      60.04    60.00  \n   960x720       60.00  \n   928x696       60.05  \n   896x672       60.01  \n   1024x576      59.95    59.96    59.90    59.82  \n   960x600       59.93    60.00  \n   960x540       59.96    59.99    59.63    59.82  \n   800x600       60.00    60.32    56.25  \n   840x525       60.01    59.88  \n   864x486       59.92    59.57  \n   800x512       60.17  \n   700x525       59.98  \n   800x450       59.95    59.82  \n   640x512       60.02  \n   720x450       59.89  \n   700x450       59.96    59.88  \n   640x480       60.00    59.94  \n   720x405       59.51    58.99  \n   684x384       59.88    59.85  \n   680x384       59.80    59.96  \n   640x400       59.88    59.98  \n   576x432       60.06  \n   640x360       59.86    59.83    59.84    59.32  \n   512x384       60.00  \n   512x288       60.00    59.92  \n   480x270       59.63    59.82  \n   400x300       60.32    56.34  \n   432x243       59.92    59.57  \n   320x240       60.05  \n   360x202       59.51    59.13  \n   320x180       59.84    59.32  \nDP-1 disconnected (normal left inverted right x axis y axis)\nHDMI-1 disconnected (normal left inverted right x axis y axis)\nDP-2 disconnected (normal left inverted right x axis y axis)\nHDMI-2 disconnected (normal left inverted right x axis y axis)",
+    "automatic_shutdown": null
+  },
+  {
+    "school": "kettula",
+    "hostname": "kettula-lap-4889",
+    "type": "laptop",
+    "timestamp": 1611586344,
+    "image": "opinsys-os-opinsys-buster-2020-11-09-120441-amd64.img",
+    "release": "O2046 Deneb",
+    "kernel_version": "4.19.0-11-amd64",
+    "kernel_args": null,
+    "manufacturer": "HP",
+    "product": "HP EliteBook 840 G3",
+    "serial": "J16RQTHLSW",
+    "mainboard_serial": "K7YG9EAQH1",
+    "bios_vendor": "HP",
+    "bios_version": "N75 Ver. 01.51",
+    "bios_release_date": "10/20/2020",
+    "cpu": "Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz",
+    "cpu_count": 4,
+    "memory_mib": 7762,
+    "memory_slots": [
+      {
+        "size": 8192,
+        "slot": "Bottom-Slot 1(left)",
+        "vendor": "Samsung",
+        "product": "M471A1K43BB0-CPB"
+      },
+      {
+        "slot": "Bottom-Slot 2(right)"
+      }
+    ],
+    "hdd_model": "SAMSUNG MZNLN256",
+    "hdd_size_bytes": 256060514304,
+    "hdd_is_ssd": true,
+    "mac": [
+      "26:11:e3:90:28:ac",
+      "98:e7:cf:63:4f:27",
+      "e4:a4:6f:56:e4:75"
+    ],
+    "lspci": [
+      "00:02.0 VGA compatible controller: Intel Corporation HD Graphics 520 (rev 07)",
+      "02:00.0 Network controller: Intel Corporation Wireless 8260 (rev 3a)"
+    ],
+    "lsusb": [
+      "Bus 002 Device 002: ID 0424:5534 Standard Microsystems Corp. Hub",
+      "Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub",
+      "Bus 001 Device 005: ID 05c8:0383 Cheng Uei Precision Industry Co., Ltd (Foxlink)",
+      "Bus 001 Device 004: ID 8087:0a2b Intel Corp.",
+      "Bus 001 Device 003: ID 0424:2134 Standard Microsystems Corp. Hub",
+      "Bus 001 Device 002: ID 03f0:9d1d HP, Inc",
+      "Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub"
+    ],
+    "wifi_adapter": "Intel Corporation Wireless 8260 [8086:24f3] (rev 3a)",
+    "battery": {
+      "vendor": "Hewlett-Packard",
+      "model": "Primary",
+      "serial": "00372 2016/07/20",
+      "state": "charging",
+      "warning-level": "none",
+      "energy": "23,37 Wh",
+      "energy-empty": "0 Wh",
+      "energy-full": "40,3218 Wh",
+      "energy-full-design": "46,512 Wh",
+      "voltage": "12,691 V",
+      "percentage": "57%",
+      "capacity": "86,6912%",
+      "technology": "lithium-ion"
+    },
+    "purchase_date": null,
+    "purchase_location": null,
+    "warranty_ends": null,
+    "personally_administered": false,
+    "xrandr_commands": [],
+    "xrandr_output": "Screen 0: minimum 320 x 200, current 1920 x 1080, maximum 8192 x 8192\neDP-1 connected primary 1920x1080+0+0 (normal left inverted right x axis y axis) 309mm x 173mm\n   1920x1080     60.06*+  60.01    59.97    59.96    59.93    40.04  \n   1680x1050     59.95    59.88  \n   1600x1024     60.17  \n   1400x1050     59.98  \n   1600x900      59.99    59.94    59.95    59.82  \n   1280x1024     60.02  \n   1440x900      59.89  \n   1400x900      59.96    59.88  \n   1280x960      60.00  \n   1440x810      60.00    59.97  \n   1368x768      59.88    59.85  \n   1360x768      59.80    59.96  \n   1280x800      59.99    59.97    59.81    59.91  \n   1152x864      60.00  \n   1280x720      60.00    59.99    59.86    59.74  \n   1024x768      60.04    60.00  \n   960x720       60.00  \n   928x696       60.05  \n   896x672       60.01  \n   1024x576      59.95    59.96    59.90    59.82  \n   960x600       59.93    60.00  \n   960x540       59.96    59.99    59.63    59.82  \n   800x600       60.00    60.32    56.25  \n   840x525       60.01    59.88  \n   864x486       59.92    59.57  \n   800x512       60.17  \n   700x525       59.98  \n   800x450       59.95    59.82  \n   640x512       60.02  \n   720x450       59.89  \n   700x450       59.96    59.88  \n   640x480       60.00    59.94  \n   720x405       59.51    58.99  \n   684x384       59.88    59.85  \n   680x384       59.80    59.96  \n   640x400       59.88    59.98  \n   576x432       60.06  \n   640x360       59.86    59.83    59.84    59.32  \n   512x384       60.00  \n   512x288       60.00    59.92  \n   480x270       59.63    59.82  \n   400x300       60.32    56.34  \n   432x243       59.92    59.57  \n   320x240       60.05  \n   360x202       59.51    59.13  \n   320x180       59.84    59.32  \nDP-1 disconnected (normal left inverted right x axis y axis)\nHDMI-1 disconnected (normal left inverted right x axis y axis)\nDP-2 disconnected (normal left inverted right x axis y axis)\nHDMI-2 disconnected (normal left inverted right x axis y axis)",
+    "automatic_shutdown": null
+  },
+  {
+    "school": "pupula",
+    "hostname": "pupula-digilap-909",
+    "type": "laptop",
+    "timestamp": 1611747867,
+    "image": "opinsys-os-opinsys-buster-2020-12-09-114058-amd64.img",
+    "release": "O2050 Elnath",
+    "kernel_version": "4.19.0-11-amd64",
+    "kernel_args": null,
+    "manufacturer": "HP",
+    "product": "HP EliteBook 820 G3",
+    "serial": "6A0KLJGMBU",
+    "mainboard_serial": "2KMTP9QYHZ",
+    "bios_vendor": "HP",
+    "bios_version": "N75 Ver. 01.51",
+    "bios_release_date": "10/20/2020",
+    "cpu": "Intel(R) Core(TM) i5-6300U CPU @ 2.40GHz",
+    "cpu_count": 4,
+    "memory_mib": 7763,
+    "memory_slots": [
+      {
+        "size": 8192,
+        "slot": "Bottom-Slot 1(left)",
+        "vendor": "Samsung",
+        "product": "M471A1G43DB0-CPB"
+      },
+      {
+        "slot": "Bottom-Slot 2(right)"
+      }
+    ],
+    "hdd_model": "SAMSUNG MZNLN128",
+    "hdd_size_bytes": 128035676160,
+    "hdd_is_ssd": true,
+    "mac": [
+      "44:85:dc:52:3c:e8",
+      "70:5a:e2:2e:a6:37"
+    ],
+    "lspci": [
+      "00:02.0 VGA compatible controller: Intel Corporation HD Graphics 520 (rev 07)",
+      "02:00.0 Network controller: Intel Corporation Wireless 8260 (rev 3a)"
+    ],
+    "lsusb": [
+      "Bus 002 Device 002: ID 0424:5534 Standard Microsystems Corp. Hub",
+      "Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub",
+      "Bus 001 Device 004: ID 04f2:b51c Chicony Electronics Co., Ltd",
+      "Bus 001 Device 003: ID 8087:0a2b Intel Corp.",
+      "Bus 001 Device 002: ID 0424:2134 Standard Microsystems Corp. Hub",
+      "Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub"
+    ],
+    "wifi_adapter": "Intel Corporation Wireless 8260 [8086:24f3] (rev 3a)",
+    "battery": {
+      "vendor": "Hewlett-Packard",
+      "model": "Primary",
+      "serial": "07658 2016/03/22",
+      "state": "charging",
+      "warning-level": "none",
+      "energy": "26,3226 Wh",
+      "energy-empty": "0 Wh",
+      "energy-full": "41,2908 Wh",
+      "energy-full-design": "44,574 Wh",
+      "voltage": "12,797 V",
+      "percentage": "63%",
+      "capacity": "92,6343%",
+      "technology": "lithium-ion"
+    },
+    "purchase_date": null,
+    "purchase_location": null,
+    "warranty_ends": null,
+    "personally_administered": false,
+    "xrandr_commands": [],
+    "xrandr_output": "Screen 0: minimum 320 x 200, current 1366 x 768, maximum 8192 x 8192\neDP-1 connected primary 1366x768+0+0 (normal left inverted right x axis y axis) 277mm x 156mm\n   1366x768      60.06*+  40.04  \n   1360x768      59.80    59.96  \n   1280x720      60.00    59.99    59.86    59.74  \n   1024x768      60.04    60.00  \n   960x720       60.00  \n   928x696       60.05  \n   896x672       60.01  \n   1024x576      59.95    59.96    59.90    59.82  \n   960x600       59.93    60.00  \n   960x540       59.96    59.99    59.63    59.82  \n   800x600       60.00    60.32    56.25  \n   840x525       60.01    59.88  \n   864x486       59.92    59.57  \n   800x512       60.17  \n   700x525       59.98  \n   800x450       59.95    59.82  \n   640x512       60.02  \n   720x450       59.89  \n   700x450       59.96    59.88  \n   640x480       60.00    59.94  \n   720x405       59.51    58.99  \n   684x384       59.88    59.85  \n   680x384       59.80    59.96  \n   640x400       59.88    59.98  \n   576x432       60.06  \n   640x360       59.86    59.83    59.84    59.32  \n   512x384       60.00  \n   512x288       60.00    59.92  \n   480x270       59.63    59.82  \n   400x300       60.32    56.34  \n   432x243       59.92    59.57  \n   320x240       60.05  \n   360x202       59.51    59.13  \n   320x180       59.84    59.32  \nDP-1 disconnected (normal left inverted right x axis y axis)\nHDMI-1 disconnected (normal left inverted right x axis y axis)\nDP-2 disconnected (normal left inverted right x axis y axis)\nHDMI-2 disconnected (normal left inverted right x axis y axis)",
+    "automatic_shutdown": null
+  },
+  {
+    "school": "karhula",
+    "hostname": "karhula-kan-5g-32",
+    "type": "laptop",
+    "timestamp": 1615460070,
+    "image": "opinsys-os-opinsys-buster-2021-01-27-071357-amd64.img",
+    "release": "O2104 Fomalhaut",
+    "kernel_version": "4.19.0-13-amd64",
+    "kernel_args": null,
+    "manufacturer": "HP",
+    "product": "HP EliteBook 820 G3",
+    "serial": "I4A2UYQLK3",
+    "mainboard_serial": "5239DSFQJN",
+    "bios_vendor": "HP",
+    "bios_version": "N75 Ver. 01.49",
+    "bios_release_date": "07/12/2020",
+    "cpu": "Intel(R) Core(TM) i7-6500U CPU @ 2.50GHz",
+    "cpu_count": 4,
+    "memory_mib": 7762,
+    "memory_slots": [
+      {
+        "slot": "Bottom-Slot 1(left)"
+      },
+      {
+        "size": 8192,
+        "slot": "Bottom-Slot 2(right)",
+        "vendor": "Samsung",
+        "product": "M471A1K43CB1-CRC"
+      }
+    ],
+    "hdd_model": "SanDisk SD8SN8U-",
+    "hdd_size_bytes": 256060514304,
+    "hdd_is_ssd": true,
+    "mac": [
+      "28:16:59:e9:21:3d",
+      "7a:5f:ad:4d:a9:c9",
+      "f4:30:5a:b8:c4:f0"
+    ],
+    "lspci": [
+      "00:00.0 Host bridge: Intel Corporation Skylake Host Bridge/DRAM Registers (rev 08)",
+      "00:02.0 VGA compatible controller: Intel Corporation HD Graphics 520 (rev 07)",
+      "00:14.0 USB controller: Intel Corporation Sunrise Point-LP USB 3.0 xHCI Controller (rev 21)",
+      "00:14.2 Signal processing controller: Intel Corporation Sunrise Point-LP Thermal subsystem (rev 21)",
+      "00:15.0 Signal processing controller: Intel Corporation Sunrise Point-LP Serial IO I2C Controller #0 (rev 21)",
+      "00:16.0 Communication controller: Intel Corporation Sunrise Point-LP CSME HECI #1 (rev 21)",
+      "00:17.0 SATA controller: Intel Corporation Sunrise Point-LP SATA Controller [AHCI mode] (rev 21)",
+      "00:1c.0 PCI bridge: Intel Corporation Device 9d11 (rev f1)",
+      "00:1c.3 PCI bridge: Intel Corporation Device 9d13 (rev f1)",
+      "00:1f.0 ISA bridge: Intel Corporation Sunrise Point-LP LPC Controller (rev 21)",
+      "00:1f.2 Memory controller: Intel Corporation Sunrise Point-LP PMC (rev 21)",
+      "00:1f.3 Audio device: Intel Corporation Sunrise Point-LP HD Audio (rev 21)",
+      "00:1f.4 SMBus: Intel Corporation Sunrise Point-LP SMBus (rev 21)",
+      "00:1f.6 Ethernet controller: Intel Corporation Ethernet Connection I219-V (rev 21)",
+      "01:00.0 Unassigned class [ff00]: Realtek Semiconductor Co., Ltd. RTS522A PCI Express Card Reader (rev 01)",
+      "02:00.0 Network controller: Intel Corporation Wireless 8260 (rev 3a)"
+    ],
+    "lsusb": [
+      "Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub",
+      "Bus 001 Device 005: ID 05c8:0383 Cheng Uei Precision Industry Co., Ltd (Foxlink)",
+      "Bus 001 Device 004: ID 138a:003f Validity Sensors, Inc. VFS495 Fingerprint Reader",
+      "Bus 001 Device 003: ID 8087:0a2b Intel Corp.",
+      "Bus 001 Device 002: ID 03f0:9d1d HP, Inc",
+      "Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub"
+    ],
+    "wifi_adapter": "Intel Corporation Wireless 8260 [8086:24f3] (rev 3a)",
+    "battery": {
+      "vendor": "Hewlett-Packard",
+      "model": "Primary",
+      "serial": "21793 2017/04/21",
+      "state": "charging",
+      "warning-level": "none",
+      "energy": "41,3592 Wh",
+      "energy-empty": "0 Wh",
+      "energy-full": "43,548 Wh",
+      "energy-full-design": "43,548 Wh",
+      "voltage": "13,007 V",
+      "percentage": "94%",
+      "capacity": "100%",
+      "technology": "lithium-ion"
+    },
+    "purchase_date": null,
+    "purchase_location": null,
+    "warranty_ends": null,
+    "personally_administered": false,
+    "xrandr_commands": [],
+    "xrandr_output": "Screen 0: minimum 320 x 200, current 1920 x 1080, maximum 8192 x 8192\neDP-1 connected primary 1920x1080+0+0 (normal left inverted right x axis y axis) 276mm x 155mm\n   1920x1080     60.00*+  59.97    59.96    59.93    40.00  \n   1680x1050     59.95    59.88  \n   1600x1024     60.17  \n   1400x1050     59.98  \n   1600x900      59.99    59.94    59.95    59.82  \n   1280x1024     60.02  \n   1440x900      59.89  \n   1400x900      59.96    59.88  \n   1280x960      60.00  \n   1440x810      60.00    59.97  \n   1368x768      59.88    59.85  \n   1360x768      59.80    59.96  \n   1280x800      59.99    59.97    59.81    59.91  \n   1152x864      60.00  \n   1280x720      60.00    59.99    59.86    59.74  \n   1024x768      60.04    60.00  \n   960x720       60.00  \n   928x696       60.05  \n   896x672       60.01  \n   1024x576      59.95    59.96    59.90    59.82  \n   960x600       59.93    60.00  \n   960x540       59.96    59.99    59.63    59.82  \n   800x600       60.00    60.32    56.25  \n   840x525       60.01    59.88  \n   864x486       59.92    59.57  \n   800x512       60.17  \n   700x525       59.98  \n   800x450       59.95    59.82  \n   640x512       60.02  \n   720x450       59.89  \n   700x450       59.96    59.88  \n   640x480       60.00    59.94  \n   720x405       59.51    58.99  \n   684x384       59.88    59.85  \n   680x384       59.80    59.96  \n   640x400       59.88    59.98  \n   576x432       60.06  \n   640x360       59.86    59.83    59.84    59.32  \n   512x384       60.00  \n   512x288       60.00    59.92  \n   480x270       59.63    59.82  \n   400x300       60.32    56.34  \n   432x243       59.92    59.57  \n   320x240       60.05  \n   360x202       59.51    59.13  \n   320x180       59.84    59.32  \nDP-1 disconnected (normal left inverted right x axis y axis)\nHDMI-1 disconnected (normal left inverted right x axis y axis)\nDP-2 disconnected (normal left inverted right x axis y axis)\nHDMI-2 disconnected (normal left inverted right x axis y axis)",
+    "automatic_shutdown": null
+  },
+  {
+    "school": "kettula",
+    "hostname": "kettula-lap-050",
+    "type": "laptop",
+    "timestamp": 1615463478,
+    "image": "opinsys-os-opinsys-stretch-2021-01-27-071036-amd64.img",
+    "release": "O2104 Euclid",
+    "kernel_version": "4.9.0-14-amd64",
+    "kernel_args": null,
+    "manufacturer": "Hewlett-Packard",
+    "product": "HP EliteBook 820 G2",
+    "serial": "6E4TQUYDPO",
+    "mainboard_serial": "DG9ES5KF6O",
+    "bios_vendor": "Hewlett-Packard",
+    "bios_version": "M71 Ver. 01.27",
+    "bios_release_date": "07/12/2018",
+    "cpu": "Intel(R) Core(TM) i5-5300U CPU @ 2.30GHz",
+    "cpu_count": 4,
+    "memory_mib": 7862,
+    "memory_slots": [
+      {
+        "size": 8192,
+        "slot": "Bottom-Slot 1(left)",
+        "product": "M471B1G73EB0-YK0",
+        "vendor": "Samsung"
+      },
+      {
+        "size": 0,
+        "slot": "Bottom-Slot 2(right)",
+        "product": null,
+        "vendor": null
+      }
+    ],
+    "hdd_model": "LITEON LCH-128V2",
+    "hdd_size_bytes": 128035676160,
+    "hdd_is_ssd": true,
+    "mac": [
+      "34:02:3b:73:d1:3e",
+      "48:0f:0e:89:f6:01"
+    ],
+    "lspci": [
+      "00:02.0 VGA compatible controller: Intel Corporation HD Graphics 5500 (rev 09)",
+      "03:00.0 Network controller: Intel Corporation Wireless 7265 (rev 48)"
+    ],
+    "lsusb": [
+      "Bus 003 Device 002: ID 8087:8001 Intel Corp.",
+      "Bus 003 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub",
+      "Bus 002 Device 002: ID 0424:5534 Standard Microsystems Corp. Hub",
+      "Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub",
+      "Bus 001 Device 005: ID 04f2:b466 Chicony Electronics Co., Ltd",
+      "Bus 001 Device 004: ID 03f0:581d HP, Inc lt4112 Gobi 4G Module Network Device",
+      "Bus 001 Device 003: ID 8087:0a2a Intel Corp.",
+      "Bus 001 Device 002: ID 0424:2134 Standard Microsystems Corp. Hub",
+      "Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub"
+    ],
+    "wifi_adapter": "Intel Corporation Wireless 7265 [8086:095a] (rev 48)",
+    "battery": {
+      "vendor": "Hewlett-Packard",
+      "model": "Primary",
+      "serial": "00992 2015/05/19",
+      "state": "discharging",
+      "warning-level": "none",
+      "energy": "36,7521 Wh",
+      "energy-empty": "0 Wh",
+      "energy-full": "39,7602 Wh",
+      "energy-full-design": "39,7602 Wh",
+      "voltage": "11,99 V",
+      "percentage": "92%",
+      "capacity": "100%",
+      "technology": "lithium-ion"
+    },
+    "purchase_date": null,
+    "purchase_location": null,
+    "warranty_ends": null,
+    "personally_administered": false,
+    "xrandr_commands": [],
+    "xrandr_output": "Screen 0: minimum 320 x 200, current 1366 x 768, maximum 8192 x 8192\neDP-1 connected primary 1366x768+0+0 (normal left inverted right x axis y axis) 277mm x 156mm\n   1366x768      59.99*+  40.00  \n   1360x768      59.80    59.96  \n   1024x768      60.04    60.00  \n   960x720       60.00  \n   928x696       60.05  \n   896x672       60.01  \n   960x600       60.00  \n   960x540       59.99  \n   800x600       60.00    60.32    56.25  \n   840x525       60.01    59.88  \n   800x512       60.17  \n   700x525       59.98  \n   640x512       60.02  \n   720x450       59.89  \n   640x480       60.00    59.94  \n   680x384       59.80    59.96  \n   576x432       60.06  \n   512x384       60.00  \n   400x300       60.32    56.34  \n   320x240       60.05  \nDP-1 disconnected (normal left inverted right x axis y axis)\nHDMI-1 disconnected (normal left inverted right x axis y axis)\nDP-2 disconnected (normal left inverted right x axis y axis)\nHDMI-2 disconnected (normal left inverted right x axis y axis)",
+    "automatic_shutdown": null
+  },
+  {
+    "school": "kettula",
+    "hostname": "kettula-kan-62",
+    "type": "laptop",
+    "timestamp": 1615446846,
+    "image": "opinsys-os-opinsys-stretch-2021-01-27-071036-amd64.img",
+    "release": "O2104 Euclid",
+    "kernel_version": "4.9.0-14-amd64",
+    "kernel_args": null,
+    "manufacturer": "Hewlett-Packard",
+    "product": "HP EliteBook 8470p",
+    "serial": "U0BLQJGTM4",
+    "mainboard_serial": "GC4ZAPV8EX",
+    "bios_vendor": "Hewlett-Packard",
+    "bios_version": "68ICF Ver. F.31",
+    "bios_release_date": "09/24/2012",
+    "cpu": "Intel(R) Core(TM) i5-3360M CPU @ 2.80GHz",
+    "cpu_count": 4,
+    "memory_mib": 3820,
+    "memory_slots": [
+      {
+        "size": 0,
+        "slot": "Bottom-Slot 1(top)",
+        "product": null,
+        "vendor": null
+      },
+      {
+        "size": 4096,
+        "slot": "Bottom-Slot 2(under)",
+        "product": "HMT351S6EFR8A-PB",
+        "vendor": "Hynix/Hyundai"
+      }
+    ],
+    "hdd_model": "TOSHIBA MK5061GS",
+    "hdd_size_bytes": 500107862016,
+    "hdd_is_ssd": false,
+    "mac": [
+      "02:15:0b:13:4d:bb",
+      "84:3a:ee:9c:7e:ab",
+      "88:51:e2:aa:f7:43"
+    ],
+    "lspci": [
+      "00:02.0 VGA compatible controller: Intel Corporation 3rd Gen Core processor Graphics Controller (rev 09)",
+      "24:00.0 Network controller: Intel Corporation Centrino Advanced-N 6205 [Taylor Peak] (rev 34)"
+    ],
+    "lsusb": [
+      "Bus 004 Device 003: ID 0a5c:21e1 Broadcom Corp. HP Portable SoftSailing",
+      "Bus 004 Device 002: ID 8087:0024 Intel Corp. Integrated Rate Matching Hub",
+      "Bus 004 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub",
+      "Bus 003 Device 005: ID 03f0:3d1d HP, Inc",
+      "Bus 003 Device 004: ID 04f2:b230 Chicony Electronics Co., Ltd Integrated HP HD Webcam",
+      "Bus 003 Device 003: ID 138a:003d Validity Sensors, Inc. VFS491",
+      "Bus 003 Device 002: ID 8087:0024 Intel Corp. Integrated Rate Matching Hub",
+      "Bus 003 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub",
+      "Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub",
+      "Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub"
+    ],
+    "wifi_adapter": "Intel Corporation Centrino Advanced-N 6205 [Taylor Peak] [8086:0082] (rev 34)",
+    "battery": {
+      "vendor": "Hewlett-Packard",
+      "model": "Primary",
+      "serial": "53396 2012/12/03",
+      "state": "discharging",
+      "warning-level": "none",
+      "energy": "43,092 Wh",
+      "energy-empty": "0 Wh",
+      "energy-full": "47,4876 Wh",
+      "energy-full-design": "47,4876 Wh",
+      "voltage": "11,668 V",
+      "percentage": "90%",
+      "capacity": "100%",
+      "technology": "lithium-ion"
+    },
+    "purchase_date": null,
+    "purchase_location": null,
+    "warranty_ends": null,
+    "personally_administered": false,
+    "xrandr_commands": [],
+    "xrandr_output": "Screen 0: minimum 320 x 200, current 1366 x 768, maximum 8192 x 8192\nLVDS-1 connected primary 1366x768+0+0 (normal left inverted right x axis y axis) 309mm x 174mm\n   1366x768      60.00*+  40.00  \n   1360x768      59.80    59.96  \n   1024x768      60.04    60.00  \n   960x720       60.00  \n   928x696       60.05  \n   896x672       60.01  \n   960x600       60.00  \n   960x540       59.99  \n   800x600       60.00    60.32    56.25  \n   840x525       60.01    59.88  \n   800x512       60.17  \n   700x525       59.98  \n   640x512       60.02  \n   720x450       59.89  \n   640x480       60.00    59.94  \n   680x384       59.80    59.96  \n   576x432       60.06  \n   512x384       60.00  \n   400x300       60.32    56.34  \n   320x240       60.05  \nVGA-1 disconnected (normal left inverted right x axis y axis)\nHDMI-1 disconnected (normal left inverted right x axis y axis)\nDP-1 disconnected (normal left inverted right x axis y axis)\nHDMI-2 disconnected (normal left inverted right x axis y axis)\nHDMI-3 disconnected (normal left inverted right x axis y axis)\nDP-2 disconnected (normal left inverted right x axis y axis)\nDP-3 disconnected (normal left inverted right x axis y axis)",
+    "automatic_shutdown": null
+  },
+  {
+    "school": "karhula",
+    "hostname": "karhula-kan-27",
+    "type": "laptop",
+    "timestamp": 1614933023,
+    "image": "opinsys-os-opinsys-stretch-2021-01-27-071036-amd64.img",
+    "release": "O2104 Euclid",
+    "kernel_version": "4.9.0-14-amd64",
+    "kernel_args": null,
+    "manufacturer": "Hewlett-Packard",
+    "product": "HP EliteBook 820 G1",
+    "serial": "FH3AQRLNYJ",
+    "mainboard_serial": "MFOBNCKXEL",
+    "bios_vendor": "Hewlett-Packard",
+    "bios_version": "L71 Ver. 01.44",
+    "bios_release_date": "04/12/2018",
+    "cpu": "Intel(R) Core(TM) i5-4300U CPU @ 1.90GHz",
+    "cpu_count": 4,
+    "memory_mib": 3852,
+    "memory_slots": [
+      {
+        "size": 4096,
+        "slot": "Bottom-Slot 1(left)",
+        "product": "RMT3170EF68F9W1600",
+        "vendor": "Ramaxel"
+      },
+      {
+        "size": 0,
+        "slot": "Bottom-Slot 2(right)",
+        "product": null,
+        "vendor": null
+      }
+    ],
+    "hdd_model": "SAMSUNG MZ7PD128",
+    "hdd_size_bytes": 128035676160,
+    "hdd_is_ssd": true,
+    "mac": [
+      "38:63:c4:2a:9b:e7",
+      "80:19:40:5b:ab:74"
+    ],
+    "lspci": [
+      "00:02.0 VGA compatible controller: Intel Corporation Haswell-ULT Integrated Graphics Controller (rev 0b)",
+      "02:00.0 Network controller: Intel Corporation Wireless 7260 (rev 73)"
+    ],
+    "lsusb": [
+      "Bus 003 Device 002: ID 8087:8000 Intel Corp.",
+      "Bus 003 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub",
+      "Bus 002 Device 002: ID 0424:5534 Standard Microsystems Corp. Hub",
+      "Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub",
+      "Bus 001 Device 006: ID 05c8:0369 Cheng Uei Precision Industry Co., Ltd (Foxlink)",
+      "Bus 001 Device 005: ID 03f0:521d HP, Inc",
+      "Bus 001 Device 004: ID 138a:003f Validity Sensors, Inc. VFS495 Fingerprint Reader",
+      "Bus 001 Device 003: ID 8087:07dc Intel Corp.",
+      "Bus 001 Device 002: ID 0424:2134 Standard Microsystems Corp. Hub",
+      "Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub"
+    ],
+    "wifi_adapter": "Intel Corporation Wireless 7260 [8086:08b1] (rev 73)",
+    "battery": {
+      "vendor": "Hewlett-Packard",
+      "model": "Primary",
+      "serial": "00130 2014/09/05",
+      "state": "discharging",
+      "warning-level": "none",
+      "energy": "42,3675 Wh",
+      "energy-empty": "0 Wh",
+      "energy-full": "43,2788 Wh",
+      "energy-full-design": "43,2788 Wh",
+      "voltage": "12,217 V",
+      "percentage": "97%",
+      "capacity": "100%",
+      "technology": "lithium-ion"
+    },
+    "purchase_date": null,
+    "purchase_location": null,
+    "warranty_ends": null,
+    "personally_administered": false,
+    "xrandr_commands": [],
+    "xrandr_output": "Screen 0: minimum 320 x 200, current 1366 x 768, maximum 8192 x 8192\neDP-1 connected primary 1366x768+0+0 (normal left inverted right x axis y axis) 277mm x 156mm\n   1366x768      59.99*+  40.00  \n   1360x768      59.80    59.96  \n   1024x768      60.04    60.00  \n   960x720       60.00  \n   928x696       60.05  \n   896x672       60.01  \n   960x600       60.00  \n   960x540       59.99  \n   800x600       60.00    60.32    56.25  \n   840x525       60.01    59.88  \n   800x512       60.17  \n   700x525       59.98  \n   640x512       60.02  \n   720x450       59.89  \n   640x480       60.00    59.94  \n   680x384       59.80    59.96  \n   576x432       60.06  \n   512x384       60.00  \n   400x300       60.32    56.34  \n   320x240       60.05  \nDP-1 disconnected (normal left inverted right x axis y axis)\nHDMI-1 disconnected (normal left inverted right x axis y axis)\nDP-2 disconnected (normal left inverted right x axis y axis)\nHDMI-2 disconnected (normal left inverted right x axis y axis)",
+    "automatic_shutdown": null
+  },
+  
+]

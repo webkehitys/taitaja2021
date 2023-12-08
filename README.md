@@ -2,8 +2,6 @@
 
 ## Semifinaali
 
-Semifinaalitehtävässä opiskelijoiden tulee viimeistellä ja julkaista Weather Oy:n kehittämä sääpalvelu. Tehtävä vaatii HTML:n, CSS:n, JavaScriptin, PHP:n ja SQL:n taituruutta. Opiskelijoiden on noudatettava asiakkaan graafista suunnitelmaa ja varmistettava sivuston responsiivisuus ja käyttäjäystävällisyys. Tehtävässä arvioidaan myös laadukkaan koodin tuottamista, GitHub-repositorion määrittelyä ja README-tiedoston laatimista.
-
 ### Ennakkotehtävä
 
 Taitaja 2021 -verkkosivujen tuottamisen ennakkotehtävässä kilpailijoiden tulee luoda verkkosivusto Mustapään Auto Oy:lle, joka on erikoistunut käytettyjen autojen myyntiin ja autohuoltoon. Yritys laajentaa toimintaansa perustamalla renkaita myyvän sivuston nimeltä Mustat Renkaat. Kilpailijoiden tehtävänä on käyttää HTML5-, CSS3-, JavaScript-, PHP- ja MySQL-tekniikoita luodakseen sivuston, joka mahdollistaa käyttäjille oikean kokoisten kesä- tai talvirenkaiden etsimisen tietokannasta. Sivustolla on myös esiteltävä yrityksen perustiedot, toimipisteen karttakuva, kaksi sesonkimainosta, ja sivuston tulee noudattaa graafista ohjeistusta sekä olla responsiivinen.
